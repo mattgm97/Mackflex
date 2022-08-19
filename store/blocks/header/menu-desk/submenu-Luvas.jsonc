@@ -1,0 +1,48 @@
+{
+    "vtex.menu@2.x:menu#submenu-cat-Calçados-col1":{
+        "props":{
+            "orientation": "vertical",
+            "blockClass":"row-menu-col",
+            "items": [
+              {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Bracol",
+                    "href": "/calcados-de-seguranca/bracol"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Mochilas e malas",
+                    "href": "/calcados-de-seguranca/fujiwara"
+                }
+            },
+            {
+                "type": "custom",
+                "id": "",
+                "highlight": false,
+                "itemProps": {
+                    "type": "internal",
+                    "noFollow": false,
+                    "blockClass": "sub-cat-item",
+                    "text": "Óculos de natação",
+                    "href": "/calcados-de-seguranca/marluvas"
+                }
+            }
+            ]
+        }
+    }
+
+
+}

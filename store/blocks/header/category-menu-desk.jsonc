@@ -1,0 +1,129 @@
+{
+  "vtex.menu@2.x:menu#category-menu-01": {
+    "children": [
+      "menu-item#Calçados",
+       "menu-item#Luvas",
+       "menu-item#Óculos" 
+      // "menu-item#mulheres"
+    ],
+    "props": {
+      "blockClass": "mainMenu",
+      "experimentalOptimizeRendering": true
+    }
+  },
+
+  // ----------------- Categoria CALÇADOS -------------------
+  "menu-item#Calçados": {
+    "props": {
+      "id": "menu-item-category-all",
+      "type": "custom",
+      "experimentalOptimizeRendering": true,
+      "iconId": null,
+      "highlight": false,
+      "blockClass": [
+        "allCategoryBlock",
+        "highlightCategoryBlock",
+        "department-menu",
+        "removeBorderRight"
+      ],
+      "itemProps": {
+        "type": "internal",
+        "href": "/calcados-de-seguranca",
+        "noFollow": true,
+        "tagTitle": "Calçados de Segurança",
+        "text": "Calçados de Segurança"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#Calçados-submenu-block"]
+  },
+  "vtex.menu@2.x:submenu#Calçados-submenu-block": {
+    "props": {
+      "width": "100%",
+      "blockClass": "main-menu-row-desk"
+    },
+    "children": ["flex-layout.row#Calçados"]
+  },
+  "flex-layout.row#Calçados": {
+    "props": {
+      "blockClass": ["menu-content-area"],
+      "paddingTop": 6,
+      "colGap": 3
+    },
+    "children": [
+      "flex-layout.col#Calçados1",
+      "flex-layout.col#imagemCalçados"
+    ]
+  },
+  "flex-layout.col#Calçados1": {
+    "props": {
+      "width": "20%",
+      "preventVerticalStretch": true
+    },
+    "children": ["vtex.menu@2.x:menu#submenu-cat-Calçados-col1"]
+  },
+  "flex-layout.col#imagemCalçados": {
+    "props": {
+      "width": "grow",
+      "horizontalAlign": "right"
+    },
+    "children": ["image#imagemCalçados"]
+  },
+  "image#imagemCalçados": {
+    "props": {
+      "src": "assets/banners/banner-submenu.png",
+      "maxHeight": 355,
+      "width": "100%"
+    }
+  },
+
+
+
+  // ----------------- Categoria LUVAS -------------------
+
+  "menu-item#Luvas": {
+    "props": {
+      "id": "menu-item-category-all",
+      "type": "custom",
+      "experimentalOptimizeRendering": true,
+      "iconId": null,
+      "highlight": false,
+      "blockClass": [
+        "allCategoryBlock",
+        "highlightCategoryBlock",
+        "department-menu",
+        "removeBorderRight"
+      ],
+      "itemProps": {
+        "type": "internal",
+        "href": "/luvas-de-seguranca",
+        "noFollow": true,
+        "tagTitle": "Luvas de Segurança",
+        "text": "Luvas de Segurança"
+      }
+    }
+  },
+
+  "menu-item#Óculos": {
+    "props": {
+      "id": "menu-item-category-all",
+      "type": "custom",
+      "experimentalOptimizeRendering": true,
+      "iconId": null,
+      "highlight": false,
+      "blockClass": [
+        "allCategoryBlock",
+        "highlightCategoryBlock",
+        "department-menu",
+        "removeBorderRight"
+      ],
+      "itemProps": {
+        "type": "internal",
+        "href": "/oculos-de-seguranca",
+        "noFollow": true,
+        "tagTitle": "Óculos de segurança",
+        "text": "Óculos de segurança"
+      }
+    }
+  }
+ 
+}

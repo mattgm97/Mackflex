@@ -1,0 +1,54 @@
+{
+  "flex-layout.col#payment-container":{
+    "children": [
+      "flex-layout.row#payment-0",
+      "flex-layout.row#payment-1"
+    ],
+    "props": {
+      "blockClass": "payment-container",
+      "preventHorizontalStretch": true,
+       "fullWidth": true
+    }
+  },
+  "flex-layout.row#payment-0":{
+    "props": {
+      "blockClass": "payment-0",
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "rich-text#payment",
+      "image#payment-methods"    
+    ]
+  },
+  "flex-layout.row#payment-1":{
+    "children": [
+
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "blockClass": "flags__list"
+    }
+  },
+
+  "rich-text#payment": {
+    "props": {
+      "font": "t-heading-5",
+      "textPosition": "LEFT",
+      "textAlign": "LEFT",
+      "blockClass": "footer-sobre",
+      "text": "**Formas de Pagamento**"
+    } 
+  },
+
+  "image#payment-methods": {
+    "props": {
+      "blockClass": "image-payment-methods",
+      // "link": "link#payment-0",
+      "src": "assets/icons/TUDO.png"
+    }
+  }
+
+
+
+}

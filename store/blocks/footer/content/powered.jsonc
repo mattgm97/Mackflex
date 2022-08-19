@@ -1,0 +1,45 @@
+{
+  "flex-layout.col#powered-container": {
+    "children": ["flex-layout.row#powered"],
+    "props": {
+      "blockClass": "powered-container",
+      "preventHorizontalStretch": true,
+      "width": "30%"
+    }
+  },
+
+  "flex-layout.row#powered": {
+    "children": ["rich-text#poweredby", "image#powerdBy", "image#vtex-logo"],
+    "props": {
+      "preventHorizontalStretch": true,
+      "blockClass": "powered__row"
+    }
+  },
+  "rich-text#poweredby": {
+    "props": {
+      "text": "**Powered By**",
+      "blockClass": ["powered__title"]
+    }
+  },
+  "image#powerdBy": {
+    "props": {
+      "link": "link#almah",
+      "src": "assets/icons/almah-logo.svg"
+    }
+  },
+  "image#vtex-logo": {
+    "props": {
+      // "link": "link#almah",
+      "width": "60px",
+      "src": "assets/icons/logovtex.svg"
+    }
+  },
+  "link#almah": {
+    "props": {
+      "url": {
+        "$ref": "http://www.almahcomunicacao.com.br",
+        "title": "almah"
+      }
+    }
+  }
+}

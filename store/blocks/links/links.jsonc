@@ -1,0 +1,27 @@
+{
+  "flex-layout.col#btn-minicart": {
+    "props": {
+      "blockClass": "btn-minicart-col"
+    },
+    "children": [
+      "link.product#finalizar-compra",
+      "link.product#ir-para-o-carrinho"
+    ]
+  },
+
+  "link.product#finalizar-compra": {
+    "props": {
+      "label": "FINALIZAR COMPRA",
+      "href": "/checkout/#/payment",
+      "blockClass": "link-finalizar-compra"
+    }
+  },
+
+  "link.product#ir-para-o-carrinho": {
+    "props": {
+      "label": "IR PARA O CARRINHO",
+      "href": "checkout/#/cart",
+      "blockClass": "link-ir-para-carrinho"
+    }
+  }
+}

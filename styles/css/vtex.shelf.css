@@ -1,0 +1,24 @@
+.title--related--shelf {
+  padding-left: 30px;
+  display: flex;
+  justify-content: start;
+  text-decoration: underline #f15b2a;
+  color: #515151;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.arrow .caretIcon {
+  display: none;
+}
+
+.arrowLeft::after {
+  content: url("assets/icons/Vector-left.png");
+}
+
+.arrowRight::after {
+  content: url("assets/icons/Vector.png");
+}

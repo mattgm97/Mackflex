@@ -1,0 +1,89 @@
+.tittleFollowUs {
+  font-family: "Droid Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 32px;
+  color: #515151;
+  border-bottom: 4px solid #f15b2a;
+}
+
+.containerFollowUs {
+  max-width: 135px;
+  width: 100%;
+}
+
+.instaTitleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconInsta {
+  padding: 0 10px;
+}
+
+.containerBlog {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardInstagram {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 50px 0;
+}
+
+.divInstagram {
+  display: flex;
+  justify-content: center;
+}
+
+.cardBlogText {
+  text-align: center;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 415px) {
+  .containerBlog {
+    max-width: 414px;
+    width: 100%;
+  }
+
+  .instaTitleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  .imgInsta {
+    width: 171px;
+    height: 171px;
+  }
+}
+
+.imgInsta {
+  width: 171px;
+  height: 171px;
+}
+
+.cardInstagram {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 50px 0;
+}

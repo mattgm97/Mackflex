@@ -1,0 +1,41 @@
+.container {
+  margin-left: 10px;
+}
+
+.profileIcon {
+  color: #fff;
+}
+
+.label {
+  color: black;
+}
+
+.accountOptionsSectionTitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #515151;
+  text-align: center;
+}
+
+.login-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #515151;
+  text-align: center;
+}
+
+.logoutButton {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #f15b2a;
+  width: 100%;
+  position: relative;
+  right: 30px;
+}

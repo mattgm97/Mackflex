@@ -1,0 +1,32 @@
+.childrenContainer--menu-mobile {
+  display: block;
+}
+
+.openIconContainer--menu-mobile {
+  padding-top: 1.5em;
+}
+
+.openIconContainer {
+  padding: 0px;
+}
+
+.drawer--menu-mobile {
+  background-color: #F15B2A !important;
+}
+
+.closeIconContainer--menu-mobile {
+  justify-content: end;
+}
+
+.menuIcon--menu-mobile {
+  /* overflow: visible !important; */
+  display: none;
+}
+
+.openIconContainer::after {
+  content: url("assets/icons/Group.png");
+}
+
+.openIconContainer--menu-mobile {
+  padding-right: 16px;
+}

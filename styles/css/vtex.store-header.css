@@ -1,0 +1,106 @@
+.headerRowContainer--main-header {
+  background-color: transparent;
+  max-width: 100%;
+}
+
+.headerRowContentContainer--main-header {
+  padding: 0;
+  background-color: #000;
+  top: 0;
+  z-index: 20;
+  max-width: none;
+}
+
+.headerStickyRow--main-header {
+  top: 0 !important;
+}
+
+:global(.vtex-store-header-2-x-headerStickyRow--main-menu) {
+  height: 46px;
+  background-color: #f2f2f2;
+  position: sticky;
+  top: 112px;
+  z-index: 9;
+}
+
+.headerRowContainer--main-header {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 86rem;
+  margin: auto;
+}
+
+:global(.vtex-menu-2-x-menuContainerNav--mainMenu) {
+  width: 60%;
+}
+
+:global(.vtex-menu-2-x-menuContainerNav--mainMenu)
+  :global(.vtex-menu-2-x-menuContainer--mainMenu) {
+  display: flex;
+  align-items: stretch;
+}
+
+:global(.vtex-reviews-and-ratings-3-x-loginLink) {
+  padding-left: 0px;
+}
+
+:global(.vtex-reviews-and-ratings-2-x-loginLink) {
+  padding-left: 0px;
+}
+
+:global(.vtex-address-form__postalCode) {
+  padding-bottom: 0px;
+  margin-bottom: 9px;
+}
+
+:global(.vtex-numeric-stepper__plus-button),
+:global(.vtex-numeric-stepper__minus-button) {
+  border-radius: 0px;
+}
+
+:global(.vtex-address-form__postalCode-forgottenURL) {
+  display: none;
+}
+
+:global(.vtex-reviews-and-ratings-2-x-reviewsHeading) {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+:global(.vtex-slider-layout-0-x-caretIcon) {
+  color: #000 !important;
+}
+
+.headerStickyRow--main-header-mobile {
+  padding: 0px 15px;
+  background-color: #000;
+}
+
+.headerRowBackground--main-header-mobile {
+  background-color: #000;
+}
+
+@media (max-width: 760px) {
+  .headerStickyRow--main-header-mobile {
+    border-top: solid 18px #000;
+    padding-top: 1em;
+  }
+}

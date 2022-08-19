@@ -1,0 +1,50 @@
+.listPrice--selling-listprice-shelf {
+  text-align: left;
+  font-size: 14px;
+  line-height: 22px;
+  color: #515151;
+  text-decoration: line-through;
+  text-transform: uppercase;
+  padding-right: 1em;
+}
+.listPriceValue--selling-listprice-shelf {
+  text-decoration: none;
+}
+
+/* .sellingPriceValue::before {
+    content: "Por: ";
+    font-size: 12px;
+  }
+
+  .listPrice::before {
+    content: "De: ";
+    font-size: 12px;
+  } */
+
+.sellingPrice--selling-price-shelf {
+  text-transform: uppercase;
+  padding-right: 0.5em;
+  text-align: left;
+  /* font-family: "Droid Sans"; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 22px;
+  font-size: 19px;
+  margin-bottom: 0.5em;
+}
+
+.installments--pdp-installments {
+  color: #979899;
+  text-align: center;
+}
+
+.installments--home-installments {
+  margin-bottom: 15px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #515151;
+  text-align: left;
+}

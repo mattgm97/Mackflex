@@ -1,0 +1,58 @@
+{
+  "flex-layout.col#security-container":{
+    "children": [
+      "flex-layout.row#security-0",
+      "image#securityImage-0",
+      "image#securityImage-1"
+    ],
+    "props": {
+      "blockClass": "security-container",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+       "fullWidth": true
+    }
+  },
+  "flex-layout.row#security-0":{
+    "children": [
+      "rich-text#security"    
+    ]
+  },
+  "flex-layout.row#security-1":{
+    "children": [
+      "image#securityImage-0",
+      "image#securityImage-1"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "blockClass": "security__row"
+    }
+  },
+
+  "rich-text#security": {
+    "props": {
+      "blockClass": "footer-sobre",
+      "font": "t-heading-5",
+      "textPosition": "LEFT",
+      "textAlign": "LEFT",
+      "text": "**Segurança**"
+    } 
+  },
+
+  "image#securityImage-0": {
+    "props": {
+      "src": "assets/icons/security/new-pci.png",
+      "width": 40,
+      "height": 40,
+      "blockClass": "security-logo-1"
+    }
+  },
+
+  "image#securityImage-1": {
+    "props": {
+      "src": "assets/icons/security/new-safe-google.png",
+      // "width": 50,
+      // "height": 50,
+      "blockClass": "security-logo-2"
+    }
+  }
+}

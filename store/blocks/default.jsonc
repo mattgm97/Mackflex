@@ -1,0 +1,83 @@
+{
+  "store.orderplaced": {
+    "blocks": ["order-placed"]
+  },
+
+  "store.account": {
+    "blocks": ["my-account"],
+    "parent": {
+      "challenge": "challenge.profile"
+    }
+  },
+
+  "store.login": {
+    "blocks": ["login-content#default"]
+  },
+
+  "login-content#default": {
+    "props": {
+      "isInitialScreenOptionOnly": false,
+      "defaultOption": 1,
+      "showPasswordVerificationIntoTooltip": true
+    }
+  },
+
+  "slider-layout#shelf": {
+    "props": {
+      "blockClass": ["slider-shelf--default"],
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "showPaginationDots": "never"
+    }
+  },
+  "product-summary.shelf": {
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "product-rating-inline",
+      "product-summary-space",
+      "product-list-price#shelf",
+      "product-selling-price#shelf",
+      "product-installments#defaulthome",
+      "add-to-cart-button"
+    ],
+    "props": {
+      "blockClass": "default-prod-shelf"
+    }
+  },
+  "product-installments#defaulthome": {
+    "props": {
+      "message": "Ou em {installmentsNumber}x de {installmentValue}",
+      "blockClass": ["home-installments"]
+    }
+  },
+  "product-summary-image": {
+    "props": {
+      "blockClass": "product-img-shelf",
+      "showBadge": false,
+      "width": 279
+    }
+  },
+
+  "product-list-price#shelf": {
+    "props": {
+      "blockClass": "selling-listprice-shelf"
+    }
+  },
+  "product-selling-price#shelf": {
+    "props": {
+      "blockClass": "selling-price-shelf"
+    }
+  },
+
+  "add-to-cart-button": {
+    "props": {
+      "text": "COMPRAR",
+      "blockClass": "buy-button-shelf"
+    }
+  }
+}

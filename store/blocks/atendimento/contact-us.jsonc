@@ -1,0 +1,39 @@
+{
+    "store.custom#contact-us": {
+      "blocks": [
+        "flex-layout.row#contact-us"
+      ]
+    },
+  
+    "flex-layout.row#contact-us": {
+      "children": [
+        "flex-layout.col#text-contact-us"
+      ]
+    },
+  
+    "flex-layout.col#text-contact-us": {
+      "children": [
+        "rich-text#title-contact-us",
+        "rich-text#contact-us"
+      ],
+      "props": {
+        "blockclass": "textColumn",
+        "preventVerticalStretch": true
+      }
+    },
+  
+    "rich-text#title-contact-us": {
+      "props": {
+        "text":
+        "# Fale Conosco #",
+        "blockClass": "title"
+      }
+    },
+  
+    "rich-text#contact-us": {
+      "props": {
+        "text": "*Optimized store framework* \n Free your front-end with our React + Node store framework. Improve usability and SEO, while driving more conversion with modular components, single page applications, and a ready-for-PWA structure. \n *Multi-currency and language* \n Go international with multiple storefronts to support different languages and easily manage local currencies and payment conditions. \n *Serverless development platform* \n Reduce loading time, improve usability, and make the best out of SEO. Developing scalable components with a comprehensive, easy-to-use toolset, you can build stores faster than ever.",
+        "blockClass": "about"
+      }
+    }
+  }

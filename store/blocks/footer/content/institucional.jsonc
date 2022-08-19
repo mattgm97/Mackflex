@@ -1,0 +1,77 @@
+{
+  "flex-layout.col#contact-container": {
+    "children": [
+      "flex-layout.row#contact-title",
+      "vtex.menu@2.x:menu#contact-footer-desktop-1"
+    ],
+    "props": {
+      "blockClass": "linkList-container",
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#contact-title": {
+    "children": ["rich-text#contact-title-0"]
+  },
+
+  "rich-text#contact-title-0": {
+    "props": {
+      "font": "t-heading-5",
+      "textPosition": "LEFT",
+      "textAlign": "LEFT",
+      "blockClass": "footer-sobre",
+      "text": "**Sobre Nós**"
+    }
+  },
+
+  "vtex.menu@2.x:menu#contact-footer-desktop-1": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-footer",
+      "items": [
+        {
+          "id": "footer-item-acc-0",
+          "blockClass": "footer-sobre__menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/o-que-fazemos",
+            "noFollow": false,
+            "tagTitle": "O Que Fazemos",
+            "text": "O Que Fazemos"
+          }
+        },
+        {
+          "id": "footer-item-acc-1",
+          "blockClass": "footer-sobre__menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/nossa-missao",
+            "noFollow": false,
+            "tagTitle": "Nossa Missão",
+            "text": "Nossa Missão"
+          }
+        },
+        {
+          "id": "footer-item-acc-2",
+          "blockClass": "footer-sobre__menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/nossas-lojas",
+            "noFollow": false,
+            "tagTitle": "Nossas Lojas",
+            "text": "Nossas Lojas"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@media screen and (max-width: 415px) {
+  .footerLayout--mobile {
+    background-color: #000;
+  }
+
+  /* news letter mobile footer */
+
+  :global(.vtex-store-newsletter-1-x-newsletterForm--newsletter-form-row) {
+    flex-direction: column !important;
+  }
+
+  :global(.vtex-store-newsletter-1-x-emailInputContainer--newsletterInput) {
+    margin: 0 !important;
+  }
+
+  :global(.vtex-menu-2-x-menuContainerNav--menu-footer) {
+    display: flex;
+    justify-content: center;
+  }
+
+  :global(.vtex-menu-2-x-menuContainerNav--menu-footer) :global(.vtex-menu-2-x-styledLinkContent--menu-footer) {
+    display: flex;
+    justify-content: center;
+  }
+}

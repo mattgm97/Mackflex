@@ -1,0 +1,52 @@
+.quantitySelectorTitle{
+  display: none;
+}
+
+:global(.vtex-numeric-stepper__input), :global(.vtex-numeric-stepper__plus-button), :global(.vtex-numeric-stepper__minus-button){
+  height: 45px;
+}
+
+.quantitySelectorContainer{
+  margin-bottom: 2em;
+  padding-left: 12px;
+}
+
+:global(.vtex-numeric-stepper__input){
+  width: 100px;
+  border-color: #F2EEEA;
+  background-color: #F2EEEA;
+  color:#4F4F4F;
+  font-size: 24px;
+    font-weight: bold;
+}
+
+:global(.vtex-numeric-stepper__plus-button), :global(.vtex-numeric-stepper__minus-button){
+  background-color: #F2EEEA;
+  border: none;
+  border-radius: 5px;
+}
+
+:global(.vtex-numeric-stepper__plus-button){
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+}
+
+:global(.vtex-numeric-stepper__minus-button){
+  border-top-left-radius: 5px !important;
+  border-bottom-left-radius: 5px !important;
+}
+
+:global(.vtex-numeric-stepper__minus-button__text), :global(.vtex-numeric-stepper__plus-button__text){
+  color: #4F4F4F !important;
+  font-size: 29px;
+}
+
+
+
+@media (max-width: 1000px) {
+  :global(.vtex-numeric-stepper__input){
+      width: 46px;
+  }
+
+}
+

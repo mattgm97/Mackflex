@@ -1,0 +1,75 @@
+{
+  "flex-layout.row#newsletter":{
+    "children":[
+      "rich-text#newsletter"
+
+    ]
+  },
+  "flex-layout.row#newsletterRow": {
+    "children": [
+      "flex-layout.col#newsletter-proper"
+     
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "horizontalAlign": "center",
+      "blockClass": "newslettercontent"
+    }
+  },
+
+  "flex-layout.col#newsletter-title":{
+    "props":{
+      "width": "33%"
+    },
+    "children":[
+      "rich-text#newsletter"
+    ]
+  },
+  "flex-layout.col#newsletter-proper":{
+    "children":[
+      "newsletter-form"
+    ]
+      },
+  "newsletter-form": {
+    "props": {
+      "blockClass": "newsletter-form-row"
+    },
+    "children": [
+      "newsletter-input-name",
+      "newsletter-input-email",
+      "newsletter-submit"
+    ]
+  },
+  "rich-text#newsletter": {
+    "props": {
+      "text": "Deixe seu contato e fique por dentro das novidades!",
+      "font": "t-heading-5",
+      "textPosition": "LEFT",
+      "textAlign": "LEFT",
+      "blockClass": "footer-sobre"
+    }
+  },
+
+  "newsletter-input-name": {
+    "props": {
+      "placeholderText": "Nome",
+      "inputLabel": " ",
+      "blockClass": "newsletterInput"
+    }
+  },
+
+  "newsletter-input-email": {
+    "props": {
+      "placeholderText": "E-mail",
+      "inputLabel": " ",
+      "blockClass": "newsletterInput"
+    }
+  },
+
+  "newsletter-submit":{
+      "props":{
+        "submitButtonLabel": "ENVIAR"
+      }
+      
+  }
+}

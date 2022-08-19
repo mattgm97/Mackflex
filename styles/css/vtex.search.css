@@ -1,0 +1,15 @@
+.biggy-autocomplete {
+  z-index: 9999;
+  max-width: 500px;
+}
+
+
+:global(.vtex-search-result-3-x-notFound--layout--not-found-container)
+  :global(.vtex-store-components-3-x-infoCardTextContainer--info-card-home-banner1) {
+  top: 25vh;
+}
+
+:global(.vtex-search-result-3-x-notFound--layout--not-found-container)
+  :global(.vtex-store-components-3-x-infoCardTextContainer--info-card-home-banner2) {
+  top: 25vh;
+}

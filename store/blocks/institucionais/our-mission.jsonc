@@ -1,0 +1,39 @@
+{
+    "store.custom#our-mission": {
+      "blocks": [
+        "flex-layout.row#our-mission"
+      ]
+    },
+  
+    "flex-layout.row#our-mission": {
+      "children": [
+        "flex-layout.col#text-our-mission"
+      ]
+    },
+  
+    "flex-layout.col#text-our-mission": {
+      "children": [
+        "rich-text#title-our-mission",
+        "rich-text#our-mission"
+      ],
+      "props": {
+        "blockclass": "textColumn",
+        "preventVerticalStretch": true
+      }
+    },
+  
+    "rich-text#title-our-mission": {
+      "props": {
+        "text":
+        "# Nossa Missão #",
+        "blockClass": "title"
+      }
+    },
+  
+    "rich-text#our-mission": {
+      "props": {
+        "text": "*Optimized store framework* \n Free your front-end with our React + Node store framework. Improve usability and SEO, while driving more conversion with modular components, single page applications, and a ready-for-PWA structure. \n *Multi-currency and language* \n Go international with multiple storefronts to support different languages and easily manage local currencies and payment conditions. \n *Serverless development platform* \n Reduce loading time, improve usability, and make the best out of SEO. Developing scalable components with a comprehensive, easy-to-use toolset, you can build stores faster than ever.",
+        "blockClass": "about"
+      }
+    }
+  }

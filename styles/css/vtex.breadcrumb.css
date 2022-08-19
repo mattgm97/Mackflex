@@ -1,0 +1,31 @@
+.container {
+  margin: 38px 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  /* identical to box height */
+
+  color: #939598;
+}
+
+.homeIcon {
+  display: none;
+}
+
+.homeLink::after {
+  content: "Home";
+}
+
+.arrow::before {
+  content: "/";
+}
+
+.caretIcon {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .container {
+    display: none;
+  }
+}

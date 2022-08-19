@@ -1,0 +1,23 @@
+.groupName{
+  display: none;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--productSpecification){
+  margin-bottom: 1em;
+}
+
+
+
+.quantitySelectorContainer {
+  margin: 35px 0px 23px;
+}
+
+:global(.vtex-numeric-stepper__minus-button__text),
+:global(.vtex-numeric-stepper__plus-button__text),
+:global(.vtex-numeric-stepper__input) {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #9f9f9f;
+} 

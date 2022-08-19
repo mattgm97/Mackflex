@@ -1,0 +1,77 @@
+{
+  "flex-layout.col#online-services-container": {
+    "children": [
+      "flex-layout.row#online-services-title",
+      "vtex.menu@2.x:menu#online-services-footer-desktop-1"
+    ],
+    "props": {
+      "blockClass": "linkList-container",
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#online-services-title": {
+    "children": ["rich-text#online-services-title-0"]
+  },
+
+  "rich-text#online-services-title-0": {
+    "props": {
+      "font": "t-heading-5",
+      "textPosition": "LEFT",
+      "textAlign": "LEFT",
+      "blockClass": "footer-sobre",
+      "text": "**Serviços Online**"
+    }
+  },
+
+  "vtex.menu@2.x:menu#online-services-footer-desktop-1": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-footer",
+      "items": [
+        {
+          "id": "footer-item-acc-6",
+          "blockClass": "footer-sobre__menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/politica-de-privacidade",
+            "noFollow": false,
+            "tagTitle": "Serviços",
+            "text": "Serviços"
+          }
+        },
+        {
+          "id": "footer-item-acc-7",
+          "blockClass": "footer-sobre__menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/politica-de-seguranca",
+            "noFollow": false,
+            "tagTitle": "Compre pelo Whatsapp",
+            "text": "Compre pelo Whatsapp"
+          }
+        },
+        {
+          "id": "footer-item-acc-8",
+          "blockClass": "footer-sobre__menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/politica-de-entregas",
+            "noFollow": false,
+            "tagTitle": "Política de Trocas",
+            "text": "Política de Trocas"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "flex-layout.col#servicos-container": {
+    "children": [
+      "flex-layout.row#servicos-title",
+      "vtex.menu@2.x:menu#servicos-footer-desktop-1"
+    ],
+    "props": {
+      "blockClass": "linkList-container",
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#servicos-title": {
+    "children": ["rich-text#servicos-title-0"]
+  },
+
+  "rich-text#servicos-title-0": {
+    "props": {
+      "font": "t-heading-5",
+      "textPosition": "LEFT",
+      "textAlign": "LEFT",
+      "blockClass": "footer-sobre",
+      "text": "**Atendimento**"
+    }
+  },
+
+  "vtex.menu@2.x:menu#servicos-footer-desktop-1": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-footer",
+      "items": [
+        {
+          "id": "footer-item-acc-6",
+          "blockClass": "footer-sobre__menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/faq",
+            "noFollow": false,
+            "tagTitle": "FAQ",
+            "text": "FAQ"
+          }
+        },
+        {
+          "id": "footer-item-acc-7",
+          "blockClass": "footer-sobre__menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/fale-conosco",
+            "noFollow": false,
+            "tagTitle": "Fale Conosco",
+            "text": "Fale Conosco"
+          }
+        },
+        {
+          "id": "footer-item-acc-8",
+          "blockClass": "footer-sobre__menu-item",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/trabalhe-conosco",
+            "noFollow": false,
+            "tagTitle": "Trabalhe Conosco",
+            "text": "Trabalhe Conosco"
+          }
+        }
+      ]
+    }
+  }
+}
