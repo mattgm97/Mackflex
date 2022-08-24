@@ -6,9 +6,22 @@
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header-layout.desktop": {
-    "children": ["header-row#1-desktop"]
+    "children": ["sticky-layout.stack-container#header"]
+  },
+  "sticky-layout.stack-container#header": {
+    "props": {
+      "position": "top"
+    },
+    "children": [
+      "sticky-layout#links-menu"
+    ]
   },
 
+  "sticky-layout#links-menu":{
+    "children":[
+      "header-row#1-desktop"
+  ]
+  },
   "header-row#1-desktop": {
     "children": [
       "logo#desktop",
@@ -51,7 +64,7 @@
   /* MOBILE */
   "header-layout.mobile": {
     // "children": ["header-row#1-mobile", "header-row#2mobile"]
-    "children": ["header-row#1-mobile", "header-row#2mobile"]
+    "children": ["header-row#1-mobile"/*, "header-row#2mobile"*/]
   },
   "header-row#1-mobile": {
     "children": [
@@ -59,7 +72,7 @@
       "header-spacer",
       "logo#desktop",
       "header-spacer",
-      // "login",
+      "drawer#search-bar",
       "minicart.v2"
     ],
     "props": {
@@ -84,7 +97,7 @@
   },
   "image#search--icon": {
     "props": {
-      "src": "/arquivos/icon-search-black.svg",
+      "src": "assets/icons/lupa-white.svg",
       "blockClass": "image-search",
       "maxWidth": "20px",
       "maxHeight": "18px"
@@ -104,6 +117,13 @@
     ],
     "props": {
       "blockClass": "menu-mobile"
+    }
+  },
+
+  "mega-menu":{
+    "props":{
+      "title":"Todas as Categorias",
+      "blockClass":"mega-menu"
     }
   },
 
@@ -138,7 +158,7 @@
     "props": {
       //"optionsTitle": "Elija una de las opciones para confirmar su identidad",
       // "providerPasswordButtonLabel": "Ingresar con mail y contraseña",
-      "showIconProfile": false,
+      "showIconProfile": true,
       "mirrorTooltipToRight": true,
       "iconLabel": "ENTRE OU CADASTRE-SE",
       "labelClasses": "login__header"

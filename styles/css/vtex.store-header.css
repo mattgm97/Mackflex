@@ -3,12 +3,23 @@
   max-width: 100%;
 }
 
-.headerRowContentContainer--main-header {
+ .headerRowContentContainer--main-header {
   padding: 0;
-  background-color: #000;
   top: 0;
   z-index: 20;
   max-width: none;
+  transition: 0.3s all;
+}
+
+:global(.vtex-sticky-layout-0-x-wrapper--stuck) .headerRowBackground--main-header{
+  
+  background-color: #000 !important;
+  transition: 0.3s all;
+}
+
+.headerRowBackground--main-header{
+  background-color: rgba(0,0,0,0.7);
+  transition: 0.3s all;
 }
 
 .headerStickyRow--main-header {
@@ -100,7 +111,7 @@
 
 @media (max-width: 760px) {
   .headerStickyRow--main-header-mobile {
-    border-top: solid 18px #000;
-    padding-top: 1em;
+    border-top: solid 4px #000;
+    padding-bottom: 0.2em;
   }
 }

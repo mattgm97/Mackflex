@@ -3,7 +3,10 @@
     "props": {
       "blockClass": ["pdp"]
     },
-    "children": ["flex-layout.row#pdp"]
+    "children": ["flex-layout.row#pdp",
+    "product-specification-group#table",
+    "flex-layout.row#relatedshelfPlaceholder"
+  ]
   },
 
 
@@ -23,12 +26,12 @@
       "flex-layout.row#product-breadcrumb",
       "responsive-layout.desktop#pdpdesktop",
       "responsive-layout.phone#pdpMob",
-      "flex-layout.row#product-buy-together",
+      "flex-layout.row#product-buy-together"
     //  "__fold__",
      // "flex-layout.row#description",
-      "product-specification-group#table",
+      
      /* "flex-layout.row#relatedshelf" para quando o app da vtex sair do alpha*/
-     "flex-layout.row#relatedshelfPlaceholder"
+    
     ]
   },
 
@@ -241,9 +244,20 @@
   },
   "flex-layout.col#spec-group": {
     "children": [
+      "rich-text#detalhes",
       "flex-layout.row#spec-group-name",
       "product-specification"
     ]
+  },
+
+  "rich-text#detalhes": {
+    "props": {
+      "text": "DETALHES",
+      "font": "t-heading-3",
+      "textPosition": "CENTER",
+      "textAlign": "CENTER",
+      "blockClass": ["pdpTitle"]
+    }
   },
   "flex-layout.row#spec-group-name": {
     "props": {
@@ -322,6 +336,22 @@
     "blocks": ["product-summary.shelf"],
     "props": {
       "blockClass": "related--shelf",
+      "recomendation": "buy",
+      "orderBy": "OrderByTopSaleDESC",
+      "productList": {
+        "maxItems": 10,
+        "itemsPerPage": 4,
+        "minItemsPerPage": 2,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "VOCÊ PODE GOSTAR DE"
+      }
+    }
+  },
+  "shelf#related2": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "blockClass": "related--shelf",
       "recomendation": "view",
       "orderBy": "OrderByTopSaleDESC",
       "productList": {
@@ -331,22 +361,6 @@
         "scroll": "BY_PAGE",
         "arrows": true,
         "titleText": "QUEM VIU, VIU TAMBÉM"
-      }
-    }
-  },
-  "shelf#related2": {
-    "blocks": ["product-summary.shelf"],
-    "props": {
-      "blockClass": "related--shelf",
-      "recomendation": "buy",
-      "orderBy": "OrderByTopSaleDESC",
-      "productList": {
-        "maxItems": 10,
-        "itemsPerPage": 4,
-        "minItemsPerPage": 2,
-        "scroll": "BY_PAGE",
-        "arrows": true,
-        "titleText": "MAIS VENDIDOS"
       }
     }
   }

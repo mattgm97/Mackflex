@@ -19,14 +19,15 @@
 }
 
 .menuIcon--menu-mobile {
-  /* overflow: visible !important; */
-  display: none;
+  overflow: visible !important;
 }
 
-.openIconContainer::after {
-  content: url("assets/icons/Group.png");
-}
+
 
 .openIconContainer--menu-mobile {
   padding-right: 16px;
+}
+
+.openIconContainer--drawner__search-bar{
+  margin-right: 1.5em;
 }

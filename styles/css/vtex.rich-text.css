@@ -121,6 +121,10 @@
   text-align: center;
 }
 
+.paragraph--pdpTitle{
+  color: #F15B2A
+}
+
 @media (max-width: 760px) {
   .container--footer-sobre {
     justify-content: center;

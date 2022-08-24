@@ -75,6 +75,12 @@
   border-radius: 40px;
 }
 
+.flexRow--productSpecificationGroup{
+  background-color: #ECECEC;
+  padding-top: 3em;
+    padding-bottom: 5em;
+}
+
 @media (max-width: 760px) {
 
   .flexRow--footer__copyright {
@@ -104,6 +110,10 @@
 
   .flexRow--footer__newsletter-mob {
     background-color: #1e1e1e;
+  }
+
+  .flexRow--selerCondition{
+    padding: 9px 0;
   }
 }
 
