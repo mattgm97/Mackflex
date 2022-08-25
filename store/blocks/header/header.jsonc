@@ -185,6 +185,11 @@
       "labelClasses": "login__header",
       "accountOptionLinks": [
         {
+          "label": "Meus Dados",
+          "path":"/account",
+          "cssClass": ["login-link"]
+        },
+        {
           "label": "Meus pedidos",
           "path": "/account#/orders",
           "cssClass": ["login-link"]

@@ -3,9 +3,7 @@
   /* display: none; */
 }
 
-:global(.vtex-minicart-2-x-minicartIconContainer)::after {
-  content: url("/arquivos/vector.png");
-}
+
 
 .minicartQuantityBadgeDefault {
   top: -0.8em;
@@ -55,6 +53,12 @@
   border-radius: 100px;
 }
 
+.minicartIconContainer::before{
+  content: url('assets/icons/cart.svg');
+
+}
+
+
 @media screen and (max-width: 768px) {
   .openIconContainer {
     padding-left: 0px;
@@ -65,9 +69,4 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  :global(.vtex-minicart-2-x-minicartIconContainer)::before {
-    display: block;
-    content: url("/arquivos/vector.png");
-  }
-}
+

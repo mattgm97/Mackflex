@@ -5,6 +5,8 @@
   position: relative;
 }
 
+.searchBarContainer
+
 .infoCardContainer--sellerConditionCard {
   width: auto;
   background-color: #f8f8f8;
@@ -39,8 +41,8 @@
   :global(.vtex-input-prefix__group) {
   position: relative;
   border-width: 1px;
-  width: 48px;
-  height: 48px;
+  width: 60px;
+  height: 60px;
   transition: 100ms ease-out;
   border-radius: 100px;
 }
@@ -291,6 +293,14 @@
 }
 
 
+:global(.vtex-minicart-2-x-cartIcon){
+  display: none;
+}
+
+:global(.vtex-login-2-x-container) :global(.vtex-button) :global(.vtex-button__label){
+  content: url('assets/icons/user.svg');
+}
+
 @media (max-width: 1300px) {
   .container {
     max-width: 1200px;
@@ -308,7 +318,7 @@
 
   /*PARA HEADER TRANSPARENTE FUNCIONAR*/
   :global(.vtex-slider-layout-0-x-sliderLayoutContainer--mainCarousel){
-    margin-top: -72px;
+    margin-top: -84px;
   }
 }
 
