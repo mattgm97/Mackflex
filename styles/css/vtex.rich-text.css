@@ -103,7 +103,7 @@
   color: #fff;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 39px;
 }
 
 .container--detailsTitle {
@@ -128,7 +128,6 @@
 @media (max-width: 760px) {
   .container--footer-sobre {
     justify-content: center;
-    margin-top: 1.5em;
     text-align: center;
   }
 

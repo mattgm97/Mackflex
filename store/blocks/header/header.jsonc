@@ -99,8 +99,8 @@
     "props": {
       "src": "assets/icons/lupa-white.svg",
       "blockClass": "image-search",
-      "maxWidth": "20px",
-      "maxHeight": "18px"
+      "maxWidth": "29px",
+      "maxHeight": "27px"
     }
   },
   "menu#drawer": {

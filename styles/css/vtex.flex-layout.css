@@ -81,6 +81,10 @@
     padding-bottom: 5em;
 }
 
+.flexRowContent--footer__newsletter-mob{
+  padding-bottom: 1.5em;
+}
+
 @media (max-width: 760px) {
 
   .flexRow--footer__copyright {
