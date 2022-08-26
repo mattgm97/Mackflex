@@ -38,7 +38,6 @@
 
 }
 
-:global(.vtex-login-2-x-label)::before{
-  content: url('assets/icons/cart.svg');
-
+.profileIcon{
+  display: none;
 }

@@ -230,6 +230,7 @@
 .skuSelectorItem {
   width: 65px;
   border-radius: 0;
+  margin-bottom: 1em;
 }
 
 .frameAround {
@@ -297,7 +298,7 @@
   display: none;
 }
 
-:global(.vtex-login-2-x-container) :global(.vtex-button) :global(.vtex-button__label){
+:global(.vtex-login-2-x-container) :global(.vtex-button) :global(.vtex-button__label)::before{
   content: url('assets/icons/user.svg');
 }
 
@@ -331,6 +332,11 @@
   :global(.vtex-slider-layout-0-x-sliderLayoutContainer--mainCarousel){
     margin-top: -84px;
   }
+}
+
+:global(.vtex-search-result-3-x-container--layout) :global(.vtex-store-components-3-x-container){
+  padding: inherit !important;
+
 }
 
 @media (max-width: 760px) {
@@ -380,6 +386,14 @@
 :global(.vtex-login-2-x-label) {
   color: white;
   display: block;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--mob-footer-contact) :global(.vtex-flex-layout-0-x-stretchChildrenWidth) :global(.vtex-menu-2-x-menuContainerNav--menu-footer){
+  display: flex;
+  justify-content: center;
+}
+
+.productBrand {
+  font-size: 32px;
 }
 }
 

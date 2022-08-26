@@ -9,7 +9,7 @@
       "vtex.menu@2.x:menu#linkList-container-mobile-2",
       "vtex.menu@2.x:menu#linkList-container-mobile-3",
       "flex-layout.row#contact-title",
-      "vtex.menu@2.x:menu#contact-footer-desktop-1",
+      "flex-layout.row#contact-menu",
       "flex-layout.row#payment-title",
       "flex-layout.row#payment-img",
       "flex-layout.row#payment-1",
@@ -23,6 +23,14 @@
 
   "flex-layout.row#payment-img": {
     "children": ["image#payment-methods"]
+  },
+
+  "flex-layout.row#contact-menu":{
+    "children": ["vtex.menu@2.x:menu#contact-footer-desktop-1"],
+    "props":{
+      "horizontalAlign": "center",
+      "blockClass":"mob-footer-contact"
+    }
   },
 
 

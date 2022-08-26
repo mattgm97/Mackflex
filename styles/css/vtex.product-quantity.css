@@ -20,6 +20,10 @@
     font-weight: bold;
 }
 
+.quantitySelectorStepper{
+  margin-top: 1em;
+}
+
 :global(.vtex-numeric-stepper__plus-button), :global(.vtex-numeric-stepper__minus-button){
   background-color: #F2EEEA;
   border: none;

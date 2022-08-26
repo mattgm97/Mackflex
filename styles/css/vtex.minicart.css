@@ -6,8 +6,8 @@
 
 
 .minicartQuantityBadgeDefault {
-  top: -0.8em;
-  right: -0.6rem;
+  top: 0.1em;
+  right: -0.3rem;
   padding: 0.015rem;
   background-color: #b11d2f;
 }
@@ -53,7 +53,7 @@
   border-radius: 100px;
 }
 
-.minicartIconContainer::before{
+.minicartIconContainer::before {
   content: url('assets/icons/cart.svg');
 
 }
@@ -68,5 +68,3 @@
     padding: 0px;
   }
 }
-
-
