@@ -30,8 +30,7 @@ const InstaHome = () => {
       </div> */}
       {/* <!-- SnapWidget --> */}
       <script src="https://snapwidget.com/js/snapwidget.js"></script>
-      <SliderLayout {...slyderConfig}>
-        <iframe
+      <iframe
           src="https://snapwidget.com/embed/1006245"
           className="snapwidget-widget"
           allowtransparency="true"
@@ -44,6 +43,8 @@ const InstaHome = () => {
             height: "14vh",
           }}
         ></iframe>
+      <SliderLayout {...slyderConfig}>
+       
       </SliderLayout>
     </div>
   );

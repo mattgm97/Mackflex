@@ -29,7 +29,7 @@
 }
 
 .link--socialmedia-text {
-  margin: 0px 2px 0px 2px;
+  margin: 0px 8px 0px 8px;
 }
 
 .strong--socialmedia-text {
@@ -59,9 +59,9 @@
 }
 
 .container--menu-institucional-dropdown {
-  border: 2px solid #ed6f00;
+  border: 2px solid #f15b2a;
   border-radius: 2px;
-  color: #ed6f00;
+  color: #f15b2a;
 }
 
 .paragraph--menu-institucional-dropdown {
@@ -102,8 +102,7 @@
 .paragraph--footer-sobre {
   color: #fff;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 39px;
+  font-size: 19px;
 }
 
 .container--detailsTitle {
@@ -123,6 +122,9 @@
 
 .paragraph--pdpTitle{
   color: #F15B2A
+}
+.paragraph--redes-sociais{
+  margin: 0;
 }
 
 @media (max-width: 760px) {
@@ -166,4 +168,10 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 14px;
+  margin-top: 1.5em;
+  color: #6F6F6F;
+}
+
+.paragraph--powered__title{
+  color: #6F6F6F;
 }

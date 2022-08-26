@@ -53,6 +53,7 @@
 
 .flexRow--footer__copyright {
   background-color: #000;
+  padding-bottom: 1em;
 }
 
 .flexRow--newslettercontent {
@@ -83,6 +84,11 @@
 
 .flexRowContent--footer__newsletter-mob{
   padding-bottom: 1.5em;
+}
+
+.flexRowContent--footer__content-row--desktop{
+  padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
 
 @media (max-width: 760px) {

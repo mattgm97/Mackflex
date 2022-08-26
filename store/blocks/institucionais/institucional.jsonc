@@ -1,0 +1,283 @@
+{
+    "store.custom#institutional-texts": {
+        "blocks": [
+            "responsive-layout.desktop#institutional-Content-desk",
+            "responsive-layout.mobile#institutional-Content-mob"
+        ]
+    },
+
+ 
+
+
+    "responsive-layout.desktop#institutional-Content-desk": {
+        "children": [ 
+          "flex-layout.row#institutional-Content-title",
+          "flex-layout.row#institutional-Content"]
+      },
+
+      "responsive-layout.mobile#institutional-Content-mob":{
+        "children": [ "flex-layout.row#institutional-Content-mob"]
+      },
+
+      "flex-layout.row#institutional-Content-title":{
+        "props":{
+          "marginTop": 4
+        },
+"children":[
+  "flex-layout.col#institutionalMain-title"
+]
+
+      },
+
+      "flex-layout.col#institutionalMain-title":{
+"children":[
+  "rich-text#institutionalMain-title"]
+      },
+      
+    "flex-layout.row#institutional-Content": {
+      "props":{
+        "marginTop": 2,
+        "marginBottom": 8,
+        "blockClass": "Institutionalrow"
+      },
+        "children": [
+          "flex-layout.col#menu-institucional",
+            "flex-layout.col#institutional1"
+        ]
+    },
+
+    "flex-layout.row#institutional-Content-mob": {
+        "props":{
+          "marginTop": 8,
+          "marginBottom": 8,
+          "blockClass": "Institutionalrow"
+        },
+          "children": [
+            "overlay-trigger#institucional",
+              "flex-layout.col#institutional1-mob"
+              
+          ]
+      },
+        "overlay-trigger#institucional": {
+          "children": [
+            "rich-text#institucionalMenus",
+            "overlay-layout#institucional"    
+          ]
+        },
+
+        "rich-text#institucionalMenus": {
+          "props": {
+            "text": "Menu Institucional",
+            "blockClass": "menu-institucional-dropdown",
+            "textPosition": "CENTER",
+            "textAlign": "CENTER"
+          }
+        },
+
+        "overlay-layout#institucional":{
+          "props":{
+            "blockClass":"overlayinstitucional"
+          },
+          "children":[
+            "vtex.menu@2.x:menu#menu-institucional"
+          ]
+        },
+    "flex-layout.col#menu-institucional":{
+      "props":{
+        "blockClass": "Institutionaltitleblock1",
+        "preventVerticalStretch": true,
+        "horizontalAlign": "center",
+        "width": "28%"
+      },
+      "children":[
+        "vtex.menu@2.x:menu#menu-institucional"
+
+      ]
+    },
+    "flex-layout.col#institutional1": {
+      "props":{
+        "blockClass": "Institutionaltitleblock2",
+        "preventVerticalStretch": true,
+        "paddingLeft": 2
+      },
+        "children": [
+         
+            "rich-text#institutionalMain"
+        ]
+    },
+
+    "flex-layout.col#institutional1-mob": {
+        "props":{
+          "blockClass": "Institutionaltitleblock2",
+          "preventVerticalStretch": true
+        },
+          "children": [
+            "rich-text#institutionalMain-title",
+              "rich-text#institutionalMain"
+          ]
+      },
+
+  
+
+
+
+    "rich-text#institutionalMain-title": {
+      "props": {
+          "text": "TITULO AQUI",
+          "blockClass": "InstitutionalTitle"
+      }
+  },
+
+  "vtex.menu@2.x:menu#menu-institucional":{
+    "children": [
+      "menu-item#quem-somos",
+      "menu-item#nossa-missao",
+      "menu-item#nossas-lojas",
+      "menu-item#faq",
+      "menu-item#contato",
+      "menu-item#trabalhe-conosco",
+      "menu-item#servicos",
+      "menu-item#politica-de-troca"
+    
+      
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-inst"
+  }
+  },
+    "rich-text#institutionalMain": {
+        "props": {
+            "text": "SEU TEXTO AQUI",
+            "blockClass": "InstitutionalText"
+        }
+    },
+
+    "menu-item#quem-somos": {
+      "props": {
+        "id": "menu-item-quem-somos",
+        "type": "custom",
+        "highlight": false,
+        "blockClass": "submenu--inst",
+        "itemProps": {
+          "type": "internal",
+          "href": "/quem-somos",
+          "noFollow": false,
+          "tagTitle": "quem-somos",
+          "text": "Quem Somos"
+        }
+      }
+    },
+    "menu-item#nossa-missao": {
+      "props": {
+        "id": "menu-item-troca-e-dev",
+        "type": "custom",
+        "highlight": false,
+        "blockClass": "submenu--inst",
+        "itemProps": {
+          "type": "internal",
+          "href": "/nossa-missao",
+          "noFollow": false,
+          "tagTitle": "Nossa Missão",
+          "text": "Nossa Missão"
+        }
+      }
+    },
+    "menu-item#nossas-lojas": {
+      "props": {
+        "id": "menu-item-formas-pagamento",
+        "type": "custom",
+        "highlight": false,
+        "blockClass": "submenu--inst",
+        "itemProps": {
+          "type": "internal",
+          "href": "/nossas-lojas",
+          "noFollow": false,
+          "tagTitle": "Nossas Lojas",
+          "text": "Nossas Lojas"
+        }
+      }
+    },
+    "menu-item#trabalhe-conosco": {
+      "props": {
+        "id": "menu-item-pol-privacidade",
+        "type": "custom",
+        "highlight": false,
+        "blockClass": "submenu--inst",
+        "itemProps": {
+          "type": "internal",
+          "href": "/trabalhe-conosco",
+          "noFollow": false,
+          "tagTitle": "Trabalhe Conosco",
+          "text": "Trabalhe Conosco"
+        }
+      }
+    },
+
+    "menu-item#servicos": {
+      "props": {
+        "id": "menu-item-pol-seguranca",
+        "type": "custom",
+        "highlight": false,
+        "blockClass": "submenu--inst",
+        "itemProps": {
+          "type": "internal",
+          "href": "/servicos",
+          "noFollow": false,
+          "tagTitle": "Serviços",
+          "text": "Serviços"
+        }
+      }
+    },
+
+    "menu-item#politica-de-troca": {
+      "props": {
+        "id": "menu-item-pol-entregas",
+        "type": "custom",
+        "highlight": false,
+        "blockClass": "submenu--inst",
+        "itemProps": {
+          "type": "internal",
+          "href": "/politica-de-troca",
+          "noFollow": false,
+          "tagTitle": "Política de troca",
+          "text": "Política de troca"
+        }
+      }
+    },
+
+
+
+    "menu-item#faq": {
+      "props": {
+        "id": "menu-item-faq",
+        "type": "custom",
+        "highlight": false,
+        "blockClass": "submenu--inst",
+        "itemProps": {
+          "type": "internal",
+          "href": "/faq",
+          "noFollow": false,
+          "tagTitle": "faq",
+          "text": "Dúvidas Frequentes"
+        }
+      }
+    },
+    "menu-item#contato": {
+      "props": {
+        "id": "menu-item-contato",
+        "type": "custom",
+        "highlight": false,
+        "blockClass": "submenu--inst",
+        "itemProps": {
+          "type": "internal",
+          "href": "/fale-conosco",
+          "noFollow": false,
+          "tagTitle": "Fale Conosco",
+          "text": "Fale Conosco"
+        }
+      }
+    }
+
+    
+}

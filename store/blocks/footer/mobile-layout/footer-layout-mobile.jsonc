@@ -10,11 +10,22 @@
       "vtex.menu@2.x:menu#linkList-container-mobile-3",
       "flex-layout.row#contact-title",
       "vtex.menu@2.x:menu#contact-footer-desktop-1",
-      "flex-layout.row#payment-0",
+      "flex-layout.row#payment-title",
+      "flex-layout.row#payment-img",
       "flex-layout.row#payment-1",
       "flex-layout.row#footer-container-0-mobile"
     ]
   },
+
+  "flex-layout.row#payment-title": {
+    "children": ["rich-text#payment"]
+  },
+
+  "flex-layout.row#payment-img": {
+    "children": ["image#payment-methods"]
+  },
+
+
   "flex-layout.row#footer-container-0-mobile": {
     "props": {
       "blockClass": "footer__content"
@@ -94,7 +105,7 @@
   "flex-layout.col#footer-1-box-2":{
     "children": [
       "rich-text#social-footer",
-      "image#social-redes"
+      "rich-text#redes-sociais"
     
     ],
     "props": {
@@ -114,12 +125,7 @@
     }
   },
 
-  "image#social-redes": {
-    "props": {
-      "blockClass": "image-social-redes",
-      "src": "assets/icons/socialMob.png"
-    }
-  },
+ 
   "flex-layout.col#footer-1-box-3":{
     "children": [
       "flex-layout.row#powered"

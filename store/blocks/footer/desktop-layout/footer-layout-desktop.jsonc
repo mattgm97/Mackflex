@@ -28,7 +28,7 @@
     "children": [
     "image#logo-mackflex", 
     "rich-text#social-network",
-    "image#social-redes-desktop"
+    "rich-text#redes-sociais"
   ],
     "props": {
       "blockClass": ["footer__content-col", "footer__content-col--desktop-0"],
@@ -48,7 +48,7 @@
   },
   "rich-text#social-network": {
     "props": {
-      "blockClass": "footer-sobre",
+      "blockClass": ["footer-sobre", "redes-sociais"],
       "font": "t-heading-5",
       "textPosition": "LEFT",
       "textAlign": "LEFT",
@@ -56,10 +56,10 @@
     } 
   },
 
-  "image#social-redes-desktop": {
+  "rich-text#redes-sociais": {
     "props": {
-      "blockClass": "image-social-redes",
-      "src": "assets/icons/socialMob.png"
+      "text": "[![Facebook]( /arquivos/facebook.svg 'Facebook')](https://www.facebook.com/mackflex) [![Instagram]( /arquivos/instagram.svg 'Instagram')](https://www.instagram.com/mackflex_/)",
+      "blockClass":"socialmedia-text"
     }
   },
 

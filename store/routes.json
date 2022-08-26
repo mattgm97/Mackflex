@@ -1,20 +1,3 @@
 {
-    "store.custom#our-mission": {
-        "path": "/nossa-missao"
-    },
-    "store.custom#our-stores": {
-        "path": "/nossas-lojas"
-    },
-    "store.custom#what-we-do": {
-        "path": "/o-que-fazemos"
-    },
-    "store.custom#careers": {
-        "path": "/trabalhe-conosco"
-    },
-    "store.custom#contact-us": {
-        "path": "/fale-conosco"
-    },
-    "store.custom#faq": {
-        "path": "/faq"
-    }
+   
 }

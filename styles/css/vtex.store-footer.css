@@ -13,13 +13,5 @@
     margin: 0 !important;
   }
 
-  :global(.vtex-menu-2-x-menuContainerNav--menu-footer) {
-    display: flex;
-    justify-content: center;
-  }
 
-  :global(.vtex-menu-2-x-menuContainerNav--menu-footer) :global(.vtex-menu-2-x-styledLinkContent--menu-footer) {
-    display: flex;
-    justify-content: center;
-  }
 }

@@ -15,9 +15,13 @@
   color: #3c3c3c;
 }
 
+.styledLink--menu-footer{
+  color: #B9B9B9;
+}
+
 .accordionIcon--linkList-footer-toggle--isOpen {
   transform: translateY(-50%) rotate(180deg);
-  content: url(/arquivos/arrow-menu.svg);
+  content: url(assets/icons/seta-footer.png);
   transition: 0.3s;
   width: 16px;
   margin-top: 10px;
@@ -25,7 +29,7 @@
 
 .accordionIcon--linkList-footer-toggle--isClosed {
   transform: translateY(-50%) rotate(0deg);
-  content: url(/arquivos/arrow-menu.svg);
+  content: url(assets/icons/seta-footer.png);
   transition: 0.3s;
   width: 16px;
   margin-top: 10px;
@@ -36,9 +40,7 @@
   border-width: 0px 0px;
 }
 
-.menuContainerNav--second-accordion {
-  margin-top: -7px;
-}
+
 
 :global(.vtex-menu-2-x-menuItemInnerDiv--linkList-footer-toggle) {
   background-color: #000;
@@ -64,13 +66,14 @@
 }
 
 .styledLinkContent--submenu--inst:hover {
-  border: solid 3px #ed6f00;
-  color: #ed6f00;
+  border: solid 3px #f15b2a;
+  color: #f15b2a;
 }
 
 .menuItem--submenu--inst .styledLinkContainer {
   margin: 0px;
 }
+
 
 @media (max-width: 760px) {
   .styledLinkContent--submenu {
@@ -96,15 +99,12 @@
     /* font-family: "Droid Sans"; */
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 17px;
     line-height: 23px;
     color: #ffffff;
   }
 
-  .menuItem--linkList-footer-toggle
-    :global(.vtex-menu-2-x-styledLinkContainer) {
-    margin-bottom: 0px;
-  }
+
 
   .styledLinkContent--linkList-footer-toggle {
     font-size: 20px;
@@ -125,9 +125,7 @@
     color: #f5f5f5;
   }
 
-  .styledLinkContent--linkList-footer-toggle::after {
-    content: url(assets/icons/seta-footer.png);
-  }
+
 
   .menuContainer--menu-footer {
     display: flex;

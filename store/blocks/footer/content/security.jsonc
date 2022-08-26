@@ -41,8 +41,8 @@
   "image#securityImage-0": {
     "props": {
       "src": "assets/icons/security/new-pci.png",
-      "width": 40,
-      "height": 40,
+      "width": 33,
+      "height": 31,
       "blockClass": "security-logo-1"
     }
   },

@@ -88,7 +88,8 @@
   },
 
   "vtex.menu@2.x:submenu.accordion#listLink-footer-accordion-3": {
-    "children": ["vtex.menu@2.x:menu#online-services-footer-desktop-1"]
+    "children": ["image#securityImage-0",
+    "image#securityImage-1"]
   },
 
   //SOBRE

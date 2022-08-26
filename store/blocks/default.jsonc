@@ -58,7 +58,7 @@
   "product-summary-image": {
     "props": {
       "blockClass": "product-img-shelf",
-      "showBadge": false,
+      "showBadge": true,
       "width": 279
     }
   },

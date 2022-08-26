@@ -301,6 +301,17 @@
   content: url('assets/icons/user.svg');
 }
 
+.imageElement--security-logo-2{
+  height: fit-content;
+}
+
+.discountInsideContainer{
+  background-color: #F15B2A;
+    border-radius: 5px;
+    padding: 7px 10px;
+    top: 96%;
+}
+
 @media (max-width: 1300px) {
   .container {
     max-width: 1200px;

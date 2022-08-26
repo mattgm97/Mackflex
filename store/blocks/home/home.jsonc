@@ -11,8 +11,9 @@
       
       "flex-layout.row#secondContent",
       "flex-layout.row#banner-footer",
+      "flex-layout.row#insta"
 
-       "insta-home"
+       
     ]
   },
   "list-context.image-list#bannersprincipais": {
@@ -421,6 +422,23 @@
           "url": "#"
         }
       }
+    }
+  },
+
+  "flex-layout.row#insta": {
+    "props":{
+      "blockClass": "instagram-iframe"
+    },
+    "children": [
+      "sandbox#insta"
+    ]
+  },
+  "sandbox#insta": {
+    "props": {
+      "width": "100%",
+      "height": "350px",
+      "initialContent":"<script src='https://snapwidget.com/js/snapwidget.js'></script><iframe src='https://snapwidget.com/embed/1006245' class='snapwidget-widget' allowtransparency='true' frameborder='0' scrolling='no' style='border:none; overflow:hidden;  width:100%; '></iframe>",
+      "allowCookies": false
     }
   }
 }
