@@ -334,6 +334,15 @@
 }
 
 @media (max-width: 760px) {
+
+  :global(.vtex-search-2-x-biggy-autocomplete-wrapper){
+    width: 80vw;
+    margin-left: -2em;
+  }
+
+  :global(.vtex-search-2-x-tileList){
+    display: none;
+  }
   .infoCardContainer--sellerConditionCard {
     display: flex;
   }
