@@ -1,8 +1,8 @@
 {
-  "progressive-discount": {
-    "component": "DescontoProgressivo"
-  },
   "insta-home": {
     "component": "InstaHome"
+  },
+  "CSSWorkaround":{
+    "component": "CSSWorkaround"
   }
 }

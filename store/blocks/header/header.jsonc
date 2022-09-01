@@ -6,7 +6,7 @@
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header-layout.desktop": {
-    "children": ["sticky-layout.stack-container#header"]
+    "children": ["CSSWorkaround","sticky-layout.stack-container#header"]
   },
   "sticky-layout.stack-container#header": {
     "props": {
@@ -64,7 +64,7 @@
   /* MOBILE */
   "header-layout.mobile": {
     // "children": ["header-row#1-mobile", "header-row#2mobile"]
-    "children": ["header-row#1-mobile"/*, "header-row#2mobile"*/]
+    "children": ["CSSWorkaround", "header-row#1-mobile"/*, "header-row#2mobile"*/]
   },
   "header-row#1-mobile": {
     "children": [
