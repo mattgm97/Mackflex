@@ -74,6 +74,10 @@
   margin: 0px;
 }
 
+.submenu--main-menu-row-desk{
+  margin-left: -8.5%;
+}
+
 
 @media (max-width: 760px) {
   .styledLinkContent--submenu {

@@ -62,6 +62,7 @@
   border-width: 1px;
   transition: 120ms ease-in;
   width: 375px;
+  border-color: transparent;
   border-radius: 100px;
 }
 
@@ -313,6 +314,10 @@
     top: 96%;
 }
 
+:global(.vtex-login-2-x-container) :global(.vtex-button){
+  background-color: transparent !important;
+}
+
 @media (max-width: 1300px) {
   .container {
     max-width: 1200px;
@@ -332,6 +337,15 @@
   :global(.vtex-slider-layout-0-x-sliderLayoutContainer--mainCarousel){
     margin-top: -84px;
   }
+
+  .searchBarContainer:hover :global(.vtex-input-prefix__group),   .searchBarContainer:hover :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input) {
+
+    border-color: transparent !important;
+  }
+
+
+
+ 
 }
 
 :global(.vtex-search-result-3-x-container--layout) :global(.vtex-store-components-3-x-container){

@@ -11,6 +11,7 @@
       
       "flex-layout.row#secondContent",
       "flex-layout.row#banner-footer",
+      "flex-layout.row#insta-title",
       "flex-layout.row#insta"
 
        
@@ -431,6 +432,23 @@
     },
     "children": [
       "sandbox#insta"
+    ]
+  },
+  "rich-text#insta": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "SIGA-NOS",
+      "font": "t-heading-4",
+      "blockClass": "sectionRichTitle"
+    }
+  },
+  "flex-layout.row#insta-title": {
+    "props":{
+      "blockClass": "instagram-iframe"
+    },
+    "children": [
+      "rich-text#insta"
     ]
   },
   "sandbox#insta": {
