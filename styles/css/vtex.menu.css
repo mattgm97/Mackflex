@@ -2,7 +2,7 @@
   color: #808080;
 }
 
-.styledLinkContent--allCategoryBlock {
+.styledLinkContent--allCategoryBlock, .styledLinkContent--mainMenu  {
   color: #fff;
   font-size: 15px;
   /* font-family: "Droid Sans"; */
