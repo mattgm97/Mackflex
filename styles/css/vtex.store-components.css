@@ -348,6 +348,27 @@
  
 }
 
+@media (min-width: 1200px) and (max-width: 1700px) {
+:global(.vtex-menu-2-x-styledLinkContainer--allCategoryBlock){
+  margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+:global(.vtex-menu-2-x-styledLinkContent--allCategoryBlock), :global(.vtex-menu-2-x-styledLinkContent--mainMenu){
+  font-size: 13px;
+}
+ 
+}
+
+@media (min-width: 1400px) {
+
+  :global(.vtex-menu-2-x-styledLinkContent--allCategoryBlock), :global(.vtex-menu-2-x-styledLinkContent--mainMenu){
+    font-size: 15px;
+  }
+   
+  }
+
+
+
 :global(.vtex-search-result-3-x-container--layout) :global(.vtex-store-components-3-x-container){
   padding: inherit !important;
 
