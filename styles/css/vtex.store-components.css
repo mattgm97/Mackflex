@@ -229,7 +229,7 @@
 }
 
 .skuSelectorItem {
-  width: 65px;
+  width: auto;
   border-radius: 0;
   margin-bottom: 1em;
 }
