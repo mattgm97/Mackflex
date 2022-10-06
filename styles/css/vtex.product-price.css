@@ -1,4 +1,4 @@
-.listPrice--selling-listprice-shelf {
+.listPrice--selling-listprice-shelf, .listPriceRange--selling-listprice-shelf {
   text-align: left;
   font-size: 14px;
   line-height: 22px;
@@ -7,7 +7,7 @@
   text-transform: uppercase;
   padding-right: 1em;
 }
-.listPriceValue--selling-listprice-shelf {
+.listPriceValue--selling-listprice-shelf, .listPriceRangeUniqueValue--selling-listprice-shelf {
   text-decoration: none;
 }
 
@@ -21,7 +21,7 @@
     font-size: 12px;
   } */
 
-.sellingPrice--selling-price-shelf {
+.sellingPrice--selling-price-shelf, .sellingPriceRange--selling-price-shelf {
   text-transform: uppercase;
   padding-right: 0.5em;
   text-align: left;

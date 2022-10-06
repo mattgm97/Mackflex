@@ -40,8 +40,10 @@
       "product-summary-name",
       "product-rating-inline",
       "product-summary-space",
-      "product-list-price#shelf",
-      "product-selling-price#shelf",
+     /* "product-list-price#shelf",
+      "product-selling-price#shelf",*/
+      "product-list-price-range#shelf",
+      "product-selling-price-range#shelf",  
       "product-installments#defaulthome",
       "add-to-cart-button"
     ],
@@ -60,6 +62,20 @@
       "blockClass": "product-img-shelf",
       "showBadge": true,
       "width": 279
+    }
+  },
+
+  "product-list-price-range#shelf":{
+    "props":{
+      "message":"{minPriceValue}",
+      "blockClass":"selling-listprice-shelf"
+    }
+  },
+
+  "product-selling-price-range#shelf":{
+    "props":{
+      "message":"{minPriceValue}",
+      "blockClass":"selling-price-shelf"
     }
   },
 
