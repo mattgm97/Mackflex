@@ -787,9 +787,9 @@
   div#payment-data i.icon-credit-card {
     display: none;
   }
-  div#payment-data span.payment-group-item-text {
+ /* div#payment-data span.payment-group-item-text {
     background-image: none;
-  }
+  }*/
   div#payment-data .required.payment-group-list-btn a {
     border: 1px solid #dedede;
     border-radius: 4px;
@@ -1091,10 +1091,14 @@
   p.link.link-gift-card {
     position: initial !important;
   }
-  @media screen and (min-width: 768px) {
+  /*@media screen and (min-width: 768px) {
     form.form-step .steps-view {
-      width: 75% !important;
+      width: 68% !important;
     }
+  }*/
+
+  .payment-group-list-btn{
+    width: auto;
   }
   label.srp-shipping-current-single {
     background-color: #fff;

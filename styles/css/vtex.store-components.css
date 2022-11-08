@@ -247,15 +247,10 @@
   background-color: #F15B2A !important;
 }
 
-:global(.vtex-mega-menu-2-x-styledLinkText--mega-menu), :global(.vtex-mega-menu-2-x-submenuContainerTitle--mega-menu), :global(.vtex-mega-menu-2-x-collapsibleHeaderText--mega-menu), :global(.vtex-mega-menu-2-x-departmentsTitle--mega-menu) {
-  color: white;
-} 
+
 
 :global(.vtex-mega-menu-2-x-styledLinkText--mega-menu) {
   font-weight: 400;
-}
-:global(.vtex-mega-menu-2-x-accordionIconContainer--mega-menu) {
-  color: #FFF !important;
 }
 
 
@@ -375,6 +370,15 @@
 }
 
 @media (max-width: 760px) {
+
+  :global(.vtex-mega-menu-2-x-accordionIconContainer--mega-menu) {
+    color: #FFF !important;
+  }
+  
+
+  :global(.vtex-mega-menu-2-x-styledLinkText--mega-menu), :global(.vtex-mega-menu-2-x-submenuContainerTitle--mega-menu), :global(.vtex-mega-menu-2-x-collapsibleHeaderText--mega-menu), :global(.vtex-mega-menu-2-x-departmentsTitle--mega-menu) {
+    color: white;
+  } 
 
   :global(.vtex-search-2-x-biggy-autocomplete-wrapper){
     width: 80vw;

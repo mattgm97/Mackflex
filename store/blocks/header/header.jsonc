@@ -19,12 +19,14 @@
 
   "sticky-layout#links-menu":{
     "children":[
-      "header-row#1-desktop"
+      "header-row#1-desktop",
+      "flex-layout.row#mega-menu"
   ]
   },
   "header-row#1-desktop": {
     "children": [
       "logo#desktop",
+      "mega-menu-trigger-btn",
       "vtex.menu@2.x:menu#category-menu-01",
       "search-bar",
       "login",
@@ -33,6 +35,12 @@
     "props": {
       "sticky": true,
       "blockClass": "main-header"
+    }
+  },
+
+  "mega-menu-trigger-btn":{
+    "props":{
+      "id":"hpa-hamburguer-menu"
     }
   },
 
@@ -117,6 +125,13 @@
     ],
     "props": {
       "blockClass": "menu-mobile"
+    }
+  },
+
+  "flex-layout.row#mega-menu":{
+    "children":["mega-menu"],
+    "props":{
+      "blockClass":"mega-menu-container"
     }
   },
 
