@@ -13,3 +13,24 @@
   :global(.vtex-store-components-3-x-infoCardTextContainer--info-card-home-banner2) {
   top: 25vh;
 }
+
+
+@media (min-width: 1000px) {
+  :global(.vtex-search-2-x-itemList){
+    overflow: initial;
+  }
+
+  .biggy-autocomplete {
+    left: -28%;
+  }
+  
+  }
+
+  @media (min-width: 1500px) {
+  
+    .biggy-autocomplete {
+      left: -12%;
+    }
+    
+    }
+  

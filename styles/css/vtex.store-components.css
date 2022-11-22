@@ -61,7 +61,7 @@
 .searchBarContainer:hover :global(.vtex-input-prefix__group) {
   border-width: 1px;
   transition: 120ms ease-in;
-  width: 375px;
+  width: 335px;
   border-color: transparent;
   border-radius: 100px;
 }

@@ -48,3 +48,17 @@
   color: #515151;
   text-align: left;
 }
+
+
+.sellingPriceRange--pdp{
+  color: #f15b2a;
+    text-align: start;
+}
+
+.currencyContainer--pdp{
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-size: 44px;
+}
