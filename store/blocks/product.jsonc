@@ -147,9 +147,9 @@
     "children": [
       "vtex.store-components:product-name",
       "product-identifier.product",
-     /* "product-price#product-details",*/
-      "product-list-price-range#pdp",
-      "product-selling-price-range#pdp",
+     "product-price#product-details",
+     /* "product-list-price-range#pdp",
+      "product-selling-price-range#pdp",*/
       "product-rating-summary",
       "product-description",
       "sku-selector",
@@ -169,9 +169,9 @@
       "paddingRight": 1
     },
     "children": [
-      /*"product-price#product-details",*/
-      "product-list-price-range#pdp",
-      "product-selling-price-range#pdp",
+      "product-price#product-details",
+     /* "product-list-price-range#pdp",
+      "product-selling-price-range#pdp",*/
       "product-rating-summary",
       "product-description",
       "sku-selector",
@@ -206,7 +206,6 @@
   "sku-selector": {
     "props": {
       "initialSelection": "empty",
-      "hideImpossibleCombinations": true,
       "showValueForVariation": "all",
       "maxItems": 10,
       "displayMode": "default",
