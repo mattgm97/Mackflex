@@ -175,3 +175,20 @@
 .paragraph--powered__title{
   color: #6F6F6F;
 }
+
+.container--zoom-image {
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.paragraph--zoom-image {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  background: #F15B2A;
+  border-radius: 30px;
+  padding: 0.625rem 2.188rem;
+}

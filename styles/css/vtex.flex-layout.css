@@ -72,7 +72,7 @@
 }
 
 .flexCol--product-content-section :global(.vtex-button) {
-  max-width: 343px;
+  /* max-width: 343px; */
   border-radius: 40px;
 }
 
@@ -126,11 +126,28 @@
   .flexRow--selerCondition{
     padding: 9px 0;
   }
+
+  .flexRowContent--name-and-discount {
+    display: flex;
+  }
+
+  .flexRowContent--name-and-discount :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+    width: 80% !important;
+  }
+
+  .flexRowContent--name-and-discount :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child{
+    width: 10% !important;
+  }
+
+  .flexRowContent--product-main :global(.vtex-flex-layout-0-x-flexCol){
+    padding: 0;
+  }
 }
 
 @media (min-width: 1125px) {
   :global(.vtex-flex-layout-0-x-flexCol--filterCol) {
     width: 330px;
+    padding: 0;
   }
 }
 
@@ -201,4 +218,25 @@
   flex-direction: column;
   justify-content: center;
   height: 100%;
+}
+
+.flexRow--block-quantity {
+  margin-bottom: 35px;
+}
+
+.flexRowContent--show-more-bottom {
+  margin: 50px 0;
+}
+
+@media (max-width: 760px) {
+  .flexRowContent--progressive-discount{
+    display: inline-block;
+  }
+
+  .flexRowContent--progressive-discount
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    display: inline-block;
+    width: 25% !important;
+    margin-bottom: 10px;
+  }
 }

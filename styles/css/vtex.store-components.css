@@ -179,7 +179,7 @@
   line-height: 52px;
   letter-spacing: 0em;
   text-align: left;
-
+  padding: 0;
   font-size: 44px;
 }
 
@@ -259,16 +259,19 @@
 }
 
 
-:global(.vtex-product-summary-2-x-element--default-prod-shelf) :global(.vtex-button){
+/* :global(.vtex-product-summary-2-x-element--default-prod-shelf) :global(.vtex-button){
   visibility:hidden;
   opacity:0;
   transition:visibility 0.3s linear,opacity 0.3s linear;
-}
+} */
 
-:global(.vtex-product-summary-2-x-container--default-prod-shelf):hover :global(.vtex-product-summary-2-x-clearLink--default-prod-shelf) :global(.vtex-product-summary-2-x-element--default-prod-shelf) :global(.vtex-button){
+/* :global(.vtex-product-summary-2-x-container--default-prod-shelf):hover 
+:global(.vtex-product-summary-2-x-clearLink--default-prod-shelf) 
+:global(.vtex-product-summary-2-x-element--default-prod-shelf) 
+:global(.vtex-button){
   visibility:visible;
   opacity:1;
-}
+} */
 
 :global(.vtex-flex-layout-0-x-flexRow--minicart-footer) :global(.vtex-store-components-3-x-container){
   padding-left: 0.25rem !important;
@@ -280,13 +283,29 @@
   padding-right: 0.25rem !important;
 }
 
+:global(.vtex-store-components-3-x-productDescriptionText) :global(.vtex-store-components-3-x-content){
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #939598;  
+}
+
+
 :global(.vtex-store-components-3-x-productDescriptionTitle){
   font-size: 0px;
+  margin-top: 25px;
 }
 :global(.vtex-store-components-3-x-productDescriptionTitle)::before{
-  content:"Descrição";
+  content:"PRINCIPAIS CARACTERÍSTICAS";
   font-size: 1.25rem;
   font-family: 'Droid Sans';
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19px;
+  color: #4F4F4F;
 }
 
 
@@ -304,9 +323,9 @@
 
 .discountInsideContainer{
   background-color: #F15B2A;
-    border-radius: 5px;
-    padding: 7px 10px;
-    top: 96%;
+  border-radius: 5px;
+  padding: 7px 10px;
+  top: 96%;
 }
 
 :global(.vtex-login-2-x-container) :global(.vtex-button){
@@ -496,3 +515,55 @@
       max-width: 1200px;
   }
 }*/
+
+.skuSelectorTextContainer {
+  padding: 0;
+}
+
+.skuSelectorOptionsList, 
+.skuSelectorItem{
+  margin-left: 0;
+}
+
+.productImagesThumb--thumbnail {
+  padding: 0 7.5px !important;
+}
+
+.carouselGaleryThumbs--thumbnail {
+  display: block;
+}
+
+.infoCardContainer--category-home {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 74px;
+}
+
+.infoCardTextContainer--category-home {
+  padding: 0 20px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoCardCallActionContainer--category-home {
+  text-decoration: none !important;
+}
+
+.infoCardHeadline--circle-menu-option, .infoCardCallActionText--category-home {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #515151;  
+  text-decoration: none !important;
+}
+
+.infoCardImageContainer--circle-menu-option {
+  width: 94%;
+  text-align: center;
+}
