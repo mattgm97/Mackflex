@@ -5,3 +5,11 @@
   line-height: 15px;
   color: #939598;
 }
+
+.product-identifier--productReference::before {
+  content: "Modelo ";
+}
+
+.product-identifier__label {
+  font-size: 0;
+}

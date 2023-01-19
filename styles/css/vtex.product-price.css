@@ -25,25 +25,62 @@
   text-transform: uppercase;
   padding-right: 0.5em;
   text-align: left;
-  /* font-family: "Droid Sans"; */
   font-style: normal;
   font-weight: 400;
   font-size: 19px;
   line-height: 22px;
-  font-size: 19px;
   margin-bottom: 0.5em;
+  font-family: 'Droid Sans';
+  color: #515151;
 }
 
 .installments--pdp-installments {
-  color: #979899;
-  text-align: center;
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0;
+  line-height: 15px;
+  color: #939598;
+}
+
+.installments--pdp-installments::before {
+  content: "Ou em ";
+  color: #939598;
+  font-weight: 400;
+}
+
+.installmentsNumber--pdp-installments::after {
+  content: "x ";
+}
+
+.currencyContainer--pdp-installments::before{
+  content: "de ";
+  color: #939598;
+  font-weight: 400;
+}
+
+.installmentsNumber--pdp-installments,
+.installmentValue--pdp-installments{
+  color: #F15B2A;
+}
+
+.installments--pdp-installments::before{
+  font-size: 13px;
+}
+
+.installmentsNumber,
+.currencyContainer--pdp-installments,
+.installmentValue--pdp-installments{
+  font-size: 13px;
+  /* font-weight: 700; */
 }
 
 .installments--home-installments {
+  font-family: 'Droid Sans';
   margin-bottom: 15px;
   font-style: normal;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 14px;
   color: #515151;
   text-align: left;
@@ -61,4 +98,19 @@
   letter-spacing: 0em;
   text-align: left;
   font-size: 44px;
+}
+
+@media (max-width: 760px) {
+  .sellingPrice--selling-price-shelf, .sellingPriceRange--selling-price-shelf {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .installments--home-installments,
+  .installmentsNumber--home-installments {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+  }
 }

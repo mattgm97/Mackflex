@@ -8,7 +8,7 @@
       "flex-layout.row#images-products-home",
       /*"flex-layout.row#banners-home2",
       "flex-layout.row#banners-home2-categories",*/
-      
+      "flex-layout.row#categoryHome",
       "flex-layout.row#secondContent",
       "flex-layout.row#banner-footer",
       "flex-layout.row#insta-title",
@@ -244,7 +244,10 @@
   },
 
   "flex-layout.col#firstContent": {
-    "children": ["rich-text#novidades", "list-context.product-list#novidades"]
+    "children": [
+      "rich-text#novidades", 
+      "list-context.product-list#novidades"
+    ]
   },
   "rich-text#novidades": {
     "props": {
@@ -457,6 +460,37 @@
       "height": "350px",
       "initialContent":"<script src='https://snapwidget.com/js/snapwidget.js'></script><iframe src='https://snapwidget.com/embed/1006245' class='snapwidget-widget' allowtransparency='true' frameborder='0' scrolling='no' style='border:none; overflow:hidden;  width:100%; '></iframe>",
       "allowCookies": false
+    }
+  },
+  "flex-layout.row#categoryHome": {
+    "children": [
+      "flex-layout.col#titleCategorySlider"
+    ]
+  },
+  "flex-layout.col#titleCategorySlider": {
+    "children": [
+      "rich-text#titleCategorySlider",
+      "flex-layout.col#categories-home-slider"
+    ],
+    "props": {
+      "width": "100%"
+    }
+  },
+  "flex-layout.col#categories-home-slider": {
+    "children": [
+      "slider-layout#categories-home-slider"
+    ],
+    "props": {
+      "width": "100%"
+    }
+  },
+  "rich-text#titleCategorySlider": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "CATEGORIAS",
+      "font": "t-heading-4",
+      "blockClass": "sectionRichTitle"
     }
   }
 }

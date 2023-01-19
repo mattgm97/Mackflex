@@ -3,10 +3,13 @@
 }
 
 .galleryTitle--layout{
-color:#515151;
-font-size: 22px;
-text-transform: uppercase;
-margin-bottom: 2em;
+    font-family: 'Droid Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin-bottom: 1em;
 }
 .filter__container{
     border:none
@@ -20,14 +23,26 @@ margin-bottom: 2em;
       color: #515151;
   }
 
- 
+.buttonShowMore :global(.vtex-button){
+    padding: 14px 40px;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    font-size: 0;
+    border: 2px solid #F15B2A;
+    border-radius: 30px;
+    background-color: transparent;
+    font-family: 'Droid Sans';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+    text-align: center;
+    color: #F15B2A;
+}
 
-  .buttonShowMore :global(.vtex-button){
-      border-radius: 100px;
-      padding: 14px 40px;
-      margin-bottom: 2em;
-      margin-top: 2em;
-  }
+.buttonShowMore :global(.vtex-button__label)::after{
+    content: 'Carregar Mais';
+    font-size: 18px;
+}
 
   .filterClearButtonWrapper :global(.vtex-button), .filterApplyButtonWrapper :global(.vtex-button){
       background-color: #ED6F00;
@@ -58,3 +73,24 @@ margin-bottom: 2em;
         margin-bottom: 1em;
       }
   }
+
+  .progressBarContainer {
+    display: none;
+  }
+
+@media (max-width: 600px) {
+    .orderByButton{
+        border: 1px solid #F15B2A;
+        border-radius: 30px;
+        padding: 10px;
+    }
+
+    .galleryTitle--layout{
+        font-family: 'Droid Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        color: #4F4F4F;
+    }
+}

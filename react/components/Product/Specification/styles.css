@@ -1,0 +1,101 @@
+.wrappedSpecification {
+  width: 100%;
+  background-color: #ECECEC;
+  padding-top: 3em;
+  padding-bottom: 5em;
+}
+
+.containerSpecification {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.containerSpecificationRow{
+  display: flex;
+  gap: 6.25rem;
+}
+
+.specificationTitle {
+  width: 100%;
+  text-align: center;
+}
+
+.specificationTitle h2{
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #F15B2A;
+}
+
+.descrition,
+.specification {
+  width: 50%;
+}
+
+.descrition p,
+.specificationGroupTitle p,
+.specificationContent p{
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  color: #333333;
+}
+
+.descrition p {
+  font-size: 16px;
+}
+
+.specificationGroupTitle p,
+.specificationContent p {
+  font-size: 14px;
+}
+
+.specificationGroup {
+  display: flex;
+}
+
+.specificationGroup:nth-child(even) {
+  border-bottom: 1px solid #333333;
+}
+
+.specificationGroupTitle,
+.specificationContent {
+  width: 50%;
+}
+
+.specificationContent {
+  text-align: right;
+}
+
+.specificationGroup:first-child,
+.specificationGroup:last-child {
+  display: none;
+}
+
+
+@media (max-width: 760px) {
+  .containerSpecificationRow{
+    display: block;
+  } 
+
+  .wrappedSpecification {
+    padding: 1rem 0;
+  }
+
+  .containerSpecification {
+    padding: 0 1rem;
+  }
+
+  .descrition,
+  .specification {
+    width: 100%;
+  }
+
+  .specificationTitle h2{
+    font-size: 16px;
+  }
+}

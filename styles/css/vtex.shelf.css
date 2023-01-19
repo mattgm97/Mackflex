@@ -1,14 +1,32 @@
 .title--related--shelf {
-  padding-left: 30px;
   display: flex;
   justify-content: start;
-  text-decoration: underline #f15b2a;
+  width: 19.5%;
   color: #515151;
-  font-size: 27px;
+  font-size: 21px;
   font-weight: 700;
   line-height: 32px;
   letter-spacing: 0em;
   text-align: left;
+  position: relative; 
+}
+
+@media (max-width: 760px) {
+  .title--related--shelf {
+    width: 44.5%;
+    font-size: 15px;
+  }
+}
+
+.title--related--shelf::after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  bottom: 20px; 
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: #f15b2a;
 }
 
 .arrow .caretIcon {
@@ -21,4 +39,10 @@
 
 .arrowRight::after {
   content: url("assets/icons/Vector.png");
+}
+
+@media (max-width: 760px) {
+  .sliderContainer--related--shelf :global(.vtex-slider-0-x-sliderFrame){
+    gap: 10px;
+  }
 }

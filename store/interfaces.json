@@ -4,5 +4,11 @@
   },
   "CSSWorkaround":{
     "component": "CSSWorkaround"
+  },
+  "ProductSpecification": {
+    "component": "ProductSpecification"
+  },
+  "ProgressiveDiscount": {
+    "component": "ProgressiveDiscount"
   }
 }

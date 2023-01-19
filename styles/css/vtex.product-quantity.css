@@ -6,10 +6,9 @@
   height: 45px;
 }
 
-.quantitySelectorContainer{
+/* .quantitySelectorContainer{
   margin-bottom: 2em;
-  padding-left: 12px;
-}
+} */
 
 :global(.vtex-numeric-stepper__input){
   width: 100px;
