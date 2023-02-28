@@ -71,8 +71,7 @@
   text-align: right;
 }
 
-.specificationGroup:first-child,
-.specificationGroup:last-child {
+.specification .specificationGroup:last-child {
   display: none;
 }
 
