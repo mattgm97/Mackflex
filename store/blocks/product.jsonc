@@ -117,7 +117,7 @@
   "flex-layout.col#stack": {
     "children": ["stack-layout", "rich-text#zoom-image"],
     "props": {
-      "width": "54%",
+      "width": "40%",
       "rowGap": 0,
       "paddingLeft": 4
     }
@@ -130,7 +130,7 @@
       "stack-layout"
     ],
     "props": {
-      "width": "54%",
+      "width": "60%",
       "rowGap": 0,
       "paddingLeft": 4
     }
