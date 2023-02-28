@@ -5,7 +5,10 @@ import styles from "./styles.css";
 
 const ProductSpecification = () => {
     const { product } = useProduct()
-    const spefication = product?.specificationGroups;
+    const spefication = product?.properties;
+
+    console.log('spefication', spefication)
+    console.log('product', product)
 
     if(spefication.length !== 0){ 
         return(
@@ -18,20 +21,20 @@ const ProductSpecification = () => {
                     </div>
                     <div className={styles.containerSpecificationRow}>              
                         <div className={styles.descrition}>
-                            <p>{product?.properties[1].values[0]}</p>
+                            <p>{product?.properties[0].values[0] ? product?.properties[0].values[0] : product?.properties[1].values[0]}</p>
                         </div>
-                        <div className={styles.descrition}>
+                        <div className={styles.specification}>
                             {spefication.map((items, index) => {
-                                console.log('items', items?.specifications?.[1]?.name)
+                                console.log('items', items)
                                 if (items !== undefined) {
                                     return (
-                                        <div className={styles.specificationGroup}>
+                                        <div key={index} className={styles.specificationGroup}>
                                                 <div className={styles.specificationGroupTitle}>
                                                     <p>{items?.name}</p>
                                                 </div>
                                                 <div className={styles.specificationContent}>  
-                                                    <p>{items?.specifications?.[0]?.name}</p>
-                                                    <p>{items?.specifications?.[1]?.name}</p>
+                                                    {/* <p>{items?.name}</p> */}
+                                                    <p>{items?.values[0]}</p>
                                                 </div>
                                         </div>
                                     )

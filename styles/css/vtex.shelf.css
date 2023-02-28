@@ -1,7 +1,7 @@
 .title--related--shelf {
   display: flex;
   justify-content: start;
-  width: 19.5%;
+  width: 26%;
   color: #515151;
   font-size: 21px;
   font-weight: 700;
@@ -41,8 +41,7 @@
   content: url("assets/icons/Vector.png");
 }
 
-@media (max-width: 760px) {
-  .sliderContainer--related--shelf :global(.vtex-slider-0-x-sliderFrame){
-    gap: 10px;
-  }
+.sliderContainer--related--shelf :global(.vtex-slider-0-x-sliderFrame),
+:global(.vtex-slider-layout-0-x-sliderTrack--slider-shelf--default){
+  gap: 10px;
 }

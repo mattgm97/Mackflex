@@ -34,7 +34,7 @@
     font-family: 'Droid Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 145.14%;
     color: #BDBDBD;
   }
@@ -73,7 +73,7 @@
 
       .progressive-discount-container label .progressive-discount-number,
       .progressive-discount-container label .progressive-discount-units {
-        font-size: 16px;
+        font-size: 14px;
       }
   
       .progressive-discount-container label{
