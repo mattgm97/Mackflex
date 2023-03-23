@@ -11,10 +11,14 @@
     border: 1px solid #f7f4f4;
 }
 
+.triggerContainer {
+    font-size: 0;
+}
+
 .triggerContainer::after {
     content: "Todas as categorias";
     font-family: "Droid Sans";
-    font-size: 15px;
+    font-size: 14px;
     color: #FFF;
     font-weight: 700;
     position: relative;

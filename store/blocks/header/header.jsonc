@@ -20,6 +20,7 @@
   "sticky-layout#links-menu":{
     "children":[
       "header-row#1-desktop",
+      "header-row#new-desktop",
       "flex-layout.row#mega-menu"
   ]
   },
@@ -37,10 +38,24 @@
       "blockClass": "main-header"
     }
   },
-
+  "header-row#new-desktop": {
+    "children": [
+      "logo#desktop",
+      "mega-menu-trigger-btn",
+      "vtex.menu@2.x:menu#category-menu-01",
+      "search-bar",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "sticky": true,
+      "blockClass": "main-header"
+    }
+  },
   "mega-menu-trigger-btn":{
     "props":{
-      "id":"hpa-hamburguer-menu"
+      // "id":"hpa-hamburguer-menu",
+      "text": "Todas as Categorias"
     }
   },
 

@@ -1,12 +1,3 @@
-.searchBarContainer {
-  z-index: 100;
-  width: 61px;
-  border: none;
-  position: relative;
-}
-
-
-
 .infoCardContainer--sellerConditionCard {
   width: auto;
   background-color: #f8f8f8;
@@ -39,12 +30,9 @@
 
 :global(.vtex-store-components-3-x-searchBarContainer)
   :global(.vtex-input-prefix__group) {
-  position: relative;
-  border-width: 1px;
-  width: 60px;
-  height: 60px;
-  transition: 100ms ease-out;
-  border-radius: 100px;
+  height: 45px;
+  border-radius: 30px;
+  border: 0;
 }
 
 /* :global(.vtex-store-components-3-x-searchBarContainer)
@@ -56,14 +44,6 @@
 .sizeDesktop {
   min-width: 165px;
   display: block;
-}
-
-.searchBarContainer:hover :global(.vtex-input-prefix__group) {
-  border-width: 1px;
-  transition: 120ms ease-in;
-  width: 335px;
-  border-color: transparent;
-  border-radius: 100px;
 }
 
 .searchBarIcon--external-search {
@@ -351,15 +331,6 @@
   :global(.vtex-slider-layout-0-x-sliderLayoutContainer--mainCarousel){
     margin-top: -84px;
   }
-
-  .searchBarContainer:hover :global(.vtex-input-prefix__group),   .searchBarContainer:hover :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input) {
-
-    border-color: transparent !important;
-  }
-
-
-
- 
 }
 
 @media (min-width: 1200px) and (max-width: 1700px) {
@@ -376,7 +347,7 @@
 @media (min-width: 1400px) {
 
   :global(.vtex-menu-2-x-styledLinkContent--allCategoryBlock), :global(.vtex-menu-2-x-styledLinkContent--mainMenu){
-    font-size: 15px;
+    font-size: 14px;
   }
    
   }
@@ -468,18 +439,6 @@
 .imageElement--security-logo-1 {
   padding-right: 15px;
 }
-
-
-
-@media (max-width: 1400px) {
-  .searchBarContainer:hover :global(.vtex-input-prefix__group) {
-    border-width: 1px;
-    transition: 120ms ease-in;
-    width: 322px;
-    border-radius: 100px;
-  }
-}
-
 
 @media (max-width: 760px) {
   .searchBarContainer {
