@@ -1,5 +1,5 @@
 {
-    "vtex.menu@2.x:menu#submenu-cat-Calçados-col1":{
+    "vtex.menu@2.x:menu#submenu-cat-manutencao-col1":{
         "props":{
             "orientation": "vertical",
             "blockClass":"row-menu-col",
@@ -27,6 +27,7 @@
                     "text": "Fujiwara",
                     "href": "/calcados-de-seguranca/fujiwara"
                 }
+                
             },
             {
                 "type": "custom",

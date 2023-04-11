@@ -44,9 +44,8 @@
       "product-selling-price#shelf",*/
       // "product-list-price-range#shelf",
       // "product-price-savings",
-      // "product-summary-price",
-      "product-selling-price-range#shelf",  
-      "product-installments#defaulthome",
+      // "product-list-price",
+      "product-summary-price",
       "add-to-cart-button"
     ],
     "props": {

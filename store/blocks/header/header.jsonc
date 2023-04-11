@@ -252,7 +252,7 @@
     "children": [
       "product-summary-name#search",
       "product-summary-image#shelf",
-      "product-summary-price#search",
+      "product-list-price",
       "product-summary-buy-button#search"
     ]
   },

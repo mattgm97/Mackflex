@@ -161,8 +161,9 @@
     "children": [
       "vtex.store-components:product-name",
       "product-identifier.product",
-      "product-price#product-details",
-     "product-installments#default",
+      // "product-price#product-details",
+    //  "product-installments#default",
+     "product-list-price",
      /* "product-list-price-range#pdp",
       "product-selling-price-range#pdp",*/
 
@@ -235,8 +236,7 @@
       "product-description",
       "flex-layout.row#ProgressiveDiscount",
       "sku-selector",
-      "product-price#product-details",
-      "product-installments",
+      "product-list-price",
       "product-quantity",
       "add-to-cart-button#pdp",
       // "shipping-simulator",

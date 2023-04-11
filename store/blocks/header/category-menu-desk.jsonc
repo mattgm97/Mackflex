@@ -2,8 +2,9 @@
   "vtex.menu@2.x:menu#category-menu-01": {
     "children": [
       "menu-item#Calçados",
-       "menu-item#Luvas",
-       "menu-item#Óculos" 
+      "menu-item#Pneumaticos",
+      "menu-item#Hidraulicos",
+      "menu-item#Manutencao"
       // "menu-item#mulheres"
     ],
     "props": {
@@ -78,9 +79,9 @@
 
 
 
-  // ----------------- Categoria LUVAS -------------------
+  // ----------------- Categoria Pneumáticos -------------------
 
-  "menu-item#Luvas": {
+  "menu-item#Pneumaticos": {
     "props": {
       "id": "menu-item-category-all",
       "type": "custom",
@@ -95,15 +96,57 @@
       ],
       "itemProps": {
         "type": "internal",
-        "href": "/luvas-de-seguranca",
+        "href": "/Pneumatico",
         "noFollow": true,
-        "tagTitle": "Luvas de Segurança",
-        "text": "Luvas de Segurança"
+        "tagTitle": "Pneumático",
+        "text": "Pneumático"
       }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#Pneumaticos-submenu-block"]
+  },
+  "vtex.menu@2.x:submenu#Pneumaticos-submenu-block": {
+    "props": {
+      "width": "100%",
+      "blockClass": "main-menu-row-desk"
+    },
+    "children": ["flex-layout.row#Pneumaticos"]
+  },
+  "flex-layout.row#Pneumaticos": {
+    "props": {
+      "blockClass": ["menu-content-area"],
+      "paddingTop": 6,
+      "colGap": 3
+    },
+    "children": [
+      "flex-layout.col#Pneumaticos1",
+      "flex-layout.col#imagemPneumaticos"
+    ]
+  },
+  "flex-layout.col#Pneumaticos1": {
+    "props": {
+      "width": "20%",
+      "preventVerticalStretch": true
+    },
+    "children": ["vtex.menu@2.x:menu#submenu-cat-Pneumaticos-col1"]
+  },
+  "flex-layout.col#imagemPneumaticos": {
+    "props": {
+      "width": "grow",
+      "horizontalAlign": "right"
+    },
+    "children": ["image#imagemPneumaticos"]
+  },
+  "image#imagemPneumaticos": {
+    "props": {
+      "src": "assets/banners/banner-submenu.png",
+      "maxHeight": 355,
+      "width": "100%"
     }
   },
 
-  "menu-item#Óculos": {
+  // ----------------- Categoria Hidráulicos -------------------
+
+  "menu-item#Hidraulicos": {
     "props": {
       "id": "menu-item-category-all",
       "type": "custom",
@@ -118,12 +161,117 @@
       ],
       "itemProps": {
         "type": "internal",
-        "href": "/oculos-de-seguranca",
+        "href": "/hidraulicos",
         "noFollow": true,
-        "tagTitle": "Óculos de segurança",
-        "text": "Óculos de segurança"
+        "tagTitle": "Hidraulicos",
+        "text": "Hidraulicos"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#hidraulicos-submenu-block"]
+  },
+  "vtex.menu@2.x:submenu#hidraulicos-submenu-block": {
+    "props": {
+      "width": "100%",
+      "blockClass": "main-menu-row-desk"
+    },
+    "children": ["flex-layout.row#hidraulicos"]
+  },
+  "flex-layout.row#hidraulicos": {
+    "props": {
+      "blockClass": ["menu-content-area"],
+      "paddingTop": 6,
+      "colGap": 3
+    },
+    "children": [
+      "flex-layout.col#hidraulicos1",
+      "flex-layout.col#imagemHidraulicos"
+    ]
+  },
+  "flex-layout.col#hidraulicos1": {
+    "props": {
+      "width": "20%",
+      "preventVerticalStretch": true
+    },
+    "children": ["vtex.menu@2.x:menu#submenu-cat-hidraulicos-col1"]
+  },
+  "flex-layout.col#imagemHidraulicos": {
+    "props": {
+      "width": "grow",
+      "horizontalAlign": "right"
+    },
+    "children": ["image#imagemHidraulicos"]
+  },
+  "image#imagemHidraulicos": {
+    "props": {
+      "src": "assets/banners/banner-submenu.png",
+      "maxHeight": 355,
+      "width": "100%"
+    }
+  },
+
+    // ----------------- Categoria Hidráulicos -------------------
+
+    "menu-item#Manutencao": {
+      "props": {
+        "id": "menu-item-category-all",
+        "type": "custom",
+        "experimentalOptimizeRendering": true,
+        "iconId": null,
+        "highlight": false,
+        "blockClass": [
+          "allCategoryBlock",
+          "highlightCategoryBlock",
+          "department-menu",
+          "removeBorderRight"
+        ],
+        "itemProps": {
+          "type": "internal",
+          "href": "/manutencao",
+          "noFollow": true,
+          "tagTitle": "Manutenção",
+          "text": "Manutenção"
+        }
+      },
+      "blocks": ["vtex.menu@2.x:submenu#manutencao-submenu-block"]
+    },
+    "vtex.menu@2.x:submenu#manutencao-submenu-block": {
+      "props": {
+        "width": "100%",
+        "blockClass": "main-menu-row-desk"
+      },
+      "children": ["flex-layout.row#manutencao"]
+    },
+    "flex-layout.row#manutencao": {
+      "props": {
+        "blockClass": ["menu-content-area"],
+        "paddingTop": 6,
+        "colGap": 3
+      },
+      "children": [
+        "flex-layout.col#manutencao1",
+        "flex-layout.col#imagemManutencao"
+      ]
+    },
+    "flex-layout.col#manutencao1": {
+      "props": {
+        "width": "20%",
+        "preventVerticalStretch": true
+      },
+      "children": ["vtex.menu@2.x:menu#submenu-cat-manutencao-col1"]
+    },
+    "flex-layout.col#imagemManutencao": {
+      "props": {
+        "width": "grow",
+        "horizontalAlign": "right"
+      },
+      "children": ["image#imagemManutencao"]
+    },
+    "image#imagemManutencao": {
+      "props": {
+        "src": "assets/banners/banner-submenu.png",
+        "maxHeight": 355,
+        "width": "100%"
       }
     }
-  }
  
 }
