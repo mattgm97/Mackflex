@@ -46,11 +46,20 @@
   bottom: 27px;
 }
 
+.sliderTrack--banner-duplo-top {
+  gap: 20px;
+}
+
 @media screen and (max-width: 768px) {
-  .slide--slider-shelf--default {
-    margin: 0px 10px;
-  }
   .slide--bannerCarousel--firstVisible {
     margin-left: 0;
+  }
+
+  .sliderTrack--categoriaCarousel {
+    gap: 10px;
+  }
+
+  .sliderTrack--banner-duplo-top {
+    gap: 0;
   }
 }

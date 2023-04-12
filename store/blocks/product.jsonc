@@ -162,13 +162,13 @@
       "vtex.store-components:product-name",
       "product-identifier.product",
       "product-price#product-details",
-     "product-installments#default",
+    //  "product-installments#default",
      /* "product-list-price-range#pdp",
       "product-selling-price-range#pdp",*/
 
-      "product-rating-summary",
+      // "product-rating-summary",
       "product-description",
-      "flex-layout.row#ProgressiveDiscount",
+      // "flex-layout.row#ProgressiveDiscount",
       "sku-selector",
       "flex-layout.row#quantity",
       "add-to-cart-button#pdp",
@@ -235,8 +235,9 @@
       "product-description",
       "flex-layout.row#ProgressiveDiscount",
       "sku-selector",
-      "product-price#product-details",
-      "product-installments",
+      "product-list-price",
+      // "product-price#product-details",
+      // "product-installments",
       "product-quantity",
       "add-to-cart-button#pdp",
       // "shipping-simulator",
@@ -336,7 +337,7 @@
     ]
   },
   "shelf#related": {
-    "blocks": ["product-summary.shelf"],
+    "blocks": ["product-summary.shelf#new-shelf"],
     "props": {
       "blockClass": "related--shelf",
       "recomendation": "buy",
@@ -352,7 +353,7 @@
     }
   },
   "shelf#related2": {
-    "blocks": ["product-summary.shelf"],
+    "blocks": ["product-summary.shelf#new-shelf"],
     "props": {
       "blockClass": "related--shelf",
       "recomendation": "view",
