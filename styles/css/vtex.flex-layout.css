@@ -240,3 +240,18 @@
     margin-bottom: 10px;
   }
 }
+
+.flexRow--topo-link {
+  background: #1A1A1A;
+}
+
+.flexRowContent--topo-link {
+  align-items: center;
+}
+
+.flexCol--topo-link-redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 20px;
+}

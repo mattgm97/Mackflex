@@ -19,10 +19,101 @@
 
   "sticky-layout#links-menu":{
     "children":[
+      "flex-layout.row#topo-link",
       "header-row#1-desktop",
       "header-row#new-desktop",
       "flex-layout.row#mega-menu"
   ]
+  },
+  "flex-layout.row#topo-link": {
+    "children": [
+      "flex-layout.col#topo-acessibilidade",
+      "flex-layout.col#topo-telefone",
+      "flex-layout.col#topo-redes"
+    ],
+    "props": {
+      "blockClass": "topo-link"
+    }
+  },
+  "flex-layout.col#topo-acessibilidade":{
+    "children": ["link.product#topo-acessibilidade"],
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "topo-link-acessibilidade",
+      "width": "15%"
+    }
+  },
+  "link.product#topo-acessibilidade": {
+    "props": {
+      "href": "#",
+      "label": "ACESSIBILIDADE"
+    }
+  },
+  "flex-layout.col#topo-telefone":{
+    "children": ["rich-text#topo-telefone"],
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "topo-link-telefone"
+    }
+  },
+  "rich-text#topo-telefone": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "PELO TELEFONE",
+      "blockClass": "topo-link-content"
+    }
+  },
+  "flex-layout.col#topo-redes":{
+    "children": [
+      "image#topo-link-facebook",
+      "image#topo-link-instagram",
+      "image#topo-link-twitter"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "topo-link-redes",
+      "width": "10%"
+    }
+  },
+  "image#topo-link-facebook": {
+    "props": {
+      "src": "assets/image/iconTopFacebook.png",
+      "maxHeight": 534,
+      "link": {
+        "properties": {
+          "attributeNofollow": false,
+          "newtab": false,
+          "url": "#"
+        }
+      }
+    }
+  },
+  "image#topo-link-instagram": {
+    "props": {
+      "src": "assets/image/iconTopInstagram.png",
+      "maxHeight": 534,
+      "link": {
+        "properties": {
+          "attributeNofollow": false,
+          "newtab": false,
+          "url": "#"
+        }
+      }
+    }
+  },
+  "image#topo-link-twitter": {
+    "props": {
+      "src": "assets/image/iconTopTwitter.png",
+      "maxHeight": 534,
+      "link": {
+        "properties": {
+          "attributeNofollow": false,
+          "newtab": false,
+          "url": "#"
+        }
+      }
+    }
   },
   "header-row#1-desktop": {
     "children": [

@@ -192,3 +192,33 @@
   border-radius: 30px;
   padding: 0.625rem 2.188rem;
 }
+
+.wrapper--topo-link-content {
+  display: flex;
+  align-items: center;
+}
+
+:global(.vtex-rich-text-0-x-wrapper--topo-link-content)::before{
+  content: url("assets/image/iconTopTel.png");
+  margin-right: 10px;
+}
+
+.paragraph--topo-link-content{
+  font-family: 'Gotham';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 11px;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--topo-link-content)::before{
+  content: "COMPRE ";
+  font-weight: 700;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--topo-link-content)::after{
+  content: " (99) 9999-9999";
+  font-weight: 700;
+}
