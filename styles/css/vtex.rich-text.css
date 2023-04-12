@@ -1,14 +1,14 @@
 .paragraph--sectionRichTitle {
   /* font-family: "Droid Sans"; */
-  font-size: 27px;
-  font-weight: 700;
-  line-height: 32px;
   letter-spacing: 0em;
   text-align: left;
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
   color: #515151;
-  text-decoration: underline;
-  line-height: 20px;
-  text-decoration-color: #f15b2a;
+  margin-bottom: 10px;
 }
 
 
@@ -94,7 +94,6 @@
 .container--sectionRichTitle {
   display: flex;
   justify-content: start;
-  padding-left: 30px;
 }
 
 

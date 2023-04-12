@@ -6,56 +6,113 @@
           "tablet": 3,
           "phone": 2
         },
+        "centerModeSlidesGap": "to-the-left",
+        "height": 250,
         "infinite": true,
-        "showNavigationArrows": "desktopOnly",
-        "blockClass": "carousel-sliders-categories"
+        "fullWidth": true,
+        "showNavigationArrows": "never",
+        "blockClass": "categoriaCarousel",
+        "showPaginationDots" : "never"
       },
       "children": [
-        "info-card#categorie01", 
-        "info-card#categorie02", 
-        "info-card#categorie03",
-        "info-card#categorie04"
+        "image#Marca1", 
+        "image#Marca2", 
+        "image#Marca3",
+        "image#Marca4",
+        "image#Marca5",
+        "image#Marca6",
+        "image#Marca7"
       ]
-    },
-    "info-card#categorie01": {
-      "props": {
-        "imageUrl": "assets/image/categoryLuvas.png",
-        "callToActionText": "Luvas",
-        "callToActionUrl": "/luvas",
-        "textPosition": "right",
-        "callToActionMode": "link",
-        "blockClass": "category-home"
-      }
-    },
-    "info-card#categorie02": {
-      "props": {
-        "imageUrl": "assets/image/categoryOculos.png",
-        "callToActionText": "Óculos",
-        "callToActionUrl": "/oculos",
-        "textPosition": "right",
-        "callToActionMode": "link",
-        "blockClass": "category-home"
-      }
-    },
-    "info-card#categorie03": {
-      "props": {
-        "imageUrl": "assets/image/categoryManomeros.png",
-        "callToActionText": "Manômeros",
-        "callToActionUrl": "/manomeros",
-        "textPosition": "right",
-        "callToActionMode": "link",
-        "blockClass": "category-home"
-      }
-    },
-    "info-card#categorie04": {
-      "props": {
-        "imageUrl": "assets/image/categoryMangueirasTubos.png",
-        "callToActionText": "Mangueiras e Tubos",
-        "callToActionUrl": "/mangueiras-e-Tubos",
-        "textPosition": "right",
-        "callToActionMode": "link",
-        "blockClass": "category-home"
+  },
+  "image#Marca1": {
+    "props": {
+      "src": "assets/image/categoryLuvas.png",
+      "link": {
+        "properties": {
+          "url": {
+            "$ref": "#/definitions/url",
+            "title": "admin/native-types.link.url"
+          }
+        }
       }
     }
+  },
+  "image#Marca2": {
+    "props": {
+      "src": "assets/image/categoryOculos.png",
+      "link": {
+        "properties": {
+          "url": {
+            "$ref": "#/definitions/url",
+            "title": "admin/native-types.link.url"
+          }
+        }
+      }
+    }
+  },
+  "image#Marca3": {
+    "props": {
+      "src": "assets/image/categoryManomeros.png",
+      "link": {
+        "properties": {
+          "url": {
+            "$ref": "#/definitions/url",
+            "title": "admin/native-types.link.url"
+          }
+        }
+      }
+    }
+  },
+  "image#Marca4": {
+    "props": {
+      "src": "assets/image/categoryMangueirasTubos.png",
+      "link": {
+        "properties": {
+          "url": {
+            "$ref": "#/definitions/url",
+            "title": "admin/native-types.link.url"
+          }
+        }
+      }
+    }
+  },
+  "image#Marca5": {
+    "props": {
+      "src": "assets/image/categoryValvulas.png",
+      "link": {
+        "properties": {
+          "url": {
+            "$ref": "#/definitions/url",
+            "title": "admin/native-types.link.url"
+          }
+        }
+      }
+    }
+  },
+  "image#Marca6": {
+    "props": {
+      "src": "assets/image/categoryBotas.png",
+      "link": {
+        "properties": {
+          "url": {
+            "$ref": "#/definitions/url",
+            "title": "admin/native-types.link.url"
+          }
+        }
+      }
+    }
+  },
+  "image#Marca7": {
+    "props": {
+      "src": "assets/image/categoryLuvas.png",
+      "link": {
+        "properties": {
+          "url": {
+            "$ref": "#/definitions/url",
+            "title": "admin/native-types.link.url"
+          }
+        }
+      }
+    }
+  }
 }
-

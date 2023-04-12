@@ -3,14 +3,16 @@
     "blocks": [
       "list-context.image-list#bannersprincipais",
       "flex-layout.row#sellingConditions",
+      "flex-layout.row#categoryHome",
+      "flex-layout.row#bannerDuploTop",
       "__fold__",
       "flex-layout.row#firstContent",
       "flex-layout.row#images-products-home",
       /*"flex-layout.row#banners-home2",
       "flex-layout.row#banners-home2-categories",*/
-      "flex-layout.row#categoryHome",
+      
       "flex-layout.row#secondContent",
-      "flex-layout.row#banner-footer",
+      // "flex-layout.row#banner-footer",
       "flex-layout.row#insta-title",
       "flex-layout.row#insta"
 
@@ -84,24 +86,10 @@
 
 
   "flex-layout.row#images-products-home": {
-    "children": ["flex-layout.col#images-products-home1", "flex-layout.col#images-products-home2"],
+    "children": ["slider-layout#images-products-home"],
     "props": {
       "blockClass": "banner-row",
       "marginTop": 6
-    }
-  },
-
-  "flex-layout.col#images-products-home1":{
-    "children": ["image#banners-home1"],
-    "props": {
-      "horizontalAlign": "center"
-    }
-  },
-
-  "flex-layout.col#images-products-home2":{
-    "children": ["image#banners-home2"],
-    "props": {
-      "horizontalAlign": "center"
     }
   },
 
@@ -246,7 +234,7 @@
   "flex-layout.col#firstContent": {
     "children": [
       "rich-text#novidades", 
-      "list-context.product-list#novidades"
+      "list-context.product-list#new-shelf"
     ]
   },
   "rich-text#novidades": {
@@ -272,7 +260,7 @@
     "children": ["flex-layout.col#secondContent"]
   },
   "flex-layout.col#secondContent": {
-    "children": ["rich-text#promocao", "list-context.product-list#promocao"]
+    "children": ["rich-text#promocao", "list-context.product-list#new-shelf"]
   },
   "rich-text#promocao": {
     "props": {
@@ -468,12 +456,14 @@
     ]
   },
   "flex-layout.col#titleCategorySlider": {
+    "title": "Categorias home",
     "children": [
       "rich-text#titleCategorySlider",
       "flex-layout.col#categories-home-slider"
     ],
     "props": {
-      "width": "100%"
+      "width": "100%",
+      "blockClass": "categoryHome"
     }
   },
   "flex-layout.col#categories-home-slider": {
@@ -481,7 +471,8 @@
       "slider-layout#categories-home-slider"
     ],
     "props": {
-      "width": "100%"
+      "width": "100%",
+      "rowGap": 10
     }
   },
   "rich-text#titleCategorySlider": {
@@ -491,6 +482,106 @@
       "text": "CATEGORIAS",
       "font": "t-heading-4",
       "blockClass": "sectionRichTitle"
+    }
+  },
+  "flex-layout.row#bannerDuploTop": {
+    "children" : [
+      "slider-layout#bannerDuploTop"
+    ],
+    "props": {
+      "blockClass": "banner-duplo-top"
+    }
+  },
+  "slider-layout#bannerDuploTop": {
+    "title": "Banner duplo topo",
+      "props": {
+        "itemsPerPage": {
+          "desktop": 2,
+          "tablet": 2,
+          "phone": 1
+        },
+        "gap": 10,
+        "infinite": true,
+        "fullWidth": true,
+        "showNavigationArrows": "never",
+        "showPaginationDots" : "never",
+        "blockClass": "banner-duplo-top"
+      },
+      "children": [
+        "image#bannerDuploTop1", 
+        "image#bannerDuploTop2"
+      ]
+  },
+  "image#bannerDuploTop1": {
+    "props": {
+      "src": "assets/image/bannerTop1.png",
+      "link": {
+        "properties": {
+          "url": {
+            "$ref": "#/definitions/url",
+            "title": "admin/native-types.link.url"
+          }
+        }
+      }
+    }
+  },
+  "image#bannerDuploTop2": {
+    "props": {
+      "src": "assets/image/bannerTop2.png",
+      "link": {
+        "properties": {
+          "url": {
+            "$ref": "#/definitions/url",
+            "title": "admin/native-types.link.url"
+          }
+        }
+      }
+    }
+  },
+  "slider-layout#images-products-home": {
+    "title": "Banner duplo topo",
+      "props": {
+        "itemsPerPage": {
+          "desktop": 2,
+          "tablet": 2,
+          "phone": 1
+        },
+        "gap": 10,
+        "infinite": true,
+        "fullWidth": true,
+        "showNavigationArrows": "never",
+        "showPaginationDots" : "never",
+        "blockClass": "banner-duplo-top"
+      },
+      "children": [
+        "image#images-products-home1", 
+        "image#images-products-home2"
+      ]
+  },
+  "image#images-products-home1": {
+    "props": {
+      "src": "assets/image/images-products-home1.png",
+      "link": {
+        "properties": {
+          "url": {
+            "$ref": "#/definitions/url",
+            "title": "admin/native-types.link.url"
+          }
+        }
+      }
+    }
+  },
+  "image#images-products-home2": {
+    "props": {
+      "src": "assets/image/images-products-home2.png",
+      "link": {
+        "properties": {
+          "url": {
+            "$ref": "#/definitions/url",
+            "title": "admin/native-types.link.url"
+          }
+        }
+      }
     }
   }
 }

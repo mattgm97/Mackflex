@@ -327,7 +327,7 @@
   },
 
   "list-context.product-list#notfound": {
-    "blocks": ["product-summary.shelf"],
+    "blocks": ["product-summary.shelf#new-shelf"],
     "children": ["slider-layout#shelf"],
     "props": {
       "orderBy": "OrderByReleaseDateDESC",
@@ -342,7 +342,7 @@
     }
   },
   "gallery": {
-    "blocks": ["product-summary.shelf"],
+    "blocks": ["product-summary.shelf#new-shelf"],
     "props": {
       "itemsPerRow": {
         "desktop": 4,
