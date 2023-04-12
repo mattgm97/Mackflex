@@ -557,6 +557,10 @@
   padding: 0;
 }
 
+.sellingPrice {
+  padding-bottom: 5px;
+}
+
 .listPriceLabel {
   text-transform: uppercase;
   font-style: normal;
