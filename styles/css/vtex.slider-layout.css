@@ -50,6 +50,10 @@
   gap: 20px;
 }
 
+.sliderTrack--categoriaCarousel {
+  gap: 25px;
+}
+
 @media screen and (max-width: 768px) {
   .slide--bannerCarousel--firstVisible {
     margin-left: 0;
@@ -61,5 +65,9 @@
 
   .sliderTrack--banner-duplo-top {
     gap: 0;
+  }
+
+  .sliderTrack--categoriaCarousel {
+    gap: 10px;
   }
 }
