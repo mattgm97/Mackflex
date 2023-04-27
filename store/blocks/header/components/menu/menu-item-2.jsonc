@@ -1,0 +1,242 @@
+{
+  // DESKTOP
+  "menu-item#headerMenuDesktopItem2": {
+    "title": "Header Desktop Menu Item 2",
+    "props": {
+      "id": "headerMenuDesktopItem2",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "VINHOS",
+        "text": "VINHOS"
+      },
+      "onMountBehavior": "closed",
+      "blockClass": "headerMenuDesktopItem"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#headerMenuDesktopItem2"]
+  },
+  "vtex.menu@2.x:submenu#headerMenuDesktopItem2": {
+    "title": "Header Desktop Submenu 2",
+    "children": ["vtex.menu@2.x:menu#headerMenuDesktopItem_2"]
+  },
+  "vtex.menu@2.x:menu#headerMenuDesktopItem_2": {
+    "props": {
+      "blockClass": "headerSubMenuDesktop",
+      "items": [
+        {
+          "__editorItemTitle": "ITEM 1",
+          "id": "headerMenuDesktopItem2-1",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "VINHO TINTO",
+            "text": "VINHO TINTO"
+          },
+          "blockClass": "headerSubMenuDesktopItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 2",
+          "id": "headerMenuDesktopItem2-2",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "VINHO BRANCO",
+            "text": "VINHO BRANCO"
+          },
+          "blockClass": "headerSubMenuDesktopItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 3",
+          "id": "headerMenuDesktopItem2-3",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "VINHO ROSÉ",
+            "text": "VINHO ROSÉ"
+          },
+          "blockClass": "headerSubMenuDesktopItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 4",
+          "id": "headerMenuDesktopItem2-4",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "ESPUMANTE",
+            "text": "ESPUMANTE"
+          },
+          "blockClass": "headerSubMenuDesktopItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 5",
+          "id": "headerMenuDesktopItem2-5",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "FRIZANTE",
+            "text": "FRIZANTE"
+          },
+          "blockClass": "headerSubMenuDesktopItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 6",
+          "id": "headerMenuDesktopItem2-6",
+          "type": "custom",
+          "highlight": true,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "TODOS VINHOS",
+            "text": "TODOS VINHOS"
+          },
+          "blockClass": "headerSubMenuDesktopItem"
+        }
+      ]
+    }
+  },
+  // -------------------------------------------------------
+  // MOBILE
+  "drawer#headerMenuMobileItem2": {
+    "title": "Menu 2",
+    "children": ["vtex.menu@2.x:menu#headerMenuMobileItem2"],
+    "blocks": [
+      "drawer-header#headerMenuMobileItem2",
+      "drawer-trigger#headerMenuMobileItem2"
+    ],
+    "props": {
+      "blockClass": "mainMenuHeaderItem"
+    }
+  },
+  // DRAWER HEADER
+  "drawer-header#headerMenuMobileItem2": {
+    "title": "Submenu - Header Title",
+    "children": ["drawer-close-button", "rich-text#headerMenuMobileItem2"],
+    "props": {
+      "blockClass": "submenuHeader"
+    }
+  },
+  // DEPARTMENT NAME
+  "drawer-trigger#headerMenuMobileItem2": {
+    "children": ["rich-text#headerMenuMobileItem2"]
+  },
+  "rich-text#headerMenuMobileItem2": {
+    "title": "Submenu - Title",
+
+    "props": {
+      "text": "VINHOS",
+      "blockClass": "headerMenuMobileItem"
+    }
+  },
+  // SUBMENU
+  "vtex.menu@2.x:menu#headerMenuMobileItem2": {
+    "title": "Submenu",
+    "props": {
+      "blockClass": "headerSubmenuMobile",
+      "items": [
+        {
+          "__editorItemTitle": "ITEM 1",
+          "id": "headerMenuMobileItem2-1",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "VINHO TINTO",
+            "text": "VINHO TINTO"
+          },
+          "blockClass": "headerMenuMobileItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 2",
+          "id": "headerMenuMobileItem2-2",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "VINHO BRANCO",
+            "text": "VINHO BRANCO"
+          },
+          "blockClass": "headerMenuMobileItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 3",
+          "id": "headerMenuMobileItem2-3",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "VINHO ROSÉ",
+            "text": "VINHO ROSÉ"
+          },
+          "blockClass": "headerMenuMobileItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 4",
+          "id": "headerMenuMobileItem2-4",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "ESPUMANTE",
+            "text": "ESPUMANTE"
+          },
+          "blockClass": "headerMenuMobileItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 5",
+          "id": "headerMenuMobileItem2-5",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "FRIZANTE",
+            "text": "FRIZANTE"
+          },
+          "blockClass": "headerMenuMobileItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 6",
+          "id": "headerMenuMobileItem2-6",
+          "type": "custom",
+          "highlight": true,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "TODOS VINHOS",
+            "text": "TODOS VINHOS"
+          },
+          "blockClass": "headerMenuMobileItem"
+        }
+      ]
+    }
+  }
+}

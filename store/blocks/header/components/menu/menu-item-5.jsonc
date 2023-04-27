@@ -1,0 +1,299 @@
+{
+  // DESKTOP
+  "menu-item#headerMenuDesktopItem5": {
+    "title": "Header Desktop Menu Item 5",
+    "props": {
+      "id": "headerMenuDesktopItem5",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "CERVEJAS",
+        "text": "CERVEJAS"
+      },
+      "onMountBehavior": "closed",
+      "blockClass": "headerMenuDesktopItem"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#headerMenuDesktopItem5"]
+  },
+  //ITEM 5 - SUBMENU
+  "vtex.menu@2.x:submenu#headerMenuDesktopItem5": {
+    "title": "Header Desktop Submenu 5",
+    "children": ["vtex.menu@2.x:menu#headerMenuDesktopItem_5"]
+  },
+  "vtex.menu@2.x:menu#headerMenuDesktopItem_5": {
+    "props": {
+      "blockClass": "headerSubMenuDesktop",
+      "items": [
+        {
+          "__editorItemTitle": "ITEM 1",
+          "id": "headerMenuDesktopItem5-1",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "ALE",
+            "text": "ALE"
+          },
+          "blockClass": "headerSubMenuDesktopItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 2",
+          "id": "headerMenuDesktopItem5-2",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "LAGER",
+            "text": "LAGER"
+          },
+          "blockClass": "headerSubMenuDesktopItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 3",
+          "id": "headerMenuDesktopItem5-3",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "PILSEN",
+            "text": "PILSEN"
+          },
+          "blockClass": "headerSubMenuDesktopItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 4",
+          "id": "headerMenuDesktopItem5-4",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "WEISS",
+            "text": "WEISS"
+          },
+          "blockClass": "headerSubMenuDesktopItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 5",
+          "id": "headerMenuDesktopItem5-5",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "IPA",
+            "text": "IPA"
+          },
+          "blockClass": "headerSubMenuDesktopItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 6",
+          "id": "headerMenuDesktopItem5-6",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "SEM GLÚTEN",
+            "text": "SEM GLÚTEN"
+          },
+          "blockClass": "headerSubMenuDesktopItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 7",
+          "id": "headerMenuDesktopItem5-7",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "ZERO ALCOOL",
+            "text": "ZERO ALCOOL"
+          },
+          "blockClass": "headerSubMenuDesktopItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 8",
+          "id": "headerMenuDesktopItem5-8",
+          "type": "custom",
+          "highlight": true,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "TODAS CERVEJAS",
+            "text": "TODAS CERVEJAS"
+          },
+          "blockClass": "headerSubMenuDesktopItem"
+        }
+      ]
+    }
+  },
+  // -------------------------------------------------------
+  // MOBILE
+  "drawer#headerMenuMobileItem5": {
+    "title": "Menu 5",
+    "children": ["vtex.menu@2.x:menu#headerMenuMobileItem5"],
+    "blocks": [
+      "drawer-header#headerMenuMobileItem5",
+      "drawer-trigger#headerMenuMobileItem5"
+    ],
+    "props": {
+      "blockClass": "mainMenuHeaderItem"
+    }
+  },
+  // DRAWER HEADER
+  "drawer-header#headerMenuMobileItem5": {
+    "title": "Submenu - Header Title",
+    "children": ["drawer-close-button", "rich-text#headerMenuMobileItem5"],
+    "props": {
+      "blockClass": "submenuHeader"
+    }
+  },
+  // DEPARTMENT NAME
+  "drawer-trigger#headerMenuMobileItem5": {
+    "children": ["rich-text#headerMenuMobileItem5"]
+  },
+  "rich-text#headerMenuMobileItem5": {
+    "title": "Submenu - Title",
+
+    "props": {
+      "text": "CERVEJAS",
+      "blockClass": "headerMenuMobileItem"
+    }
+  },
+  // SUBMENU
+  "vtex.menu@2.x:menu#headerMenuMobileItem5": {
+    "title": "Submenu",
+    "props": {
+      "blockClass": "headerSubmenuMobile",
+      "items": [
+        {
+          "__editorItemTitle": "ITEM 1",
+          "id": "headerMenuDesktopItem5-1",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "ALE",
+            "text": "ALE"
+          },
+          "blockClass": "headerMenuMobileItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 2",
+          "id": "headerMenuDesktopItem5-2",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "LAGER",
+            "text": "LAGER"
+          },
+          "blockClass": "headerMenuMobileItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 3",
+          "id": "headerMenuDesktopItem5-3",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "PILSEN",
+            "text": "PILSEN"
+          },
+          "blockClass": "headerMenuMobileItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 4",
+          "id": "headerMenuDesktopItem5-4",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "WEISS",
+            "text": "WEISS"
+          },
+          "blockClass": "headerMenuMobileItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 5",
+          "id": "headerMenuDesktopItem5-5",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "IPA",
+            "text": "IPA"
+          },
+          "blockClass": "headerMenuMobileItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 6",
+          "id": "headerMenuDesktopItem5-6",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "SEM GLÚTEN",
+            "text": "SEM GLÚTEN"
+          },
+          "blockClass": "headerMenuMobileItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 7",
+          "id": "headerMenuDesktopItem5-7",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "ZERO ALCOOL",
+            "text": "ZERO ALCOOL"
+          },
+          "blockClass": "headerMenuMobileItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 8",
+          "id": "headerMenuDesktopItem5-8",
+          "type": "custom",
+          "highlight": true,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "TODAS CERVEJAS",
+            "text": "TODAS CERVEJAS"
+          },
+          "blockClass": "headerMenuMobileItem"
+        }
+      ]
+    }
+  }
+}

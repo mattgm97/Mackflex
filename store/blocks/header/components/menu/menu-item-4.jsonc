@@ -1,0 +1,215 @@
+{
+  // DESKTOP
+  "menu-item#headerMenuDesktopItem4": {
+    "title": "Header Desktop Menu Item 4",
+    "props": {
+      "id": "headerMenuDesktopItem4",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "ACESSÓRIOS",
+        "text": "ACESSÓRIOS"
+      },
+      "onMountBehavior": "closed",
+      "blockClass": "headerMenuDesktopItem"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#headerMenuDesktopItem4"]
+  },
+  //ITEM 4 - SUBMENU
+  "vtex.menu@2.x:submenu#headerMenuDesktopItem4": {
+    "title": "Header Desktop Submenu 4",
+    "children": ["vtex.menu@2.x:menu#headerMenuDesktopItem4"]
+  },
+  "vtex.menu@2.x:menu#headerMenuDesktopItem4": {
+    "props": {
+      "blockClass": "headerSubMenuDesktop",
+      "items": [
+        {
+          "__editorItemTitle": "ITEM 1",
+          "id": "headerMenuDesktopItem4-1",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "TAÇAS E COPOS",
+            "text": "TAÇAS E COPOS"
+          },
+          "blockClass": "headerSubMenuDesktopItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 2",
+          "id": "headerMenuDesktopItem4-2",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "ACESSÓRIOS PARA VINHO",
+            "text": "ACESSÓRIOS PARA VINHO"
+          },
+          "blockClass": "headerSubMenuDesktopItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 3",
+          "id": "headerMenuDesktopItem4-3",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "CERVEJEIRA E FRIGOBAR",
+            "text": "CERVEJEIRA E FRIGOBAR"
+          },
+          "blockClass": "headerSubMenuDesktopItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 4",
+          "id": "headerMenuDesktopItem4-4",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "ADEGA",
+            "text": "ADEGA"
+          },
+          "blockClass": "headerSubMenuDesktopItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 5",
+          "id": "headerMenuDesktopItem4-5",
+          "type": "custom",
+          "highlight": true,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "TODOS ACESSÓRIOS",
+            "text": "TODOS ACESSÓRIOS"
+          },
+          "blockClass": "headerSubMenuDesktopItem"
+        }
+      ]
+    }
+  },
+  // -------------------------------------------------------
+  // MOBILE
+  "drawer#headerMenuMobileItem4": {
+    "title": "Menu 4",
+    "children": ["vtex.menu@2.x:menu#headerMenuMobileItem4"],
+    "blocks": [
+      "drawer-header#headerMenuMobileItem4",
+      "drawer-trigger#headerMenuMobileItem4"
+    ],
+    "props": {
+      "blockClass": "mainMenuHeaderItem"
+    }
+  },
+  // DRAWER HEADER
+  "drawer-header#headerMenuMobileItem4": {
+    "title": "Submenu - Header Title",
+    "children": ["drawer-close-button", "rich-text#headerMenuMobileItem4"],
+    "props": {
+      "blockClass": "submenuHeader"
+    }
+  },
+  // DEPARTMENT NAME
+  "drawer-trigger#headerMenuMobileItem4": {
+    "children": ["rich-text#headerMenuMobileItem4"]
+  },
+  "rich-text#headerMenuMobileItem4": {
+    "title": "Submenu - Title",
+
+    "props": {
+      "text": "ACESSÓRIOS",
+      "blockClass": "headerMenuMobileItem"
+    }
+  },
+  // SUBMENU
+  "vtex.menu@2.x:menu#headerMenuMobileItem4": {
+    "title": "Submenu",
+    "props": {
+      "blockClass": "headerSubmenuMobile",
+      "items": [
+        {
+          "__editorItemTitle": "ITEM 1",
+          "id": "headerMenuDesktopItem4-1",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "TAÇAS E COPOS",
+            "text": "TAÇAS E COPOS"
+          },
+          "blockClass": "headerMenuMobileItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 2",
+          "id": "headerMenuDesktopItem4-2",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "ACESSÓRIOS PARA VINHO",
+            "text": "ACESSÓRIOS PARA VINHO"
+          },
+          "blockClass": "headerMenuMobileItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 3",
+          "id": "headerMenuDesktopItem4-3",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "CERVEJEIRA E FRIGOBAR",
+            "text": "CERVEJEIRA E FRIGOBAR"
+          },
+          "blockClass": "headerMenuMobileItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 4",
+          "id": "headerMenuDesktopItem4-4",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "ADEGA",
+            "text": "ADEGA"
+          },
+          "blockClass": "headerMenuMobileItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 5",
+          "id": "headerMenuDesktopItem4-5",
+          "type": "custom",
+          "highlight": true,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "TODOS ACESSÓRIOS",
+            "text": "TODOS ACESSÓRIOS"
+          },
+          "blockClass": "headerMenuMobileItem"
+        }
+      ]
+    }
+  }
+}

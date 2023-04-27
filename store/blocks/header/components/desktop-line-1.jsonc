@@ -1,0 +1,88 @@
+{
+  "flex-layout.row#desktop-line-1": {
+    "title": "Header Desktop Linha 1",
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": ["headerLine1", "container"]
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "search-bar#header",
+      "flex-layout.row#desktop-line-1-actions"
+    ]
+  },
+  "flex-layout.row#desktop-line-1-actions": {
+    "title": "Header Desktop Linha - Opções",
+    "children": [      
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "desktop-line-1-actions"
+    }
+  },
+  "login": {
+    "props": {
+      "accountOptionLinks": [
+        {
+          "label": "Minha conta",
+          "path": "/account",
+          "cssClass": "title"
+        },
+        {
+          "label": "Meus pedidos",
+          "path": "/account#/orders",
+          "cssClass": ""
+        },
+        {
+          "label": "Favoritos",
+          "path": "/account#/wishlist",
+          "cssClass": ""
+        }
+      ]
+    }
+  },
+  "flex-layout.col#logo-desktop": {
+    "title": "Header Desktop Coluna - Logo",
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo"]
+  },
+  "logo": {
+    "title": "Logo",
+    "props": {
+      "title": "Mack Flex",
+      "href": "/",
+      "url": "assets/icons/header/NewLogoMackFlex.svg",
+      "width": "137",
+      "blockClass": ["mack-logo"]
+    }
+  },
+  "search-bar#header": {
+    "title": "Header Desktop Search",
+    "props": {
+      "blockClass": "headerSearch",
+      "emptyPlaceholder": "O que você procura?",
+      "displayMode": "search-and-clear-buttons",
+      "autoFocus": false,
+      "openAutocompleteOnFocus": true,
+      "containerMode": "container"
+    }
+    // "blocks": ["autocomplete-result-list.v2"]
+  }
+  // "autocomplete-result-list.v2": {
+  //   "props": {
+  //     // "HorizontalProductSummary": "product-summary.shelf#minisearch",
+  //     "productLayout": "HORIZONTAL",
+  //     "maxTopSearches": 10,
+  //     "simulationBehavior": "default"
+  //   }
+  //   // "blocks": ["product-summary.shelf#minisearch"]
+  // }
+}

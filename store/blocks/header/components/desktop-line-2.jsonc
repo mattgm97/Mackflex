@@ -1,0 +1,27 @@
+{
+  "flex-layout.row#desktop-line-2": {
+    "title": "Header Desktop Linha 2",
+    "children": ["vtex.menu@2.x:menu#headerMenuDesktop"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["headerLine2", "container"]
+    }
+  },
+  //MENU PRINCIPAL
+  "vtex.menu@2.x:menu#headerMenuDesktop": {
+    "title": "Header - Menu - Desktop",
+    "children": [
+      "menu-item#headerMenuDesktopItem1",
+      "menu-item#headerMenuDesktopItem2",
+      "menu-item#headerMenuDesktopItem3",
+      "menu-item#headerMenuDesktopItem4",
+      "menu-item#headerMenuDesktopItem5",
+      "menu-item#headerMenuDesktopItem6",
+      "menu-item#headerMenuDesktopItem7",
+      "menu-item#headerMenuDesktopItem8"
+    ],
+    "props": {
+      "blockClass": "headerMenuDesktop"
+    }
+  }
+}

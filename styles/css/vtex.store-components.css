@@ -3,9 +3,8 @@
   width: 61px;
   border: none;
   position: relative;
+  padding: 0 0 0.5rem 0;
 }
-
-
 
 .infoCardContainer--sellerConditionCard {
   width: auto;
@@ -37,33 +36,9 @@
   width: 100%;
 }
 
-:global(.vtex-store-components-3-x-searchBarContainer)
-  :global(.vtex-input-prefix__group) {
-  position: relative;
-  border-width: 1px;
-  width: 60px;
-  height: 60px;
-  transition: 100ms ease-out;
-  border-radius: 100px;
-}
-
-/* :global(.vtex-store-components-3-x-searchBarContainer)
-  :global(.vtex-input-prefix__group):hover {
-  position: relative;
-  right: 19vw;
-} */
-
 .sizeDesktop {
   min-width: 165px;
   display: block;
-}
-
-.searchBarContainer:hover :global(.vtex-input-prefix__group) {
-  border-width: 1px;
-  transition: 120ms ease-in;
-  width: 335px;
-  border-color: transparent;
-  border-radius: 100px;
 }
 
 .searchBarIcon--external-search {
@@ -223,26 +198,22 @@
   border-radius: 0;
 }
 
-
-:global(.vtex-mega-menu-2-x-menuItemVertical--mega-menu), :global(.vtex-mega-menu-2-x-submenuItemVertical--mega-menu){
+:global(.vtex-mega-menu-2-x-menuItemVertical--mega-menu),
+:global(.vtex-mega-menu-2-x-submenuItemVertical--mega-menu) {
   border-color: transparent !important;
 }
 
-:global(.vtex-mega-menu-2-x-submenuContainerVertical--mega-menu){
-  background-color: #F15B2A !important;
+:global(.vtex-mega-menu-2-x-submenuContainerVertical--mega-menu) {
+  background-color: #f15b2a !important;
 }
-
-
 
 :global(.vtex-mega-menu-2-x-styledLinkText--mega-menu) {
   font-weight: 400;
 }
 
-
 .shippingContainer {
   margin-top: 2.5em;
 }
-
 
 /* :global(.vtex-product-summary-2-x-element--default-prod-shelf) :global(.vtex-button){
   visibility:hidden;
@@ -258,62 +229,65 @@
   opacity:1;
 } */
 
-:global(.vtex-flex-layout-0-x-flexRow--minicart-footer) :global(.vtex-store-components-3-x-container){
+:global(.vtex-flex-layout-0-x-flexRow--minicart-footer)
+  :global(.vtex-store-components-3-x-container) {
   padding-left: 0.25rem !important;
   padding-right: 0.25rem !important;
 }
 
-:global(.vtex-store-components-3-x-productDescriptionText) :global(.vtex-store-components-3-x-container){
+:global(.vtex-store-components-3-x-productDescriptionText)
+  :global(.vtex-store-components-3-x-container) {
   padding-left: 0.1rem !important;
   padding-right: 0.25rem !important;
 }
 
-:global(.vtex-store-components-3-x-productDescriptionText) :global(.vtex-store-components-3-x-content){
-  font-family: 'Droid Sans';
+:global(.vtex-store-components-3-x-productDescriptionText)
+  :global(.vtex-store-components-3-x-content) {
+  font-family: "Droid Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  color: #939598;  
+  color: #939598;
 }
 
-
-:global(.vtex-store-components-3-x-productDescriptionTitle){
+:global(.vtex-store-components-3-x-productDescriptionTitle) {
   font-size: 0px;
   margin-top: 25px;
 }
-:global(.vtex-store-components-3-x-productDescriptionTitle)::before{
-  content:"PRINCIPAIS CARACTERÍSTICAS";
+:global(.vtex-store-components-3-x-productDescriptionTitle)::before {
+  content: "PRINCIPAIS CARACTERÍSTICAS";
   font-size: 1.25rem;
-  font-family: 'Droid Sans';
+  font-family: "Droid Sans";
   text-transform: uppercase;
   font-style: normal;
   font-weight: 700;
   line-height: 19px;
-  color: #4F4F4F;
+  color: #4f4f4f;
 }
 
-
-:global(.vtex-minicart-2-x-cartIcon){
+:global(.vtex-minicart-2-x-cartIcon) {
   display: none;
 }
 
-:global(.vtex-login-2-x-container) :global(.vtex-button) :global(.vtex-button__label)::before{
-  content: url('assets/icons/user.svg');
+:global(.vtex-login-2-x-container)
+  :global(.vtex-button)
+  :global(.vtex-button__label)::before {
+  content: url("assets/icons/iconMackFlexLogin.svg");
 }
 
-.imageElement--security-logo-2{
+.imageElement--security-logo-2 {
   height: fit-content;
 }
 
-.discountInsideContainer{
-  background-color: #F15B2A;
+.discountInsideContainer {
+  background-color: #f15b2a;
   border-radius: 5px;
   padding: 7px 10px;
   top: 96%;
 }
 
-:global(.vtex-login-2-x-container) :global(.vtex-button){
+:global(.vtex-login-2-x-container) :global(.vtex-button) {
   background-color: transparent !important;
 }
 
@@ -327,69 +301,57 @@
   .shippingContainer {
     width: 52%;
   }
-  :global(.vtex-store-components-3-x-container){
+  :global(.vtex-store-components-3-x-container) {
     padding-left: 8rem !important;
-      padding-right: 8rem !important;
+    padding-right: 8rem !important;
   }
 
   /*PARA HEADER TRANSPARENTE FUNCIONAR*/
-  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--mainCarousel){
+  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--mainCarousel) {
     margin-top: -84px;
   }
-
-  .searchBarContainer:hover :global(.vtex-input-prefix__group),   .searchBarContainer:hover :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input) {
-
-    border-color: transparent !important;
-  }
-
-
-
- 
 }
 
 @media (min-width: 1200px) and (max-width: 1700px) {
-:global(.vtex-menu-2-x-styledLinkContainer--allCategoryBlock){
-  margin-left: 0.5rem;
+  :global(.vtex-menu-2-x-styledLinkContainer--allCategoryBlock) {
+    margin-left: 0.5rem;
     margin-right: 0.5rem;
-}
-:global(.vtex-menu-2-x-styledLinkContent--allCategoryBlock), :global(.vtex-menu-2-x-styledLinkContent--mainMenu){
-  font-size: 13px;
-}
- 
+  }
+  :global(.vtex-menu-2-x-styledLinkContent--allCategoryBlock),
+  :global(.vtex-menu-2-x-styledLinkContent--mainMenu) {
+    font-size: 13px;
+  }
 }
 
 @media (min-width: 1400px) {
-
-  :global(.vtex-menu-2-x-styledLinkContent--allCategoryBlock), :global(.vtex-menu-2-x-styledLinkContent--mainMenu){
+  :global(.vtex-menu-2-x-styledLinkContent--allCategoryBlock),
+  :global(.vtex-menu-2-x-styledLinkContent--mainMenu) {
     font-size: 15px;
   }
-   
-  }
+}
 
-
-
-:global(.vtex-search-result-3-x-container--layout) :global(.vtex-store-components-3-x-container){
+:global(.vtex-search-result-3-x-container--layout)
+  :global(.vtex-store-components-3-x-container) {
   padding: inherit !important;
-
 }
 
 @media (max-width: 760px) {
-
   :global(.vtex-mega-menu-2-x-accordionIconContainer--mega-menu) {
-    color: #FFF !important;
+    color: #fff !important;
   }
-  
 
-  :global(.vtex-mega-menu-2-x-styledLinkText--mega-menu), :global(.vtex-mega-menu-2-x-submenuContainerTitle--mega-menu), :global(.vtex-mega-menu-2-x-collapsibleHeaderText--mega-menu), :global(.vtex-mega-menu-2-x-departmentsTitle--mega-menu) {
+  :global(.vtex-mega-menu-2-x-styledLinkText--mega-menu),
+  :global(.vtex-mega-menu-2-x-submenuContainerTitle--mega-menu),
+  :global(.vtex-mega-menu-2-x-collapsibleHeaderText--mega-menu),
+  :global(.vtex-mega-menu-2-x-departmentsTitle--mega-menu) {
     color: white;
-  } 
-
-  :global(.vtex-search-2-x-biggy-autocomplete-wrapper){
-    width: 80vw;
-    margin-left: -2em;
   }
 
-  :global(.vtex-search-2-x-tileList){
+  :global(.vtex-search-2-x-biggy-autocomplete-wrapper) {
+    width: 80vw;
+  }
+
+  :global(.vtex-search-2-x-tileList) {
     display: none;
   }
   .infoCardContainer--sellerConditionCard {
@@ -422,17 +384,14 @@
     display: none;
   }
 
-  :global(.vtex-login-2-x-container) {
-    display: block;
-    float: initial;
-  }
-
   :global(.vtex-login-2-x-label) {
     color: white;
     display: block;
   }
 
-  :global(.vtex-flex-layout-0-x-flexRowContent--mob-footer-contact) :global(.vtex-flex-layout-0-x-stretchChildrenWidth) :global(.vtex-menu-2-x-menuContainerNav--menu-footer){
+  :global(.vtex-flex-layout-0-x-flexRowContent--mob-footer-contact)
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth)
+    :global(.vtex-menu-2-x-menuContainerNav--menu-footer) {
     display: flex;
     justify-content: center;
   }
@@ -452,43 +411,27 @@
   padding-right: 15px;
 }
 
-
-
-@media (max-width: 1400px) {
-  .searchBarContainer:hover :global(.vtex-input-prefix__group) {
-    border-width: 1px;
-    transition: 120ms ease-in;
-    width: 322px;
-    border-radius: 100px;
-  }
-}
-
-
 @media (max-width: 760px) {
   .searchBarContainer {
     z-index: 100;
     width: 322px;
     border: none;
     position: relative;
-    margin-left: 12px;
   }
 
   :global(.vtex-store-components-3-x-searchBarContainer)
-  :global(.vtex-input-prefix__group) {
+    :global(.vtex-input-prefix__group) {
+    width: 100%;
+    height: 33px;
+    border-radius: 100px;
+    border-width: 1px;
+  }
 
-  width: 322px;
-  height: 48px;
-
+  :global(.vtex-store-components-3-x-logoImage) {
+    width: 110px !important;
+    height: auto;
+  }
 }
-
-:global(.vtex-store-components-3-x-logoImage){
-  width: 110px !important;
-  height: auto;
-}
-}
-
-
-
 
 /*.container {
   max-width: 95rem;
@@ -503,8 +446,8 @@
   padding: 0;
 }
 
-.skuSelectorOptionsList, 
-.skuSelectorItem{
+.skuSelectorOptionsList,
+.skuSelectorItem {
   margin-left: 0;
 }
 
@@ -535,14 +478,15 @@
   text-decoration: none !important;
 }
 
-.infoCardHeadline--circle-menu-option, .infoCardCallActionText--category-home {
-  font-family: 'Droid Sans';
+.infoCardHeadline--circle-menu-option,
+.infoCardCallActionText--category-home {
+  font-family: "Droid Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  color: #515151;  
+  color: #515151;
   text-decoration: none !important;
 }
 
@@ -552,7 +496,7 @@
 }
 
 .sellingPrice,
-.listPrice{
+.listPrice {
   text-align: left;
   padding: 0;
 }
@@ -567,13 +511,13 @@
   font-weight: 400;
   font-size: 19px;
   line-height: 22px;
-  font-family: 'Droid Sans';
+  font-family: "Droid Sans";
   color: #515151;
   padding: 0;
 }
 
-.installmentsPrice{
-  font-family: 'Droid Sans';
+.installmentsPrice {
+  font-family: "Droid Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -582,10 +526,22 @@
 }
 
 @media (max-width: 760px) {
-  .installmentsPrice{
+  .installmentsPrice {
     font-weight: 400;
     font-size: 10px;
     line-height: 12px;
     color: #515151;
   }
+}
+
+:global(.vtex-login-2-x-container) {
+  margin: 0;
+}
+
+:global(.vtex-login-2-x-container) :global(.vtex-button__label) {
+  padding: 0;
+}
+
+:global(.vtex-login-2-x-container) :global(.vtex-login-2-x-label) {
+  display: none;
 }

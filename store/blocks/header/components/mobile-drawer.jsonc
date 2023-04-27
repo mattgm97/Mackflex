@@ -1,0 +1,67 @@
+{
+  "drawer#mobileMenu": {
+    "title": "Menu Lateral",
+    "children": [
+      "flex-layout.row#mainMenuHeaderMobile",
+      "flex-layout.row#footerMenuHeaderMobile"
+    ],
+    "blocks": ["drawer-header#mobileMenu"],
+    "props": {
+      "blockClass": "mainMenuHeaderMobile"
+    }
+  },
+  "drawer-header#mobileMenu": {
+    "children": ["drawer-close-button", "login"],
+    "props": {
+      "blockClass": "mainMenuHeaderMobile"
+    }
+  },
+  "flex-layout.row#mainMenuHeaderMobile": {
+    "children": ["flex-layout.col#mainMenuHeaderMobile"],
+    "props": {
+      "blockClass": "mainMenuHeaderMobile"
+    }
+  },
+  "flex-layout.col#mainMenuHeaderMobile": {
+    "title": "Menu",
+    "children": [
+      "rich-text#menuItem1",
+      "drawer#headerMenuMobileItem2",
+      "drawer#headerMenuMobileItem3",
+      "drawer#headerMenuMobileItem4",
+      "drawer#headerMenuMobileItem5",
+      "drawer#headerMenuMobileItem6",
+      "drawer#headerMenuMobileItem7",
+      "rich-text#menuItem8"
+    ],
+    "props": {
+      "blockClass": "mainMenuHeaderMobile"
+    }
+  },
+
+  "flex-layout.row#footerMenuHeaderMobile": {
+    "children": ["flex-layout.col#footerMenuHeaderMobile"],
+    "props": {
+      "blockClass": "footerMenuHeaderMobile"
+    }
+  },
+  "flex-layout.col#footerMenuHeaderMobile": {
+    "title": "Footer Menu",
+    "children": ["rich-text#footerMenuItem1", "rich-text#footerMenuItem2"],
+    "props": {}
+  },
+  "rich-text#footerMenuItem1": {
+    "title": "Menu 9",
+    "props": {
+      "text": "HARMONIZAÇÕES",
+      "blockClass": "headerMenuMobileItem"
+    }
+  },
+  "rich-text#footerMenuItem2": {
+    "title": "Menu 10",
+    "props": {
+      "text": "CENTRAL DE AJUDA",
+      "blockClass": "headerMenuMobileItem"
+    }
+  }
+}

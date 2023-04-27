@@ -3,8 +3,6 @@
   /* display: none; */
 }
 
-
-
 .minicartQuantityBadgeDefault {
   top: 0.1em;
   right: -0.3rem;
@@ -54,10 +52,8 @@
 }
 
 .minicartIconContainer::before {
-  content: url('assets/icons/cart.svg');
-
+  content: url("assets/icons/iconMackFlexCart.svg");
 }
-
 
 @media screen and (max-width: 768px) {
   .openIconContainer {

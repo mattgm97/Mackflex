@@ -1,0 +1,242 @@
+{
+  // DESKTOP
+  "menu-item#headerMenuDesktopItem3": {
+    "title": "Header Desktop Menu Item 3",
+    "props": {
+      "id": "headerMenuDesktopItem3",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "KITS",
+        "text": "KITS"
+      },
+      "onMountBehavior": "closed",
+      "blockClass": "headerMenuDesktopItem"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#headerMenuDesktopItem3"]
+  },
+  "vtex.menu@2.x:submenu#headerMenuDesktopItem3": {
+    "title": "Header Desktop Submenu 3",
+    "children": ["vtex.menu@2.x:menu#headerMenuDesktopItem_3"]
+  },
+  "vtex.menu@2.x:menu#headerMenuDesktopItem_3": {
+    "props": {
+      "blockClass": "headerSubMenuDesktop",
+      "items": [
+        {
+          "__editorItemTitle": "ITEM 1",
+          "id": "headerMenuDesktopItem3-1",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "KITS DE VINHOS",
+            "text": "KITS DE VINHOS"
+          },
+          "blockClass": "headerSubMenuDesktopItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 2",
+          "id": "headerMenuDesktopItem3-2",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "KITS DE ACESSÓRIOS",
+            "text": "KITS DE ACESSÓRIOS"
+          },
+          "blockClass": "headerSubMenuDesktopItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 3",
+          "id": "headerMenuDesktopItem3-3",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "KITS DE CERVEJA",
+            "text": "KITS DE CERVEJA"
+          },
+          "blockClass": "headerSubMenuDesktopItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 4",
+          "id": "headerMenuDesktopItem3-4",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "KITS GOURMET",
+            "text": "KITS GOURMET"
+          },
+          "blockClass": "headerSubMenuDesktopItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 5",
+          "id": "headerMenuDesktopItem3-5",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "KITS DE DESTILADOS",
+            "text": "KITS DE DESTILADOS"
+          },
+          "blockClass": "headerSubMenuDesktopItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 6",
+          "id": "headerMenuDesktopItem3-6",
+          "type": "custom",
+          "highlight": true,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "TODOS KITS",
+            "text": "TODOS KITS"
+          },
+          "blockClass": "headerSubMenuDesktopItem"
+        }
+      ]
+    }
+  },
+  // -------------------------------------------------------
+  // MOBILE
+  "drawer#headerMenuMobileItem3": {
+    "title": "Menu 3",
+    "children": ["vtex.menu@2.x:menu#headerMenuMobileItem3"],
+    "blocks": [
+      "drawer-header#headerMenuMobileItem3",
+      "drawer-trigger#headerMenuMobileItem3"
+    ],
+    "props": {
+      "blockClass": "mainMenuHeaderItem"
+    }
+  },
+  // DRAWER HEADER
+  "drawer-header#headerMenuMobileItem3": {
+    "children": ["drawer-close-button", "rich-text#headerMenuMobileItem3"],
+    "props": {
+      "blockClass": "submenuHeader"
+    }
+  },
+  // DEPARTMENT NAME
+  "drawer-trigger#headerMenuMobileItem3": {
+    "title": "Submenu - Header Title",
+    "children": ["rich-text#headerMenuMobileItem3"]
+  },
+  "rich-text#headerMenuMobileItem3": {
+    "title": "Submenu - Title",
+
+    "props": {
+      "text": "KITS",
+      "blockClass": "headerMenuMobileItem"
+    }
+  },
+  // SUBMENU
+  "vtex.menu@2.x:menu#headerMenuMobileItem3": {
+    "title": "Submenu",
+    "props": {
+      "blockClass": "headerSubmenuMobile",
+      "items": [
+        {
+          "__editorItemTitle": "ITEM 1",
+          "id": "headerMenuMobileItem3-1",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "KITS DE VINHOS",
+            "text": "KITS DE VINHOS"
+          },
+          "blockClass": "headerMenuMobileItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 2",
+          "id": "headerMenuMobileItem3-2",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "KITS DE ACESSÓRIOS",
+            "text": "KITS DE ACESSÓRIOS"
+          },
+          "blockClass": "headerMenuMobileItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 3",
+          "id": "headerMenuMobileItem3-3",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "KITS DE CERVEJA",
+            "text": "KITS DE CERVEJA"
+          },
+          "blockClass": "headerMenuMobileItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 4",
+          "id": "headerMenuMobileItem3-4",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "KITS GOURMET",
+            "text": "KITS GOURMET"
+          },
+          "blockClass": "headerMenuMobileItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 5",
+          "id": "headerMenuMobileItem3-5",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "KITS DE DESTILADOS",
+            "text": "KITS DE DESTILADOS"
+          },
+          "blockClass": "headerMenuMobileItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 6",
+          "id": "headerMenuMobileItem3-6",
+          "type": "custom",
+          "highlight": true,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "TODOS KITS",
+            "text": "TODOS KITS"
+          },
+          "blockClass": "headerMenuMobileItem"
+        }
+      ]
+    }
+  }
+}

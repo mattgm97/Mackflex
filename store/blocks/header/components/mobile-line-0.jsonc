@@ -1,0 +1,24 @@
+{
+  "flex-layout.row#mobile-line-0": {
+    "title": "Top Bar Mobile",
+    "children": ["flex-layout.col#mobile-line-0-content"],
+    "props": {
+      "blockClass": ["mobileHeaderLine0"],
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#mobile-line-0-content": {
+    "children": ["rich-text#mobile-line-0-content-text"]
+  },
+  "rich-text#mobile-line-0-content-text": {
+    "title": "Top Bar mobile Dúvidas",
+    "props": {
+      "blockClass": ["mobileHeaderLine0Text"],
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "#FFF",
+      "text": "**DÚVIDAS?** [CLIQUE AQUI!](#)"
+    }
+  }
+}

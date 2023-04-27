@@ -1,0 +1,11 @@
+// {
+//   "flex-layout.row#mobile-line-3": {
+//     "title": "Geolocation",
+//     "props": {
+//       "fullWidth": true,
+//       "blockClass": "geolocation-mobile"
+//     },
+//     "children": ["geolocation"]
+//   }
+// }
+{}
