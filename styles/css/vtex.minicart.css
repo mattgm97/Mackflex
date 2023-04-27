@@ -64,3 +64,16 @@
     padding: 0px;
   }
 }
+
+.drawer--mackFlexCart {
+  width: 100% !important;
+}
+
+.minicartTitle {
+  font-size: 0;
+}
+
+.minicartTitle::before {
+  content: "MEU CARRINHO";
+  font-size: 18px;
+}

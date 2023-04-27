@@ -10,8 +10,26 @@
   padding: 0px;
 }
 
-.drawer--menu-mobile {
+.drawer--mainMenuHeaderMobile {
   background-color: #f15b2a !important;
+}
+
+.drawerHeader--mainMenuHeaderMobile {
+  margin-top: 1rem;
+}
+
+.drawerHeader--mainMenuHeaderMobile .closeIconButton {
+  position: absolute;
+  right: 0;
+  top: 22px;
+}
+
+.goBackContainer .caretIcon {
+  filter: brightness(4);
+}
+
+.drawerHeader--mainMenuHeaderMobile .closeIconButton .closeIcon {
+  filter: brightness(4);
 }
 
 .closeIconContainer--menu-mobile {
@@ -42,4 +60,16 @@
 
 .openIconContainer--mainMenuHeaderMobile::before {
   content: url("assets/icons/header/iconMenuHambuguer.svg");
+}
+
+:global(.vtex-mega-menu-2-x-goBackContainer) {
+  position: absolute;
+  right: 11px;
+  top: 7px;
+  color: #fff;
+}
+
+:global(.vtex-mega-menu-2-x-caretIcon),
+:global(.vtex-mega-menu-2-x-goBackButtonText) {
+  color: #fff;
 }
