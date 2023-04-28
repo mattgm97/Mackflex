@@ -1,3 +1,7 @@
+.drawer {
+  width: 100% !important;
+}
+
 .cartIcon {
   color: #fff;
   /* display: none; */
@@ -42,9 +46,8 @@
 
 .closeIconButton {
   position: absolute;
-  left: 83%;
-  padding-bottom: 0;
-  padding-top: 1.4rem;
+  left: 83%;  
+  padding-top: 1rem;
 }
 
 .minicartCheckoutButton :global(.vtex-button) {
