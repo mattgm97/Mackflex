@@ -238,3 +238,35 @@
   padding-top: 0.25em;
   padding-bottom: 0.32em;
 }
+
+.wrapper--mackFlexTextTopBar .paragraph {
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  color: #fff;
+  font-size: 11px;
+}
+
+.wrapper--mackFlexTextTopBar .paragraph .image {
+  margin-right: 0.5rem;
+}
+
+.wrapper--mackFlexTextTopBar .paragraph .italic {
+  margin-right: 0.5rem;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.wrapper--mackFlexTextTopBar .paragraph .strong:last-child {
+  margin-left: 0.5rem;
+}
+
+.container--mackFlexTextTopBar {
+  display: flex;
+  justify-content: center;
+}
+
+.container--mackFlexTextTopBarAcessibilidade {
+  justify-content: start;
+}

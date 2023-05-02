@@ -312,3 +312,31 @@
   font-weight: 700;
   font-size: 18px;
 }
+
+/* TOP BAR DESKTOP */
+.flexRow--mackFlexTopBarDesk {
+  background-color: #000;
+}
+
+.flexRow--mackFlexTopBarDesk :global(.vtex-store-components-3-x-container) {
+  max-width: 100rem;
+  padding: 0 !important;
+  margin: auto;
+}
+
+.flexRowContent--mackFlexTopBarDesk {
+  justify-content: space-evenly;
+}
+
+.flexCol--mackFlexSocial {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.flexColChild--mackFlexSocial {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 0.5rem;
+}

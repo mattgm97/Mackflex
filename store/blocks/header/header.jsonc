@@ -15,19 +15,76 @@
       "blockClass": "sticky-header"
     },
     "children": [
-      "flex-layout.row#desktop-line-telemarketing",
+      "flex-layout.row#desktop-line-top-bar",
       "flex-layout.row#desktop-line-1",
       "flex-layout.row#desktop-line-2"
     ]
   },
-  "flex-layout.row#desktop-line-telemarketing": {
+  "flex-layout.row#desktop-line-top-bar": {
+    "title": "Top bar Desktop",
+    "children": [
+      "flex-layout.col#desktop-line-top-acessibilidade",
+      "flex-layout.col#desktop-line-top-tel",
+      "flex-layout.col#desktop-line-top-social-media"
+    ],
     "props": {
-      "fullWidth": true,
-      "blockClass": "telemarketing"
-    },
-    "children": ["telemarketing"]
+      "blockClass": "mackFlexTopBarDesk"
+    }
+  },
+  "flex-layout.col#desktop-line-top-acessibilidade": {
+    "children": ["rich-text#acessibilidade"]
+  },
+  "rich-text#acessibilidade": {
+    "title": "Top Bar Acessibilidade",
+    "props": {
+      "text": "![Acessibilidade](assets/icons/header/iconAcessibilidadeTopbar.svg) **ACESSIBILIDADE**",
+      "blockClass": ["mackFlexTextTopBar", "mackFlexTextTopBarAcessibilidade"]
+    }
+  },
+  "flex-layout.col#desktop-line-top-tel": {
+    "children": ["rich-text#telefone"]
+  },
+  "rich-text#telefone": {
+    "title": "Top Bar telefone",
+    "props": {
+      "text": "![Telefone](assets/icons/header/iconTelTopbar.svg) _COMPRE_ PELO TELEFONE  **(99) 9999-9999**",
+      "blockClass": "mackFlexTextTopBar"
+    }
+  },
+  "flex-layout.col#desktop-line-top-social-media": {
+    "children": [
+      "image#faceTopBar",
+      "image#instaTopBar",
+      "image#twitterTopBar"
+    ],
+    "title": "Top Bar Social Media",
+    "props": {
+      "blockClass": ["mackFlexSocial"]
+    }
+  },
+  "image#faceTopBar": {
+    "props": {
+      "src": "assets/icons/header/iconFacebookTopbar.svg",
+      "width": 7,
+      "height": 14
+    }
+  },
+  "image#instaTopBar": {
+    "props": {
+      "src": "assets/icons/header/iconInstagramTop.svg",
+      "width": 14,
+      "height": 14
+    }
+  },
+  "image#twitterTopBar": {
+    "props": {
+      "src": "assets/icons/header/iconTwitterTop.svg",
+      "width": 18,
+      "height": 14
+    }
   },
 
+  // MOBILE
   "header-layout.mobile": {
     "children": ["sticky-layout#mobile"]
   },
@@ -40,7 +97,6 @@
       "flex-layout.row#mobile-line-0",
       "flex-layout.row#mobile-line-1",
       "flex-layout.row#mobile-line-2"
-      // "flex-layout.row#mobile-line-3"
     ]
   }
 }
