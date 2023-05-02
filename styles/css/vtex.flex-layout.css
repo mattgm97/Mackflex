@@ -284,6 +284,10 @@
   background-color: #fff;
 }
 
+.flexRow--mackFlexQuantity {
+  margin-top: 1rem;
+}
+
 .flexRow--mackFlexQuantity :global(.vtex-flex-layout-0-x-flexColChild) {
   display: flex;
   align-items: center;
@@ -292,4 +296,19 @@
 .flexRowContent--mackFlexQuantity
   :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
   width: 35% !important;
+}
+
+.flexRowContent--mackflex-cart-name {
+  justify-content: start;
+}
+
+.flexCol--minicart-footer-col :global(.vtex-checkout-summary-0-x-summaryTitle) {
+  display: none;
+}
+
+.flexCol--minicart-footer-col
+  :global(.vtex-checkout-summary-0-x-summaryItemPrice) {
+  color: #f15b2a;
+  font-weight: 700;
+  font-size: 18px;
 }

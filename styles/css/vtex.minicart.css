@@ -24,7 +24,6 @@
 
 .minicartCheckoutButton {
   position: relative;
-  top: -10px;
 }
 
 .openIconContainer {
@@ -46,7 +45,7 @@
 
 .closeIconButton {
   position: absolute;
-  left: 83%;  
+  left: 83%;
   padding-top: 1rem;
 }
 

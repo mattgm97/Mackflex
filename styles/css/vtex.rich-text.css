@@ -210,3 +210,31 @@
   text-decoration: none;
   font-weight: 400;
 }
+
+.container--mackFlexCtaMiniCart {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper--mackFlexCtaMiniCart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #939598;
+  border-radius: 40px;
+  width: 95%;
+  text-align: center;
+  height: 40px;
+}
+
+.link--mackFlexCtaMiniCart {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.paragraph--mackFlexCtaMiniCart {
+  margin: 0;
+  padding-top: 0.25em;
+  padding-bottom: 0.32em;
+}

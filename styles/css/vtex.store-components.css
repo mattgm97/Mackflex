@@ -340,13 +340,6 @@
     color: #fff !important;
   }
 
-  :global(.vtex-mega-menu-2-x-styledLinkText--mega-menu),
-  :global(.vtex-mega-menu-2-x-submenuContainerTitle--mega-menu),
-  :global(.vtex-mega-menu-2-x-collapsibleHeaderText--mega-menu),
-  :global(.vtex-mega-menu-2-x-departmentsTitle--mega-menu) {
-    color: white;
-  }
-
   :global(.vtex-search-2-x-biggy-autocomplete-wrapper) {
     width: 80vw;
   }
@@ -544,4 +537,11 @@
 
 :global(.vtex-login-2-x-container) :global(.vtex-login-2-x-label) {
   display: none;
+}
+
+:global(.vtex-mega-menu-2-x-styledLinkText--mega-menu),
+:global(.vtex-mega-menu-2-x-submenuContainerTitle--mega-menu),
+:global(.vtex-mega-menu-2-x-collapsibleHeaderText--mega-menu),
+:global(.vtex-mega-menu-2-x-departmentsTitle--mega-menu) {
+  color: white;
 }

@@ -76,7 +76,8 @@
     ],
     "props": {
       "colSizing": "auto",
-      "preserveLayoutOnMobile": "true"
+      "preserveLayoutOnMobile": "true",
+      "blockClass": "mackflex-cart-name"
     }
   },
   "vtex.product-list:product-name#minicart": {
@@ -148,7 +149,8 @@
   },
   "rich-text#go-to-checkout": {
     "props": {
-      "text": "[Ir para o carrinho](/checkout/#/cart)"
+      "text": "[Ir para o carrinho](/checkout/#/cart)",
+      "blockClass":"mackFlexCtaMiniCart"
     }
   },
 
