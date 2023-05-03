@@ -150,7 +150,7 @@
   "rich-text#go-to-checkout": {
     "props": {
       "text": "[Ir para o carrinho](/checkout/#/cart)",
-      "blockClass":"mackFlexCtaMiniCart"
+      "blockClass": "mackFlexCtaMiniCart"
     }
   },
 

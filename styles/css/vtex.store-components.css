@@ -1,11 +1,3 @@
-.searchBarContainer {
-  z-index: 100;
-  width: 61px;
-  border: none;
-  position: relative;
-  padding: 0 0 0.5rem 0;
-}
-
 .infoCardContainer--sellerConditionCard {
   width: auto;
   background-color: #f8f8f8;
@@ -37,8 +29,9 @@
 }
 
 .sizeDesktop {
-  min-width: 165px;
   display: block;
+  padding: 1rem 0;
+  max-width: 204px;
 }
 
 .searchBarIcon--external-search {
@@ -274,6 +267,14 @@
   :global(.vtex-button)
   :global(.vtex-button__label)::before {
   content: url("assets/icons/iconMackFlexLogin.svg");
+}
+
+@media (min-width: 1200px) {
+  :global(.vtex-login-2-x-container)
+    :global(.vtex-button)
+    :global(.vtex-button__label)::before {
+    content: url("assets/icons/header/iconDesktopLogin.svg");
+  }
 }
 
 .imageElement--security-logo-2 {
@@ -539,9 +540,43 @@
   display: none;
 }
 
+@media (min-width: 1200px) {
+  :global(.vtex-login-2-x-container) :global(.vtex-login-2-x-label) {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    font-size: 10px;
+    margin-left: 19.9px;
+    padding: 0;
+  }
+
+  :global(.vtex-login-2-x-container) :global(.vtex-login-2-x-label)::after {
+    content: "OU";
+    margin-left: 0.5rem;
+    margin-bottom: 0.2rem;
+    font-weight: normal;
+  }
+
+  :global(.vtex-login-2-x-container) :global(.vtex-login-2-x-label)::before {
+    content: "CADASTRE-SE";
+    order: 1;
+  }
+}
+
 :global(.vtex-mega-menu-2-x-styledLinkText--mega-menu),
 :global(.vtex-mega-menu-2-x-submenuContainerTitle--mega-menu),
 :global(.vtex-mega-menu-2-x-collapsibleHeaderText--mega-menu),
 :global(.vtex-mega-menu-2-x-departmentsTitle--mega-menu) {
   color: white;
+}
+
+.searchBarContainer {
+  display: flex;
+  align-items: center;
+  min-width: 586px;
+}
+
+.searchBarInnerContainer--mackFlexSearch :global(.vtex-input-prefix__group) {
+  border: 1px solid #828282;
+  border-radius: 100px;
 }

@@ -57,6 +57,17 @@
   content: url("assets/icons/iconMackFlexCart.svg");
 }
 
+@media (min-width: 1200px) {
+  .minicartIconContainer::before {
+    content: url("assets/icons/header/iconCartDesktop.svg");
+  }
+  .minicartIconContainer::after {
+    content: url("assets/icons/header/iconTextMeuCarrinho.svg");
+    position: absolute;
+    left: 33px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .openIconContainer {
     padding-left: 0px;

@@ -2,12 +2,10 @@
   "flex-layout.row#desktop-line-1": {
     "title": "Header Desktop Linha 1",
     "props": {
-      "horizontalAlign": "center",
-      "verticalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
       "fullWidth": true,
-      "blockClass": ["headerLine1", "container"]
+      "colSizing": "auto",
+      "horizontalAlign": "center",
+      "blockClass": ["mackFlexMainHeader"]
     },
     "children": [
       "flex-layout.col#logo-desktop",
@@ -17,13 +15,9 @@
   },
   "flex-layout.row#desktop-line-1-actions": {
     "title": "Header Desktop Linha - Opções",
-    "children": [      
-      "login",
-      "minicart.v2"
-    ],
+    "children": ["login", "minicart.v2"],
     "props": {
-      "fullWidth": true,
-      "blockClass": "desktop-line-1-actions"
+      "blockClass": "mackFlexDeskLoginMinicart"
     }
   },
   "login": {
@@ -60,14 +54,14 @@
       "title": "Mack Flex",
       "href": "/",
       "url": "assets/icons/header/NewLogoMackFlex.svg",
-      "width": "137",
+      "width": "204",
       "blockClass": ["mack-logo"]
     }
   },
   "search-bar#header": {
     "title": "Header Desktop Search",
     "props": {
-      "blockClass": "headerSearch",
+      "blockClass": "mackFlexSearch",
       "emptyPlaceholder": "O que você procura?",
       "displayMode": "search-and-clear-buttons",
       "autoFocus": false,

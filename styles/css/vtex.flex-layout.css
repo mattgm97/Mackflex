@@ -319,7 +319,7 @@
 }
 
 .flexRow--mackFlexTopBarDesk :global(.vtex-store-components-3-x-container) {
-  max-width: 100rem;
+  max-width: 90rem;
   padding: 0 !important;
   margin: auto;
 }
@@ -339,4 +339,15 @@
   align-items: center;
   cursor: pointer;
   margin: 0 0.5rem;
+}
+
+.flexRowContent--mackFlexMainHeader {
+  max-width: 90rem;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+}
+
+.flexRow--mackFlexMainHeader {
+  background-color: #fff;
 }
