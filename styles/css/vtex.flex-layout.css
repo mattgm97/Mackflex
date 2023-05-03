@@ -351,3 +351,10 @@
 .flexRow--mackFlexMainHeader {
   background-color: #fff;
 }
+
+.flexRow--mackFlexMenuDesktop {
+  background: #f8f8f8;
+}
+.flexRow--mackFlexMenuDesktop :global(.vtex-mega-menu-2-x-triggerContainer) {
+  color: #000;
+}

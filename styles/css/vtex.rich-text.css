@@ -227,6 +227,12 @@
   height: 40px;
 }
 
+@media (min-width: 1200px) {
+  .wrapper--mackFlexCtaMiniCart {
+    width: 88%;
+  }
+}
+
 .link--mackFlexCtaMiniCart {
   color: #fff;
   text-decoration: none;

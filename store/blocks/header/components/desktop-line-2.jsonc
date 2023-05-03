@@ -1,27 +1,36 @@
 {
   "flex-layout.row#desktop-line-2": {
     "title": "Header Desktop Linha 2",
-    "children": ["vtex.menu@2.x:menu#headerMenuDesktop"],
+    "children": ["flex-layout.row#4-desktop", "flex-layout.row#mega-menu"],
     "props": {
       "fullWidth": true,
-      "blockClass": ["headerLine2", "container"]
+      "blockClass": ["mackFlexMenuDesktop"]
     }
   },
-  //MENU PRINCIPAL
-  "vtex.menu@2.x:menu#headerMenuDesktop": {
-    "title": "Header - Menu - Desktop",
+  "flex-layout.row#4-desktop": {
     "children": [
-      "menu-item#headerMenuDesktopItem1",
-      "menu-item#headerMenuDesktopItem2",
-      "menu-item#headerMenuDesktopItem3",
-      "menu-item#headerMenuDesktopItem4",
-      "menu-item#headerMenuDesktopItem5",
-      "menu-item#headerMenuDesktopItem6",
-      "menu-item#headerMenuDesktopItem7",
-      "menu-item#headerMenuDesktopItem8"
-    ],
+      "flex-layout.col#trigger-mega-menu"
+      // ...
+    ]
+  },
+
+  "flex-layout.row#mega-menu": {
+    "children": ["mega-menu#desktop"]
+  },
+  "mega-menu#desktop": {
     "props": {
-      "blockClass": "headerMenuDesktop"
+      "openOnly": "horizontal"
+    }
+  },
+  "flex-layout.col#trigger-mega-menu": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["mega-menu-trigger-btn"]
+  },
+  "mega-menu-trigger-btn": {
+    "props": {
+      "Drawer": "drawer"
     }
   }
 }

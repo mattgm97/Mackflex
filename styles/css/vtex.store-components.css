@@ -570,10 +570,12 @@
   color: white;
 }
 
-.searchBarContainer {
-  display: flex;
-  align-items: center;
-  min-width: 586px;
+@media (min-width: 1200px) {
+  .searchBarContainer {
+    display: flex;
+    align-items: center;
+    min-width: 586px;
+  }
 }
 
 .searchBarInnerContainer--mackFlexSearch :global(.vtex-input-prefix__group) {
