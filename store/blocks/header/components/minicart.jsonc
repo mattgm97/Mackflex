@@ -18,6 +18,7 @@
       "blockClass": "minicart-footer-col"
     },
     "children": [
+      "minicart-bar",
       "minicart-summary",
       "minicart-checkout-button",
       "flex-layout.row#go-to-checkout"
