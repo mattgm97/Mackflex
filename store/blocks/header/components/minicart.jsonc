@@ -20,8 +20,8 @@
     "children": [
       "minicart-bar",
       "minicart-summary",
-      "minicart-checkout-button",
-      "flex-layout.row#go-to-checkout"
+      "flex-layout.row#go-to-checkout",
+      "minicart-checkout-button"
     ]
   },
   "minicart-product-list": {
@@ -150,7 +150,7 @@
   },
   "rich-text#go-to-checkout": {
     "props": {
-      "text": "[Ir para o carrinho](/checkout/#/cart)",
+      "text": "[FINALIZAR COMPRA](/checkout/#/orderform)",
       "blockClass": "mackFlexCtaMiniCart"
     }
   },

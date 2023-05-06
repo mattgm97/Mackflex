@@ -23,7 +23,7 @@
   "flex-layout.row#desktop-line-top-bar": {
     "title": "Top bar Desktop",
     "children": [
-      "flex-layout.col#desktop-line-top-acessibilidade",
+      // "flex-layout.col#desktop-line-top-acessibilidade",
       "flex-layout.col#desktop-line-top-tel",
       "flex-layout.col#desktop-line-top-social-media"
     ],

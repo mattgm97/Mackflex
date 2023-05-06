@@ -25,9 +25,16 @@
   },
   "flex-layout.col#mobile-line-1-link-wish-cart": {
     "title": "Login | Wishlist | MiniCart",
-    "children": ["login", "minicart.v2"],
+    "children": ["login", "link#wishlist-mobile", "minicart.v2"],
     "props": {
       "blockClass": ["mobileHeaderLinkWishCart"]
+    }
+  },
+  "link#wishlist-mobile":{
+    "props": {
+      "href": "/favoritos",
+      "label": "",
+      "blockClass": ["mackFlexWishListMobile"]
     }
   }
 }

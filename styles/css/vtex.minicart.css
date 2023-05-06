@@ -19,7 +19,22 @@
 }
 
 .minicartCheckoutButton :global(.vtex-button__label) {
-  font-size: 12px;
+  background: #939598;
+  font-size: 0;
+}
+
+.minicartCheckoutButton :global(.vtex-button) {
+  background: #939598;
+  border-color: #939598;
+}
+
+.minicartCheckoutButton :global(.vtex-button)::before {
+  content: "IR PARA O CARRINHO";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
 }
 
 .minicartCheckoutButton {
@@ -30,9 +45,12 @@
   padding-top: 6px;
 }
 
-.openIconContainer,
+.openIconContainer {
+  padding: 0px;
+}
+
 .minicartContainer :global(.vtex-button__label) {
-  padding-right: 0px;
+  padding: 0;
 }
 
 .closeIconContainer {

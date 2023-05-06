@@ -275,6 +275,12 @@
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .flexCol--mobileHeaderLinkWishCart {
+    justify-content: space-around;
+  }
+}
+
 .flexRowContent--mobileHeaderLine1 {
   align-items: center;
 }
@@ -319,8 +325,8 @@
 }
 
 .flexRow--mackFlexTopBarDesk :global(.vtex-store-components-3-x-container) {
-  max-width: 90rem;
-  padding: 0 !important;
+  max-width: 96rem;
+  padding: 0 8rem !important;
   margin: auto;
 }
 
@@ -342,7 +348,8 @@
 }
 
 .flexRowContent--mackFlexMainHeader {
-  max-width: 90rem;
+  max-width: 96rem;
+  padding: 0 8rem;
   justify-content: space-between;
   margin: auto;
   align-items: center;
@@ -354,7 +361,20 @@
 
 .flexRow--mackFlexMenuDesktop {
   background: #f8f8f8;
+  padding: 1rem;
 }
 .flexRow--mackFlexMenuDesktop :global(.vtex-mega-menu-2-x-triggerContainer) {
   color: #000;
+}
+
+.flexRowContent--mackFlexMenuDesktop {
+  max-width: 96rem;
+  padding: 0 8rem;
+  margin: auto;
+}
+
+.flexRowContent--mackFlexDeskLoginMinicart
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  flex: 1;
+  margin: 0 0.5rem;
 }

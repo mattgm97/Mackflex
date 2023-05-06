@@ -15,7 +15,7 @@
   },
   "flex-layout.row#desktop-line-1-actions": {
     "title": "Header Desktop Linha - Opções",
-    "children": ["login", "minicart.v2"],
+    "children": ["login", "link#wishlist", "minicart.v2"],
     "props": {
       "blockClass": "mackFlexDeskLoginMinicart"
     }
@@ -41,6 +41,13 @@
       ]
     }
   },
+  "link#wishlist": {
+    "props": {
+      "href": "/favoritos",
+      "label": "MEUS \n",
+      "blockClass": ["mackFlexWishList"]
+    }
+  },
   "flex-layout.col#logo-desktop": {
     "title": "Header Desktop Coluna - Logo",
     "props": {
@@ -63,20 +70,10 @@
     "props": {
       "blockClass": "mackFlexSearch",
       "emptyPlaceholder": "O que você procura?",
-      "displayMode": "search-and-clear-buttons",
+      "displayMode": "clear-button",
       "autoFocus": false,
       "openAutocompleteOnFocus": true,
       "containerMode": "container"
     }
-    // "blocks": ["autocomplete-result-list.v2"]
   }
-  // "autocomplete-result-list.v2": {
-  //   "props": {
-  //     // "HorizontalProductSummary": "product-summary.shelf#minisearch",
-  //     "productLayout": "HORIZONTAL",
-  //     "maxTopSearches": 10,
-  //     "simulationBehavior": "default"
-  //   }
-  //   // "blocks": ["product-summary.shelf#minisearch"]
-  // }
 }

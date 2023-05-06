@@ -570,11 +570,22 @@
   color: white;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1900px) {
   .searchBarContainer {
     display: flex;
     align-items: center;
-    min-width: 586px;
+    min-width: 37rem;
+  }
+}
+@media (max-width: 1200px) {
+  .searchBarContainer {
+    min-width: 29rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .searchBarContainer {
+    min-width: 20rem;
   }
 }
 
