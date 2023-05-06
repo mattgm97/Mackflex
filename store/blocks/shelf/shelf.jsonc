@@ -1,80 +1,77 @@
 {
-    "list-context.product-list#new-shelf": {
-        "blocks": ["product-summary.shelf#new-shelf"],
-        "children": ["slider-layout#new-shelf-products"],
-        "props": {
-            "preferredSKU" : "PRICE_ASC",
-            "orderBy": "OrderByReleaseDateDESC",
-            "maxItems": 12
-        },
-        "title": "Novidades"
+  "list-context.product-list#new-shelf": {
+    "blocks": ["product-summary.shelf#new-shelf"],
+    "children": ["slider-layout#new-shelf-products"],
+    "props": {
+      "preferredSKU": "PRICE_ASC",
+      "orderBy": "OrderByReleaseDateDESC",
+      "maxItems": 12
     },
-        "product-summary.shelf#new-shelf": {
-        "children": [
-        "product-summary-image",
-        "flex-layout.row#new-shelf-name",
-        "product-summary-price",
-        "product-summary-buy-button"
-        ]
-    },
-    "slider-layout#new-shelf-products": {
-        "props": {
-          "itemsPerPage": {
-            "desktop": 4,
-            "tablet": 3,
-            "phone": 2
-          },
-          "infinite": true,
-          "showNavigationArrows": "always",
-          "showPaginationDots": "never",
-          "blockClass": "slider-shelf--default",
-          "autoplay": {
-            "timeout": 3000,
-            "stopOnHover": true
-          }
-        }
-    },
-    "flex-layout.row#new-shelf-name": {
-        "children": [
-            "flex-layout.col#new-shelf-name", 
-            "flex-layout.col#new-shelf-porcentagem"
-        ],
-        "props": {
-          "blockClass": "shelf-name"
-        }
-    },
-    "flex-layout.col#new-shelf-name": {
-        "children": [
-            "product-summary-name"
-        ],
-        "props": {
-          "width": "80%",
-          "blockClass": "new-shelf-name"
-        }
-    },
-    "flex-layout.col#new-shelf-porcentagem": {
-        "children": [
-            "product-price-savings"
-        ],
-        "props": {
-            "width": "20%",
-            "blockClass": "new-shelf-porcentagem"
-        }
-    },
-    "product-selling-price#summary": {
-        "props": {
-          "alwaysShow": true,
-          "message": "{savingsPercentage} off"
-        }
-    },
-    "product-summary-buy-button": {
-        "props": {
-          "buyButtonText": "COMPRAR"
-        }
-    },
-    "product-summary-price": {
-        "props": {
-            "showListPrice" : false
-        }
+    "title": "Novidades"
+  },
+  "product-summary.shelf#new-shelf": {
+    "children": [
+      "add-to-list-btn",
+      "product-summary-image",
+      "flex-layout.row#new-shelf-name",
+      "product-summary-price",
+      "product-summary-buy-button"
+    ]
+  },
+  "slider-layout#new-shelf-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "blockClass": "slider-shelf--default",
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": true
+      }
     }
+  },
+  "flex-layout.row#new-shelf-name": {
+    "children": [
+      "flex-layout.col#new-shelf-name",
+      "flex-layout.col#new-shelf-porcentagem"
+    ],
+    "props": {
+      "blockClass": "shelf-name"
+    }
+  },
+  "flex-layout.col#new-shelf-name": {
+    "children": ["product-summary-name"],
+    "props": {
+      "width": "80%",
+      "blockClass": "new-shelf-name"
+    }
+  },
+  "flex-layout.col#new-shelf-porcentagem": {
+    "children": ["product-price-savings"],
+    "props": {
+      "width": "20%",
+      "blockClass": "new-shelf-porcentagem"
+    }
+  },
+  "product-selling-price#summary": {
+    "props": {
+      "alwaysShow": true,
+      "message": "{savingsPercentage} off"
+    }
+  },
+  "product-summary-buy-button": {
+    "props": {
+      "buyButtonText": "COMPRAR"
+    }
+  },
+  "product-summary-price": {
+    "props": {
+      "showListPrice": false
+    }
+  }
 }

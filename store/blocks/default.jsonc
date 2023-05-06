@@ -36,28 +36,35 @@
   },
   "product-summary.shelf": {
     "children": [
+      "flex-layout.row#wishlist-shelf",
       "product-summary-image",
       "flex-layout.row#name-and-discount",
       // "product-rating-inline",
       // "product-summary-space",
-     /* "product-list-price#shelf",
+      /* "product-list-price#shelf",
       "product-selling-price#shelf",*/
       // "product-list-price-range#shelf",
       // "product-price-savings",
       // "product-summary-price",
-      "product-selling-price-range#shelf",  
-      "product-installments#defaulthome",
-      "add-to-cart-button"
+      "product-selling-price-range#shelf",
+      "product-installments#defaulthome"
+      // "add-to-cart-button"
     ],
     "props": {
       "blockClass": "default-prod-shelf"
     }
   },
+  "flex-layout.row#wishlist-shelf": {
+    "title": "Wishlist",
+    "children": ["add-to-list-btn"],
+    "props": {
+      "blockClass": ["mackFlex-shelf__wishlist"],
+      "horizontalAlign": "right",
+      "colSizing": "auto"
+    }
+  },
   "flex-layout.row#name-and-discount": {
-    "children": [
-      "flex-layout.col#name",
-      "flex-layout.col#discount"
-    ],
+    "children": ["flex-layout.col#name", "flex-layout.col#discount"],
     "props": {
       "paddingTop": "8",
       "blockClass": "name-and-discount"
@@ -79,9 +86,7 @@
   },
   "product-price-savings#summary": {
     "props": {
-      "markers": [
-        "discount"
-      ]
+      "markers": ["discount"]
     }
   },
   "product-installments#defaulthome": {
@@ -98,17 +103,17 @@
     }
   },
 
-  "product-list-price-range#shelf":{
-    "props":{
-      "message":"{minPriceValue}",
-      "blockClass":"selling-listprice-shelf"
+  "product-list-price-range#shelf": {
+    "props": {
+      "message": "{minPriceValue}",
+      "blockClass": "selling-listprice-shelf"
     }
   },
 
-  "product-selling-price-range#shelf":{
-    "props":{
-      "message":"{minPriceValue}",
-      "blockClass":"selling-price-shelf"
+  "product-selling-price-range#shelf": {
+    "props": {
+      "message": "{minPriceValue}",
+      "blockClass": "selling-price-shelf"
     }
   },
 

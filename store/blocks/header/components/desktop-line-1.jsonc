@@ -43,7 +43,7 @@
   },
   "link#wishlist": {
     "props": {
-      "href": "/favoritos",
+      "href": "/account/#/wishlist",
       "label": "MEUS \n",
       "blockClass": ["mackFlexWishList"]
     }

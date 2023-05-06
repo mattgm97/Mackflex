@@ -222,6 +222,22 @@
   opacity:1;
 } */
 
+:global(.vtex-product-summary-2-x-element) {
+  position: relative;
+}
+
+:global(.vtex-product-summary-2-x-element)
+  :global(.vtex-wish-list-1-x-wishlistIconContainer) {
+  position: absolute;
+  z-index: 9;
+  right: 5px;
+  top: 8px;
+}
+
+:global(.vtex-wish-list-1-x-wishlistIconContainer) :global(.vtex-button) {
+  background-color: transparent;
+}
+
 :global(.vtex-flex-layout-0-x-flexRow--minicart-footer)
   :global(.vtex-store-components-3-x-container) {
   padding-left: 0.25rem !important;
@@ -577,7 +593,7 @@
     min-width: 37rem;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1500px) {
   .searchBarContainer {
     min-width: 29rem;
   }
