@@ -135,3 +135,10 @@
 .styledLinkContent--menu-footer {
   font-style: italic;
 }
+
+.styledLinkContent--header__menu {
+  font-family: "Droid Sans";
+  font-size: 15px;
+  color: #1a1a1a;
+  font-weight: 700;
+}

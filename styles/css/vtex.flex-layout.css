@@ -361,7 +361,7 @@
 
 .flexRow--mackFlexMenuDesktop {
   background: #f8f8f8;
-  padding: 1rem;
+  padding: 0.2rem;
 }
 .flexRow--mackFlexMenuDesktop :global(.vtex-mega-menu-2-x-triggerContainer) {
   color: #000;
@@ -371,10 +371,10 @@
   max-width: 96rem;
   padding: 0 8rem;
   margin: auto;
+  align-items: center;
+  justify-content: center;
 }
-
-.flexRowContent--mackFlexDeskLoginMinicart
+.flexRowContent--mackFlexMenuDesktop
   :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
-  flex: 1;
-  margin: 0 0.5rem;
+  width: auto !important;
 }

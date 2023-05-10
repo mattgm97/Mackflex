@@ -1,7 +1,7 @@
 {
   "flex-layout.row#desktop-line-2": {
     "title": "Header Desktop Linha 2",
-    "children": ["flex-layout.row#4-desktop", "flex-layout.row#mega-menu"],
+    "children": ["flex-layout.row#4-desktop"],
     "props": {
       "fullWidth": true,
       "blockClass": ["mackFlexMenuDesktop"]
@@ -9,11 +9,14 @@
   },
   "flex-layout.row#4-desktop": {
     "children": [
-      "flex-layout.col#trigger-mega-menu"
-      // ...
-    ]
+      "flex-layout.col#trigger-mega-menu",
+      "flex-layout.row#mega-menu",
+      "vtex.menu@2.x:menu#main-menu"
+    ],
+    "props": {
+      "blockClass": "mackFlexSpacing"
+    }
   },
-
   "flex-layout.row#mega-menu": {
     "children": ["mega-menu#desktop"]
   },
@@ -22,6 +25,7 @@
       "openOnly": "horizontal"
     }
   },
+
   "flex-layout.col#trigger-mega-menu": {
     "props": {
       "verticalAlign": "middle"
