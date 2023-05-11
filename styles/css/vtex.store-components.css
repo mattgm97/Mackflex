@@ -322,11 +322,6 @@
     padding-left: 8rem !important;
     padding-right: 8rem !important;
   }
-
-  /*PARA HEADER TRANSPARENTE FUNCIONAR*/
-  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--mainCarousel) {
-    margin-top: -84px;
-  }
 }
 
 @media (min-width: 1200px) and (max-width: 1700px) {
