@@ -378,3 +378,13 @@
   :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
   width: auto !important;
 }
+
+.flexRowContent--mackFlexMenuDesktop
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
+  margin-right: 1.5rem;
+}
+
+.flexRowContent--mackFlexMenuDesktop
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child {
+    
+}

@@ -142,3 +142,7 @@
   color: #1a1a1a;
   font-weight: 700;
 }
+
+.menuContainer--header__menu .menuItem--header__menu {
+  margin-left: 3rem;
+}
