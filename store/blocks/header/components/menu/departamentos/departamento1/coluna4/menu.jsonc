@@ -24,12 +24,7 @@
         "main-menu-column",
         "main-menu-column-fourth"
       ],
-      "title": {
-        "itemProps": {
-          "text": ""
-        },
-        "type": "custom"
-      },
+
       "items": [
         {
           "type": "custom",

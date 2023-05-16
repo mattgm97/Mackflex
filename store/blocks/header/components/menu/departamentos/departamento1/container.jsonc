@@ -1,5 +1,5 @@
 {
-  "menu-item#dep1": {
+  "menu-item#dep1-1": {
     "title": "Departamento 1",
     "props": {
       "blockClass": ["header__menu", "main-menu-department"],

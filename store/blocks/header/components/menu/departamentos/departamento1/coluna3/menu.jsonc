@@ -2,7 +2,7 @@
   "experimental__visibility-layout#menu-dep1-col3": {
     "title": "Menu (On/Off)",
     "props": {
-      "visible": true
+      "visible": false
     },
     "children": ["flex-layout.col#menu-dep1-col3"]
   },
@@ -24,12 +24,6 @@
         "main-menu-column",
         "main-menu-column-third"
       ],
-      "title": {
-        "itemProps": {
-          "text": "Titulo"
-        },
-        "type": "custom"
-      },
       "items": [
         {
           "type": "custom",

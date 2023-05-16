@@ -6,7 +6,7 @@
       "experimentalOptimizeRendering": true
     },
     "children": [
-      "menu-item#dep1",
+      "menu-item#dep1-1",
       "menu-item#dep2",
       "menu-item#dep3",
       "menu-item#dep4"
