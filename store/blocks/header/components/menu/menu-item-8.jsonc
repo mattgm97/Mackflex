@@ -1,0 +1,29 @@
+{
+  "menu-item#headerMenuDesktopItem8": {
+    "title": "Header Desktop Menu Item 8",
+    "props": {
+      "id": "headerMenuDesktopItem8",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "BLOG",
+        "text": "BLOG"
+      },
+      "onMountBehavior": "closed",
+      "blockClass": "headerMenuDesktopItem"
+    }
+  },
+  // -------------------------------------------------------
+  // MOBILE
+  "rich-text#menuItem8": {
+    "title": "Menu 8",
+
+    "props": {
+      "text": "[BLOG](/)",
+      "blockClass": "headerMenuMobileItem"
+    }
+  }
+}

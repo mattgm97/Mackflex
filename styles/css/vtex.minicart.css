@@ -1,9 +1,11 @@
+.drawer {
+  width: 100% !important;
+}
+
 .cartIcon {
   color: #fff;
   /* display: none; */
 }
-
-
 
 .minicartQuantityBadgeDefault {
   top: 0.1em;
@@ -17,21 +19,38 @@
 }
 
 .minicartCheckoutButton :global(.vtex-button__label) {
-  font-size: 12px;
+  background: #939598;
+  font-size: 0;
+}
+
+.minicartCheckoutButton :global(.vtex-button) {
+  background: #939598;
+  border-color: #939598;
+}
+
+.minicartCheckoutButton :global(.vtex-button)::before {
+  content: "IR PARA O CARRINHO";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
 }
 
 .minicartCheckoutButton {
   position: relative;
-  top: -10px;
 }
 
 .openIconContainer {
   padding-top: 6px;
 }
 
-.openIconContainer,
+.openIconContainer {
+  padding: 0px;
+}
+
 .minicartContainer :global(.vtex-button__label) {
-  padding-right: 0px;
+  padding: 0;
 }
 
 .closeIconContainer {
@@ -45,8 +64,7 @@
 .closeIconButton {
   position: absolute;
   left: 83%;
-  padding-bottom: 0;
-  padding-top: 1.4rem;
+  padding-top: 1rem;
 }
 
 .minicartCheckoutButton :global(.vtex-button) {
@@ -54,10 +72,19 @@
 }
 
 .minicartIconContainer::before {
-  content: url('assets/icons/cart.svg');
-
+  content: url("assets/icons/iconMackFlexCart.svg");
 }
 
+@media (min-width: 1200px) {
+  .minicartIconContainer::before {
+    content: url("assets/icons/header/iconCartDesktop.svg");
+  }
+  .minicartIconContainer::after {
+    content: url("assets/icons/header/iconTextMeuCarrinho.svg");
+    position: absolute;
+    left: 33px;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .openIconContainer {
@@ -67,4 +94,17 @@
   .openIconContainer :global(.vtex-button__label) {
     padding: 0px;
   }
+}
+
+.drawer--mackFlexCart {
+  width: 100% !important;
+}
+
+.minicartTitle {
+  font-size: 0;
+}
+
+.minicartTitle::before {
+  content: "MEU CARRINHO";
+  font-size: 18px;
 }

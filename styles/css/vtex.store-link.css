@@ -1,0 +1,31 @@
+.link--mackFlexWishList {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 0.5rem;
+}
+
+.link--mackFlexWishList::before {
+  content: url("assets/icons/header/iconWishListDesk.svg");
+}
+
+.link--mackFlexWishListMobile::before {
+  content: url("assets/icons/header/iconWishListMobile.png");
+  display: block;
+  margin-top: 3px;
+}
+
+.label--mackFlexWishList {
+  font-size: 10px;
+  margin-left: 10px;
+  padding: 0;
+  color: #000;
+}
+
+.label--mackFlexWishList::after {
+  content: "FAVORITOS";
+  font-weight: bold;
+  font-size: 10px;
+  padding: 0;
+  color: #000;
+}

@@ -1,0 +1,77 @@
+.text1 {
+  display: none;
+}
+.text3 {
+  font-size: 0 !important;
+  display: flex;
+  align-items: center;
+  margin-right: 4px;
+}
+.text3::after {
+  content: "Faltam só";
+  font-size: 12px;  
+  font-weight: 400;
+  color: #222;
+}
+.text3::before {
+  content: "";
+  display: inline-block;  
+  background-size: 100%;
+  width: 23px;
+  height: 20px;
+  margin-right: 6px;
+}
+.text4 {
+  font-size: 14px !important;
+  margin: 0;
+  padding-bottom: 10px;
+}
+.freigthScaleContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  box-shadow: none !important;
+  padding: 10px 25px !important;
+}
+.currencyContainer {
+  font-weight: 400;
+  font-size: 12px !important;
+}
+.currencyText {
+  font-size: 0 !important;
+  display: flex;
+  align-items: center;
+}
+.currencyText::after {
+  content: " Frete Grátis";
+  font-size: 12px;
+  font-weight: 700;
+  color: #f15b2a;
+  order: 2;
+}
+
+.currencyText::before {
+  content: " para seu";
+  font-size: 12px;
+  font-weight: 400;
+  color: #222;
+  order: 1;
+  margin: 0 0.2rem;
+}
+
+.barContainer {
+  background: #f15b2a;
+  border-radius: initial;
+  height: 6px;
+}
+.sliderText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+.sliderContainer {
+  border-radius: initial;
+  background-color: #d9d9d9;
+  height: 7px;
+}

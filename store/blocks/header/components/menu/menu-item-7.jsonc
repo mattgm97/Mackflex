@@ -1,0 +1,243 @@
+{
+  // DESKTOP
+  "menu-item#headerMenuDesktopItem7": {
+    "title": "Header Desktop Menu Item 7",
+    "props": {
+      "id": "headerMenuDesktopItem7",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "DESTILADOS",
+        "text": "DESTILADOS"
+      },
+      "onMountBehavior": "closed",
+      "blockClass": "headerMenuDesktopItem"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#headerMenuDesktopItem7"]
+  },
+  //ITEM 7 - SUBMENU
+  "vtex.menu@2.x:submenu#headerMenuDesktopItem7": {
+    "title": "Header Desktop Submenu 7",
+    "children": ["vtex.menu@2.x:menu#headerMenuDesktopItem_7"]
+  },
+  "vtex.menu@2.x:menu#headerMenuDesktopItem_7": {
+    "props": {
+      "blockClass": "headerSubMenuDesktop",
+      "items": [
+        {
+          "__editorItemTitle": "ITEM 1",
+          "id": "headerMenuDesktopItem7-1",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "GIN",
+            "text": "GIN"
+          },
+          "blockClass": "headerSubMenuDesktopItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 2",
+          "id": "headerMenuDesktopItem7-2",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "WHISKY",
+            "text": "WHISKY"
+          },
+          "blockClass": "headerSubMenuDesktopItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 3",
+          "id": "headerMenuDesktopItem7-3",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "VODKA",
+            "text": "VODKA"
+          },
+          "blockClass": "headerSubMenuDesktopItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 4",
+          "id": "headerMenuDesktopItem7-4",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "CACHAÇA",
+            "text": "CACHAÇA"
+          },
+          "blockClass": "headerSubMenuDesktopItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 5",
+          "id": "headerMenuDesktopItem7-5",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "LICOR",
+            "text": "LICOR"
+          },
+          "blockClass": "headerSubMenuDesktopItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 6",
+          "id": "headerMenuDesktopItem7-6",
+          "type": "custom",
+          "highlight": true,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "TODOS DESTILADOS",
+            "text": "TODOS DESTILADOS"
+          },
+          "blockClass": "headerSubMenuDesktopItem"
+        }
+      ]
+    }
+  },
+  // -------------------------------------------------------
+  // MOBILE
+  "drawer#headerMenuMobileItem7": {
+    "title": "Menu 7",
+    "children": ["vtex.menu@2.x:menu#headerMenuMobileItem7"],
+    "blocks": [
+      "drawer-header#headerMenuMobileItem7",
+      "drawer-trigger#headerMenuMobileItem7"
+    ],
+    "props": {
+      "blockClass": "mainMenuHeaderItem"
+    }
+  },
+  // DRAWER HEADER
+  "drawer-header#headerMenuMobileItem7": {
+    "title": "Submenu - Header Title",
+    "children": ["drawer-close-button", "rich-text#headerMenuMobileItem7"],
+    "props": {
+      "blockClass": "submenuHeader"
+    }
+  },
+  // DEPARTMENT NAME
+  "drawer-trigger#headerMenuMobileItem7": {
+    "children": ["rich-text#headerMenuMobileItem7"]
+  },
+  "rich-text#headerMenuMobileItem7": {
+    "title": "Submenu - Title",
+
+    "props": {
+      "text": "DESTILADOS",
+      "blockClass": "headerMenuMobileItem"
+    }
+  },
+  // SUBMENU
+  "vtex.menu@2.x:menu#headerMenuMobileItem7": {
+    "title": "Submenu",
+    "props": {
+      "blockClass": "headerSubmenuMobile",
+      "items": [
+        {
+          "__editorItemTitle": "ITEM 1",
+          "id": "headerMenuMobileItem7-1",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "GIN",
+            "text": "GIN"
+          },
+          "blockClass": "headerMenuMobileItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 2",
+          "id": "headerMenuMobileItem7-2",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "WHISKY",
+            "text": "WHISKY"
+          },
+          "blockClass": "headerMenuMobileItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 3",
+          "id": "headerMenuMobileItem7-3",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "VODKA",
+            "text": "VODKA"
+          },
+          "blockClass": "headerMenuMobileItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 4",
+          "id": "headerMenuMobileItem7-4",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "CACHAÇA",
+            "text": "CACHAÇA"
+          },
+          "blockClass": "headerMenuMobileItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 5",
+          "id": "headerMenuMobileItem7-5",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "LICOR",
+            "text": "LICOR"
+          },
+          "blockClass": "headerMenuMobileItem"
+        },
+        {
+          "__editorItemTitle": "ITEM 6",
+          "id": "headerMenuMobileItem7-6",
+          "type": "custom",
+          "highlight": true,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "TODOS DESTILADOS",
+            "text": "TODOS DESTILADOS"
+          },
+          "blockClass": "headerMenuMobileItem"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  // DESKTOP
+  "menu-item#headerMenuDesktopItem1": {
+    "title": "Header Desktop Menu",
+    "props": {
+      "id": "headerMenuDesktopItem1",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clubed",
+        "noFollow": false,
+        "tagTitle": "ClubeD",
+        "text": "CLUBED"
+      },
+      "onMountBehavior": "closed",
+      "blockClass": ["headerMenuDesktopItem", "clubed"]
+    }
+  },
+  //MOBILE
+  "rich-text#menuItem1": {
+    "title": "Menu 1",
+    "props": {
+      // "text": "[![Clube D](assets/svg/logo-clubed.svg)](/clubd)",
+      "blockClass": "headerMenuMobileItem"
+    }
+  }
+}

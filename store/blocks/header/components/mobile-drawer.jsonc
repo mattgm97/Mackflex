@@ -1,0 +1,25 @@
+{
+  "drawer#mobileMenu": {
+    "title": "Menu Lateral",
+    "children": ["mega-menu#menu"],
+    "blocks": ["drawer-header#mobileMenu"],
+    "props": {
+      "blockClass": "mainMenuHeaderMobile"
+    }
+  },
+  "mega-menu#menu": {
+    "props": {
+      "title": "Todas as Categorias",
+      "blockClass": "mega-menu",
+      "defaultDepartmentActive": "...",
+      "orientation": "vertical",
+      "openOnly": "vertical"
+    }
+  },
+  "drawer-header#mobileMenu": {
+    "children": ["drawer-close-button", "mega-menu-go-back-btn"],
+    "props": {
+      "blockClass": "mainMenuHeaderMobile"
+    }
+  }
+}

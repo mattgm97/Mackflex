@@ -1,7 +1,7 @@
 {
   "vendor": "mackflex",
   "name": "mackflex-theme",
-  "version": "2.0.3",
+  "version": "3.0.2",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -63,10 +63,13 @@
     "vtex.product-context": "0.x",
     "vtex.store-link": "0.x",
     "vtex.sandbox": "0.x",
-    "vtex.product-list-context": "0.x"
+    "vtex.product-list-context": "0.x",
+    "vtex.visibility-layout": "0.x"
   },
   "peerDependencies": {
-    "vtex.mega-menu": "2.x"
+    "vtex.mega-menu": "2.x",
+    "vtex.wish-list": "1.x",
+    "vtexeurope.minicart-freeshipping-bar": "2.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

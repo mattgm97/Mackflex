@@ -1,0 +1,40 @@
+{
+  "flex-layout.row#mobile-line-1": {
+    "title": "Menu | Logo | Login | Wishlist | Minicart",
+    "children": [
+      "flex-layout.col#mobile-line-1-menu",
+      "flex-layout.col#mobile-line-1-logo",
+      "flex-layout.col#mobile-line-1-link-wish-cart"
+    ],
+    "props": {
+      "blockClass": ["mobileHeaderLine1"],
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#mobile-line-1-menu": {
+    "title": "Menu",
+    "children": ["drawer#mobileMenu"],
+    "props": {
+      "width": "20%"
+    }
+  },
+  "flex-layout.col#mobile-line-1-logo": {
+    "title": "Logo",
+    "children": ["logo"]
+  },
+  "flex-layout.col#mobile-line-1-link-wish-cart": {
+    "title": "Login | Wishlist | MiniCart",
+    "children": ["login", "link#wishlist-mobile", "minicart.v2"],
+    "props": {
+      "blockClass": ["mobileHeaderLinkWishCart"]
+    }
+  },
+  "link#wishlist-mobile":{
+    "props": {
+      "href": "/account/#/wishlist",
+      "label": "",
+      "blockClass": ["mackFlexWishListMobile"]
+    }
+  }
+}

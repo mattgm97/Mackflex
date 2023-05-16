@@ -1,43 +1,67 @@
-.triggerContainer {
-    width: 20%;
+:global(.vtex-mega-menu-2-x-menuContainerNav) {
+  z-index: 99999 !important;
+  max-width: 100vw;
+  box-shadow: 0 10px 17px -2px rgb(0 0 0 / 30%);
+  border: 1px solid #f7f4f4;
+  top: 100%;
 }
 
-:global(.vtex-mega-menu-2-x-menuContainerNav) {
-    z-index: 99999 !important;
-    max-width: 1530px;
-    left: 50%;
-    transform: translateX(-50%);
-    box-shadow: 0 10px 17px -2px rgb(0 0 0 / 30%);
-    border: 1px solid #f7f4f4;
+@media (min-width: 1920px) {
+  .menuContainerNav {
+    padding: 0 19rem;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+  .menuContainerNav {
+    padding: 0 8rem;
+  }
+}
+
+.trigger-button {
+  padding: 1rem;
 }
 
 .triggerContainer::after {
-    content: "Todas as categorias";
-    font-family: "Droid Sans";
-    font-size: 15px;
-    color: #FFF;
-    font-weight: 700;
-    position: relative;
-    margin-left: 10px;
-    top: -3px;
+  content: "Todas as categorias";
+  font-family: "Droid Sans";
+  font-size: 15px;
+  color: #1a1a1a;
+  font-weight: 700;
+  position: relative;
+  padding: 1rem 0;
 }
 
 .styledLinkText--mega-menu:hover {
-    color: #f15b2a;
+  color: #f15b2a;
 }
 
-:global(.vtex-mega-menu-2-x-menuItemVertical--mega-menu), :global(.vtex-mega-menu-2-x-submenuItemVertical--mega-menu){
-    border-color: transparent !important;
+:global(.vtex-mega-menu-2-x-menuItemVertical--mega-menu),
+:global(.vtex-mega-menu-2-x-submenuItemVertical--mega-menu) {
+  border-color: transparent !important;
 }
 
-:global(.vtex-mega-menu-2-x-submenuContainerVertical--mega-menu){
-    background-color: #0054A8 !important;
+:global(.vtex-mega-menu-2-x-submenuContainerVertical--mega-menu) {
+  background-color: #0054a8 !important;
 }
 
 @media (max-width: 1300px) {
-    .triggerContainer {
-        width: 24%;
-        margin-left: 2em;
-    }
+  .triggerContainer {
+    width: 24%;
+    margin-left: 2em;
+  }
+}
 
+:global(.vtex-mega-menu-2-x-triggerButtonIcon) {
+  display: none;
+}
+
+.accordionIconContainer .caretIcon {
+  color: #f15b2a !important;
+}
+
+@media (max-width: 768px) {
+  .accordionIconContainer .caretIcon {
+    color: #fff !important;
+  }
 }

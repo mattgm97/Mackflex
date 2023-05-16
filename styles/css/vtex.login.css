@@ -34,11 +34,18 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
-  color: #F15B2A;
+  color: #f15b2a;
   position: relative;
-
 }
 
-.profileIcon{
+.profileIcon {
   display: none;
+}
+
+.profile {
+  max-width: 100px;
+}
+
+.box {
+  right: -66px;
 }

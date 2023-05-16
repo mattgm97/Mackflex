@@ -1,0 +1,79 @@
+{
+  "flex-layout.row#desktop-line-1": {
+    "title": "Header Desktop Linha 1",
+    "props": {
+      "fullWidth": true,
+      "colSizing": "auto",
+      "horizontalAlign": "center",
+      "blockClass": ["mackFlexMainHeader"]
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "search-bar#header",
+      "flex-layout.row#desktop-line-1-actions"
+    ]
+  },
+  "flex-layout.row#desktop-line-1-actions": {
+    "title": "Header Desktop Linha - Opções",
+    "children": ["login", "link#wishlist", "minicart.v2"],
+    "props": {
+      "blockClass": "mackFlexDeskLoginMinicart"
+    }
+  },
+  "login": {
+    "props": {
+      "accountOptionLinks": [
+        {
+          "label": "Minha conta",
+          "path": "/account",
+          "cssClass": "title"
+        },
+        {
+          "label": "Meus pedidos",
+          "path": "/account#/orders",
+          "cssClass": ""
+        },
+        {
+          "label": "Favoritos",
+          "path": "/account#/wishlist",
+          "cssClass": ""
+        }
+      ]
+    }
+  },
+  "link#wishlist": {
+    "props": {
+      "href": "/account/#/wishlist",
+      "label": "MEUS \n",
+      "blockClass": ["mackFlexWishList"]
+    }
+  },
+  "flex-layout.col#logo-desktop": {
+    "title": "Header Desktop Coluna - Logo",
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo"]
+  },
+  "logo": {
+    "title": "Logo",
+    "props": {
+      "title": "Mack Flex",
+      "href": "/",
+      "url": "assets/icons/header/NewLogoMackFlex.svg",
+      "width": "204",
+      "blockClass": ["mack-logo"]
+    }
+  },
+  "search-bar#header": {
+    "title": "Header Desktop Search",
+    "props": {
+      "blockClass": "mackFlexSearch",
+      "emptyPlaceholder": "O que você procura?",
+      "displayMode": "clear-button",
+      "autoFocus": false,
+      "openAutocompleteOnFocus": true,
+      "containerMode": "container"
+    }
+  }
+}

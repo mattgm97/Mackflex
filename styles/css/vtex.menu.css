@@ -2,7 +2,8 @@
   color: #808080;
 }
 
-.styledLinkContent--allCategoryBlock, .styledLinkContent--mainMenu  {
+.styledLinkContent--allCategoryBlock,
+.styledLinkContent--mainMenu {
   color: #fff;
   font-size: 15px;
   /* font-family: "Droid Sans"; */
@@ -15,8 +16,8 @@
   color: #3c3c3c;
 }
 
-.styledLink--menu-footer{
-  color: #B9B9B9;
+.styledLink--menu-footer {
+  color: #b9b9b9;
 }
 
 .accordionIcon--linkList-footer-toggle--isOpen {
@@ -39,8 +40,6 @@
   border: solid white;
   border-width: 0px 0px;
 }
-
-
 
 :global(.vtex-menu-2-x-menuItemInnerDiv--linkList-footer-toggle) {
   background-color: #000;
@@ -74,10 +73,9 @@
   margin: 0px;
 }
 
-.submenu--main-menu-row-desk{
+.submenu--main-menu-row-desk {
   margin-left: -8.5%;
 }
-
 
 @media (max-width: 760px) {
   .styledLinkContent--submenu {
@@ -108,8 +106,6 @@
     color: #ffffff;
   }
 
-
-
   .styledLinkContent--linkList-footer-toggle {
     font-size: 20px;
   }
@@ -129,8 +125,6 @@
     color: #f5f5f5;
   }
 
-
-
   .menuContainer--menu-footer {
     display: flex;
     align-items: flex-start;
@@ -140,4 +134,15 @@
 
 .styledLinkContent--menu-footer {
   font-style: italic;
+}
+
+.styledLinkContent--header__menu {
+  font-family: "Droid Sans";
+  font-size: 15px;
+  color: #1a1a1a;
+  font-weight: 700;
+}
+
+.menuContainer--header__menu .menuItem--header__menu {
+  margin-left: 3rem;
 }

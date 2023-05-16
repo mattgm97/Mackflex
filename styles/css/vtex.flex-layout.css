@@ -12,8 +12,6 @@
   background-color: #f8f8f8;
 }
 
-
-
 .flexColChild--orcamento-e-social {
   width: 100%;
 }
@@ -76,24 +74,22 @@
   border-radius: 40px;
 }
 
-.flexRow--productSpecificationGroup{
-  background-color: #ECECEC;
+.flexRow--productSpecificationGroup {
+  background-color: #ececec;
   padding-top: 3em;
-    padding-bottom: 5em;
+  padding-bottom: 5em;
 }
 
-.flexRowContent--footer__newsletter-mob{
+.flexRowContent--footer__newsletter-mob {
   padding-bottom: 1.5em;
 }
 
-.flexRowContent--footer__content-row--desktop{
+.flexRowContent--footer__content-row--desktop {
   padding-top: 0.5em;
-    padding-bottom: 0.5em;
+  padding-bottom: 0.5em;
 }
 
-
 @media (max-width: 760px) {
-
   .flexRow--footer__copyright {
     background-color: #000;
   }
@@ -123,7 +119,7 @@
     background-color: #1e1e1e;
   }
 
-  .flexRow--selerCondition{
+  .flexRow--selerCondition {
     padding: 9px 0;
   }
 
@@ -131,15 +127,17 @@
     display: flex;
   }
 
-  .flexRowContent--name-and-discount :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+  .flexRowContent--name-and-discount
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
     width: 80% !important;
   }
 
-  .flexRowContent--name-and-discount :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child{
+  .flexRowContent--name-and-discount
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child {
     width: 10% !important;
   }
 
-  .flexRowContent--product-main :global(.vtex-flex-layout-0-x-flexCol){
+  .flexRowContent--product-main :global(.vtex-flex-layout-0-x-flexCol) {
     padding: 0;
   }
 }
@@ -229,12 +227,12 @@
 }
 
 @media (max-width: 760px) {
-  .flexRowContent--progressive-discount{
+  .flexRowContent--progressive-discount {
     display: inline-block;
   }
 
   .flexRowContent--progressive-discount
-  :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
     display: inline-block;
     width: 25% !important;
     margin-bottom: 10px;
@@ -242,29 +240,151 @@
 }
 
 @media (max-width: 760px) {
-  .flexRow--shelf-name{
+  .flexRow--shelf-name {
     height: 40px;
   }
 
-  .flexRowContent--shelf-name{
+  .flexRowContent--shelf-name {
     display: flex;
   }
 
-  .flexRowContent--shelf-name :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child{
+  .flexRowContent--shelf-name
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
     width: 70% !important;
   }
 
-  .flexRowContent--shelf-name :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child{
+  .flexRowContent--shelf-name
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child {
     width: 30% !important;
   }
 }
 
-.flexCol--categoryHome  {
+.flexCol--categoryHome {
   padding-bottom: 40px;
 }
 
 @media (max-width: 760px) {
-  .flexCol--categoryHome  {
+  .flexCol--categoryHome {
     padding-bottom: 20px;
   }
+}
+
+.flexCol--mobileHeaderLinkWishCart {
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .flexCol--mobileHeaderLinkWishCart {
+    justify-content: space-around;
+  }
+}
+
+.flexRowContent--mobileHeaderLine1 {
+  align-items: center;
+}
+
+.flexRow--mobileHeaderLine1,
+.flexRow--mobileHeaderLine2 {
+  background-color: #fff;
+}
+
+.flexRow--mackFlexQuantity {
+  margin-top: 1rem;
+}
+
+.flexRow--mackFlexQuantity :global(.vtex-flex-layout-0-x-flexColChild) {
+  display: flex;
+  align-items: center;
+}
+
+.flexRowContent--mackFlexQuantity
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
+  width: 35% !important;
+}
+
+.flexRowContent--mackflex-cart-name {
+  justify-content: start;
+}
+
+.flexCol--minicart-footer-col :global(.vtex-checkout-summary-0-x-summaryTitle) {
+  display: none;
+}
+
+.flexCol--minicart-footer-col
+  :global(.vtex-checkout-summary-0-x-summaryItemPrice) {
+  color: #f15b2a;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/* TOP BAR DESKTOP */
+.flexRow--mackFlexTopBarDesk {
+  background-color: #000;
+}
+
+.flexRow--mackFlexTopBarDesk :global(.vtex-store-components-3-x-container) {
+  max-width: 96rem;
+  padding: 0 8rem !important;
+  margin: auto;
+}
+
+.flexRowContent--mackFlexTopBarDesk {
+  justify-content: space-evenly;
+}
+
+.flexCol--mackFlexSocial {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.flexColChild--mackFlexSocial {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 0.5rem;
+}
+
+.flexRowContent--mackFlexMainHeader {
+  max-width: 96rem;
+  padding: 0 8rem;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+}
+
+.flexRow--mackFlexMainHeader {
+  background-color: #fff;
+}
+
+.flexRow--mackFlexMenuDesktop {
+  background: #f8f8f8;
+  padding: 0.2rem;
+}
+.flexRow--mackFlexMenuDesktop :global(.vtex-mega-menu-2-x-triggerContainer) {
+  color: #000;
+}
+
+.flexRowContent--mackFlexMenuDesktop {
+  max-width: 96rem;
+  padding: 0 8rem;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+.flexRowContent--mackFlexMenuDesktop
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  width: auto !important;
+}
+
+.flexRowContent--mackFlexMenuDesktop
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
+  margin-right: 1.5rem;
+}
+
+.flexRowContent--mackFlexMenuDesktop
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child {
+    
 }

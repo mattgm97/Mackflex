@@ -1,0 +1,20 @@
+{
+  "flex-layout.row#mobile-line-2": {
+    "children": ["search-bar#mobile"],
+    "props": {
+      "blockClass": ["mobileHeaderLine2"]
+    }
+  },
+
+  "search-bar#mobile": {
+    "props": {
+      "blockClass": "headerSearch",
+      "emptyPlaceholder": "O que você procura?",
+      "displayMode": "search-and-clear-buttons",
+      "autoFocus": false,
+      "openAutocompleteOnFocus": true,
+      "containerMode": "container"
+    },
+    "blocks": ["autocomplete-result-list.v2"]
+  }
+}
