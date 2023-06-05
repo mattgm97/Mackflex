@@ -1,282 +1,287 @@
 .paragraph--sectionRichTitle {
-  /* font-family: "Droid Sans"; */
-  letter-spacing: 0em;
-  text-align: left;
-  font-family: "Droid Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  color: #515151;
-  margin-bottom: 10px;
+	/* font-family: "Droid Sans"; */
+	letter-spacing: 0em;
+	text-align: left;
+	font-family: "Droid Sans";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	color: #515151;
+	margin-bottom: 10px;
 }
 
 .link--orcamento-text,
 .strong--socialmedia-text {
-  font-size: 11px;
-  color: white;
-  text-decoration: none;
+	font-size: 11px;
+	color: white;
+	text-decoration: none;
 }
 
 .link--orcamento-text {
-  font-weight: 200;
+	font-weight: 200;
 }
 
 .paragraph--socialmedia-text {
-  align-items: center;
-  display: flex;
+	align-items: center;
+	display: flex;
 }
 
 .link--socialmedia-text {
-  margin: 0px 8px 0px 8px;
+	margin: 0px 8px 0px 8px;
 }
 
 .strong--socialmedia-text {
-  margin-right: 2px;
+	margin-right: 2px;
 }
 
 .wrapper--payment__image {
-  padding: 0px 2px;
+	padding: 0px 2px;
 }
 
 .image--payment__image {
-  width: 56px;
+	width: 56px;
 }
 
 .paragraph--payment__image {
-  margin: 0;
+	margin: 0;
 }
 
 .wrapper--security__image {
-  margin: 0px 10px;
+	margin: 0px 10px;
 }
 
 .paragraph--InstitutionalTitle {
-  text-transform: uppercase;
-  color: #515151;
-  font-size: 28px;
+	text-transform: uppercase;
+	color: #515151;
+	font-size: 28px;
 }
 
 .container--menu-institucional-dropdown {
-  border: 2px solid #f15b2a;
-  border-radius: 2px;
-  color: #f15b2a;
+	border: 2px solid #f15b2a;
+	border-radius: 2px;
+	color: #f15b2a;
 }
 
 .paragraph--menu-institucional-dropdown {
-  margin: 10px;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0em;
-  text-align: center;
+	margin: 10px;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0em;
+	text-align: center;
 }
 
 .container--menu-institucional-dropdown {
-  background-repeat: no-repeat;
-  background-position: 95% center;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12' fill='none'%3E%3Cpath d='M2 2L8.74072 9.44704L15 2' stroke='%23ED6F00' stroke-width='3'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: 95% center;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='12' viewBox='0 0 17 12' fill='none'%3E%3Cpath d='M2 2L8.74072 9.44704L15 2' stroke='%23ED6F00' stroke-width='3'/%3E%3C/svg%3E");
 }
 
 .paragraph--subit-success {
-  color: #7ae462;
+	color: #7ae462;
 }
 
 .container--InstitutionalText {
-  padding-left: 40px;
+	padding-left: 40px;
 }
 
 .container--footer-sobre {
-  display: flex;
-  justify-content: flex-start;
+	display: flex;
+	justify-content: flex-start;
 }
 
 .container--sectionRichTitle {
-  display: flex;
-  justify-content: start;
+	display: flex;
+	justify-content: start;
 }
 
 .paragraph--footer-sobre {
-  color: #fff;
-  font-weight: 700;
-  font-size: 19px;
+	color: #fff;
+	font-weight: 700;
+	font-size: 19px;
 }
 
 .container--detailsTitle {
-  position: relative;
-  left: 80%;
+	position: relative;
+	left: 80%;
 }
 
 .paragraph--detailsTitle {
-  padding: 69px 0 59px 0;
-  color: #f15b2a;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 23px;
-  letter-spacing: 0em;
-  text-align: center;
+	padding: 69px 0 59px 0;
+	color: #f15b2a;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 23px;
+	letter-spacing: 0em;
+	text-align: center;
 }
 
 .paragraph--pdpTitle {
-  color: #f15b2a;
+	color: #f15b2a;
 }
 .paragraph--redes-sociais {
-  margin: 0;
+	margin: 0;
 }
 
 @media (max-width: 760px) {
-  .container--footer-sobre {
-    justify-content: center;
-    text-align: center;
-  }
+	.container--footer-sobre {
+		justify-content: center;
+		text-align: center;
+	}
 
-  .paragraph--sectorTitle-mob {
-    font-family: "Switzerland";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 24px;
-    color: #ffffff;
-  }
+	.paragraph--sectorTitle-mob {
+		font-family: "Switzerland";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 25px;
+		line-height: 24px;
+		color: #ffffff;
+	}
 
-  .container--sectorTitle-mob {
-    margin: -45px 0 0px 20px;
-  }
+	.container--sectorTitle-mob {
+		margin: -45px 0 0px 20px;
+	}
 
-  :global(.vtex-menu-2-x-styledLinkContent--mob__toplevel1) {
-    color: #fff;
-  }
+	:global(.vtex-menu-2-x-styledLinkContent--mob__toplevel1) {
+		color: #fff;
+	}
 
-  :global(.vtex-menu-2-x-accordionIcon--mob__toplevel1) {
-    color: #fff;
-  }
+	:global(.vtex-menu-2-x-accordionIcon--mob__toplevel1) {
+		color: #fff;
+	}
 
-  :global(.vtex-menu-2-x-accordionIcon--submenu) {
-    color: #fff;
-  }
+	:global(.vtex-menu-2-x-accordionIcon--submenu) {
+		color: #fff;
+	}
 
-  :global(.vtex-store-drawer-0-x-closeIconButton--menu-mobile) {
-    margin: 20px 0 -25px 0;
-  }
+	:global(.vtex-store-drawer-0-x-closeIconButton--menu-mobile) {
+		margin: 20px 0 -25px 0;
+	}
 }
 
 .paragraph--copyright__text {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 14px;
-  margin-top: 1.5em;
-  color: #6f6f6f;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 14px;
+	margin-top: 1.5em;
+	color: #6f6f6f;
 }
 
 .paragraph--powered__title {
-  color: #6f6f6f;
+	color: #6f6f6f;
 }
 
 .container--zoom-image {
-  align-items: center;
-  justify-content: center;
-  margin-top: 30px;
+	align-items: center;
+	justify-content: center;
+	margin-top: 30px;
 }
 
 .paragraph--zoom-image {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  color: #ffffff;
-  background: #f15b2a;
-  border-radius: 30px;
-  padding: 0.625rem 2.188rem;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	color: #ffffff;
+	background: #f15b2a;
+	border-radius: 30px;
+	padding: 0.625rem 2.188rem;
 }
 
 .container--mobileHeaderLine0Text {
-  background: #000;
-  padding: 0.5rem;
+	background: #000;
+	padding: 0.5rem;
 }
 
 .paragraph--mobileHeaderLine0Text {
-  color: #fff;
-  margin: 0;
-  /* font-family: "Gotham"; */
-  font-style: normal;
-  font-weight: 700;
-  font-size: 11px;
-  line-height: 11px;
-  text-align: center;
+	color: #fff;
+	margin: 0;
+	/* font-family: "Gotham"; */
+	font-style: normal;
+	font-weight: 700;
+	font-size: 11px;
+	line-height: 11px;
+	text-align: center;
 }
 
 .link--mobileHeaderLine0Text {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 400;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 400;
 }
 
 .container--mackFlexCtaMiniCart {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .wrapper--mackFlexCtaMiniCart {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #f15b2a;
-  border-radius: 40px;
-  width: 95%;
-  text-align: center;
-  height: 40px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 14px;
-  text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #f15b2a;
+	border-radius: 40px;
+	width: 95%;
+	text-align: center;
+	height: 40px;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 14px;
+	text-align: center;
 }
 
 @media (min-width: 1200px) {
-  .wrapper--mackFlexCtaMiniCart {
-    width: 88%;
-  }
+	.wrapper--mackFlexCtaMiniCart {
+		width: 88%;
+	}
 }
 
 .link--mackFlexCtaMiniCart {
-  color: #fff;
-  text-decoration: none;
-  font-size: 14px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
 }
 
 .paragraph--mackFlexCtaMiniCart {
-  margin: 0;
-  padding-top: 0.25em;
-  padding-bottom: 0.32em;
+	margin: 0;
+	padding-top: 0.25em;
+	padding-bottom: 0.32em;
 }
 
 .wrapper--mackFlexTextTopBar .paragraph {
-  margin: 0.5rem 0;
-  display: flex;
-  align-items: end;
-  justify-content: center;
-  color: #fff;
-  font-size: 11px;
+	margin: 0.5rem 0;
+	display: flex;
+	align-items: end;
+	justify-content: center;
+	color: #fff;
+	font-size: 11px;
 }
 
 .wrapper--mackFlexTextTopBar .paragraph .image {
-  margin-right: 0.5rem;
+	margin-right: 0.5rem;
 }
 
 .wrapper--mackFlexTextTopBar .paragraph .italic {
-  margin-right: 0.5rem;
-  font-weight: 700;
-  font-style: normal;
+	margin-right: 0.5rem;
+	font-weight: 700;
+	font-style: normal;
 }
 
 .wrapper--mackFlexTextTopBar .paragraph .strong:last-child {
-  margin-left: 0.5rem;
+	margin-left: 0.5rem;
 }
 
 .container--mackFlexTextTopBar {
-  display: flex;
+	display: flex;
 }
 
 .container--mackFlexTextTopBarAcessibilidade {
-  justify-content: start;
+	justify-content: start;
+}
+@media (max-width: 1200px) {
+	.container--footer-sobre {
+		justify-content: center;
+	}
 }
