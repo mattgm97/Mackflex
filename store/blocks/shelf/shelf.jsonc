@@ -52,7 +52,7 @@
     }
   },
   "flex-layout.col#new-shelf-porcentagem": {
-    "children": ["product-price-savings"],
+    "children": ["product-price-savings#summary"],
     "props": {
       "width": "20%",
       "blockClass": "new-shelf-porcentagem"

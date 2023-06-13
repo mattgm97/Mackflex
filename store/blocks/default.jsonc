@@ -86,7 +86,9 @@
   },
   "product-price-savings#summary": {
     "props": {
-      "markers": ["discount"]
+      "markers": ["discount"],
+      "percentageStyle": "compact",
+      "message": "{savingsPercentage} OFF"
     }
   },
   "product-installments#defaulthome": {
