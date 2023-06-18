@@ -67,7 +67,8 @@
       // "flex-layout.row#promos-search",
       "flex-layout.row#searchtitle",
       "flex-layout.row#result",
-      "flex-layout.row#banner-footer"
+      "flex-layout.row#banner-footer",
+      "collapsible-layout"
     ],
     "props": {
       "pagination": "show-more",
@@ -80,6 +81,20 @@
         "categories": true,
         "brands": true
       }
+    }
+  },
+  "collapsible-layout": {
+    "props": {
+      "initialVisibility": false,
+      "minHeight": "60px",
+      "showMoreText": "Ler Mais",
+      "showLessText": "Ler Menos"
+    },
+    "children": ["rich-text"]
+  },
+  "rich-text": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed sodales tellus. Nulla cursus nulla... dolor sit amet, consectetur adipiscing elit. Morbi sed sodales tellus. Nulla cursus nulla...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed sodales tellus. Nulla cursus nulla...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed sodales tellus. Nulla cursus nulla..."
     }
   },
   "flex-layout.row#promos-search": {
@@ -187,7 +202,8 @@
       "flex-layout.row#fetchmore",
       "search-products-progress-bar",
       // "flex-layout.row#promos-search",
-      "flex-layout.row#banners-home2"
+      "flex-layout.row#banners-home2",
+      "collapsible-layout"
     ],
     "props": {
       "pagination": "show-more",

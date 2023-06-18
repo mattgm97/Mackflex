@@ -49,3 +49,27 @@
 .box {
   right: -66px;
 }
+
+/* Criar outro arquivo quando eu colocar o app certo */
+:global(.maeztraio-collapsible-layout-0-x-wrapper) {
+  margin-bottom: 5rem;
+}
+
+:global(.maeztraio-collapsible-layout-0-x-showMore) {
+  padding: 7px 30px;
+  border: 2px solid #f15b2a;
+  border-radius: 30px;
+  margin-top: 1.5rem;
+  background-color: transparent;
+  font-family: "Droid Sans";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: center;
+  color: #f15b2a;
+}
+
+:global(.maeztraio-collapsible-layout-0-x-content--closed) {
+  min-height: 63px !important;
+  max-height: 63px !important;
+}
