@@ -51,11 +51,11 @@
 }
 
 /* Criar outro arquivo quando eu colocar o app certo */
-:global(.maeztraio-collapsible-layout-0-x-wrapper) {
+:global(.mackflex-collapsible-layout-0-x-wrapper) {
   margin-bottom: 5rem;
 }
 
-:global(.maeztraio-collapsible-layout-0-x-showMore) {
+:global(.mackflex-collapsible-layout-0-x-showMore) {
   padding: 7px 30px;
   border: 2px solid #f15b2a;
   border-radius: 30px;
@@ -69,7 +69,7 @@
   color: #f15b2a;
 }
 
-:global(.maeztraio-collapsible-layout-0-x-content--closed) {
+:global(.mackflex-collapsible-layout-0-x-content--closed) {
   min-height: 63px !important;
   max-height: 63px !important;
 }
