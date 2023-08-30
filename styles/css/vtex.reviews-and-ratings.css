@@ -1,6 +1,7 @@
 .inlineContainer {
   margin: 0;
   text-align: initial;
+  padding-bottom: 1rem;
 }
 
 .star {
