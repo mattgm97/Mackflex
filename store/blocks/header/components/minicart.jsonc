@@ -1,6 +1,9 @@
 {
   "minicart.v2": {
-    "children": ["minicart-base-content"]
+    "children": ["minicart-base-content"],
+    "props": {
+      "customPixelEventId": "add-to-cart-button"
+    }
   },
 
   "minicart-base-content": {

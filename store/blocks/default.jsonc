@@ -105,29 +105,10 @@
     }
   },
 
-  "product-list-price-range#shelf": {
-    "props": {
-      "message": "{minPriceValue}",
-      "blockClass": "selling-listprice-shelf"
-    }
-  },
-
   "product-selling-price-range#shelf": {
     "props": {
       "message": "{minPriceValue}",
       "blockClass": "selling-price-shelf"
-    }
-  },
-
-  "product-list-price#shelf": {
-    "props": {
-      "blockClass": "selling-listprice-shelf"
-    }
-  },
-  "product-selling-price#shelf": {
-    "props": {
-      "blockClass": "selling-price-shelf",
-      "buyButtonBehavior": "alwaysGoToProduct"
     }
   },
 

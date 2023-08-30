@@ -1,0 +1,11 @@
+{
+  "flex-layout.row#identifier-reviews": {
+    "title": "Identifier Reviews",
+    "children": ["product-identifier.product", "product-rating-summary"],
+    "props": {
+      "colSizing": "auto",
+      "colGap": 0,
+      "blockClass": "identifier-reviews"
+    }
+  }
+}

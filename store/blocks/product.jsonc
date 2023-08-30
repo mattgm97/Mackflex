@@ -7,7 +7,7 @@
       "flex-layout.row#pdp",
       "ProductSpecification",
       "flex-layout.row#relatedshelfPlaceholder",
-      "add-to-list-btn"
+      "product-reviews"
     ]
   },
 
@@ -27,22 +27,7 @@
       "responsive-layout.desktop#pdpdesktop",
       "responsive-layout.phone#pdpMob",
       "flex-layout.row#product-buy-together"
-      //  "__fold__",
-      // "flex-layout.row#description",
-
-      /* "flex-layout.row#relatedshelf" para quando o app da vtex sair do alpha*/
     ]
-  },
-
-  "rich-text#avaliacoes-text": {
-    "title": "Avaliações Texto",
-    "props": {
-      "text": "Reviews",
-      "font": "t-heading-2",
-      "textPosition": "LEFT",
-      "textAlign": "LEFT",
-      "blockClass": "sectorTitle"
-    }
   },
 
   "flex-layout.row#product-breadcrumb": {
@@ -120,9 +105,9 @@
   },
 
   "flex-layout.col#stackmob": {
-    "children": [      
+    "children": [
       "vtex.store-components:product-name",
-      "product-identifier.product",
+      "flex-layout.row#identifier-reviews",
       "stack-layout"
     ],
     "props": {
@@ -155,20 +140,14 @@
     },
     "children": [
       "vtex.store-components:product-name",
-      "product-identifier.product",
+      // "product-identifier.product",
+      "flex-layout.row#identifier-reviews",
       "product-price#product-details",
-      //  "product-installments#default",
-      /* "product-list-price-range#pdp",
-      "product-selling-price-range#pdp",*/
-
-      // "product-rating-summary",
       "product-description",
-      // "flex-layout.row#ProgressiveDiscount",
       "sku-selector",
       "flex-layout.row#quantity",
       "add-to-cart-button#pdp",
       "flex-layout.row#frete-gratis",
-      // "shipping-simulator",
       "availability-subscriber"
     ]
   },
@@ -224,42 +203,16 @@
       "paddingRight": 1
     },
     "children": [
-      /* "product-list-price-range#pdp",
-      "product-selling-price-range#pdp",*/
-      "product-rating-summary",
       "product-description",
       "flex-layout.row#ProgressiveDiscount",
       "sku-selector",
       "product-list-price",
-      // "product-price#product-details",
-      // "product-installments",
       "product-quantity",
       "add-to-cart-button#pdp",
-      // "shipping-simulator",
       "availability-subscriber"
     ]
   },
 
-  "product-list-price-range#pdp": {
-    "props": {
-      "message": "{minPriceValue}",
-      "blockClass": ["pdp", "PriceBox"]
-    }
-  },
-
-  "product-selling-price-range#pdp": {
-    "props": {
-      "message": "{minPriceValue}",
-      "blockClass": ["pdp", "PriceBox"]
-    }
-  },
-
-  "product-installments#default": {
-    "props": {
-      "message": "ou {installmentsNumber}x de {installmentValue} sem juros",
-      "blockClass": ["pdp-installments"]
-    }
-  },
   "sku-selector": {
     "props": {
       "initialSelection": "empty",
@@ -281,9 +234,6 @@
       "text": "COMPRAR",
       "blockClass": "btn-buy-pdp"
     }
-  },
-  "flex-layout.row#relatedshelf": {
-    "children": ["flex-layout.col#relatedshelf"]
   },
   "flex-layout.col#relatedshelf": {
     "children": ["recommendation-refresh#one", "recommendation-refresh#two"]
@@ -311,12 +261,7 @@
   "flex-layout.col#product-buy-together": {
     "children": ["recommendation-buy-together"]
   },
-  "flex-layout.row#specification": {
-    "children": ["ProductSpecification"],
-    "props": {
-      "blockClass": "productSpecificationGroup"
-    }
-  },
+
   "flex-layout.row#relatedshelfPlaceholder": {
     "children": ["flex-layout.col#shelfs"]
   },

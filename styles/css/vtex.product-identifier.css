@@ -2,8 +2,8 @@
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
-  line-height: 15px;
   color: #939598;
+  margin-right: 1rem;
 }
 
 .product-identifier--productReference::before {

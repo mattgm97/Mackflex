@@ -15,7 +15,8 @@
       "product-summary-image",
       "flex-layout.row#new-shelf-name",
       "product-summary-price",
-      "product-summary-buy-button"
+      "product-rating-inline",
+      "add-to-cart-button#shelf"
     ]
   },
   "slider-layout#new-shelf-products": {
@@ -58,15 +59,11 @@
       "blockClass": "new-shelf-porcentagem"
     }
   },
-  "product-selling-price#summary": {
+  "add-to-cart-button#shelf": {
     "props": {
-      "alwaysShow": true,
-      "message": "{savingsPercentage} off"
-    }
-  },
-  "product-summary-buy-button": {
-    "props": {
-      "buyButtonText": "COMPRAR"
+      "addToCartFeedback": "customEvent",
+      "customPixelEventId": "add-to-cart-button",
+      "text": "COMPRAR"
     }
   },
   "product-summary-price": {
