@@ -1,26 +1,12 @@
 {
-  "flex-layout.col#security-container":{
-    "children": [
-      "flex-layout.row#security-0",
-      "image#securityImage-0",
-      "image#securityImage-1"
-    ],
-    "props": {
-      "blockClass": "security-container",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-       "fullWidth": true
-    }
+  "flex-layout.row#security-0": {
+    "children": ["rich-text#security"]
   },
-  "flex-layout.row#security-0":{
-    "children": [
-      "rich-text#security"    
-    ]
-  },
-  "flex-layout.row#security-1":{
+  "flex-layout.row#security-1": {
     "children": [
       "image#securityImage-0",
-      "image#securityImage-1"
+      "image#securityImage-1",
+      "sandbox#reputation"
     ],
     "props": {
       "preventHorizontalStretch": true,
@@ -35,7 +21,7 @@
       "textPosition": "LEFT",
       "textAlign": "LEFT",
       "text": "**Segurança**"
-    } 
+    }
   },
 
   "image#securityImage-0": {
@@ -53,6 +39,14 @@
       // "width": 50,
       // "height": 50,
       "blockClass": "security-logo-2"
+    }
+  },
+  "sandbox#reputation": {
+    "props": {
+      "width": "200px",
+      "height": "60px",
+      "initialContent": "<div id='reputation-ra'><script type='text/javascript' id='ra-embed-reputation' src='https://s3.amazonaws.com/raichu-beta/selos/bundle.js' data-id='a1JKaGg1YmQtUUZzU3JqUTptYWNrLWZsZXg=' data-target='reputation-ra' data-model='2'></script></div>",
+      "allowCookies": true
     }
   }
 }

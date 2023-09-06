@@ -88,8 +88,11 @@
   },
 
   "vtex.menu@2.x:submenu.accordion#listLink-footer-accordion-3": {
-    "children": ["image#securityImage-0",
-    "image#securityImage-1"]
+    "children": [
+      "image#securityImage-0",
+      "image#securityImage-1",
+      "sandbox#reputation"
+    ]
   },
 
   //SOBRE

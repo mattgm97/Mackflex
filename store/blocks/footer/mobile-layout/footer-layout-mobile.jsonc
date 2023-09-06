@@ -25,14 +25,13 @@
     "children": ["image#payment-methods"]
   },
 
-  "flex-layout.row#contact-menu":{
+  "flex-layout.row#contact-menu": {
     "children": ["vtex.menu@2.x:menu#contact-footer-desktop-1"],
-    "props":{
+    "props": {
       "horizontalAlign": "center",
-      "blockClass":"mob-footer-contact"
+      "blockClass": "mob-footer-contact"
     }
   },
-
 
   "flex-layout.row#footer-container-0-mobile": {
     "props": {
@@ -48,82 +47,18 @@
     "props": {
       "blockClass": "footer__newsletter-mob"
     },
-    "children": [
-      "flex-layout.row#newsletter",
-      "flex-layout.row#newsletterRow"
-    ]
+    "children": ["flex-layout.row#newsletter", "flex-layout.row#newsletterRow"]
   },
-
-  "flex-layout.col#footer-1-box-menu-1":{
-    "children": [
-      "vtex.menu@2.x:menu#linkList-container-mobile"
-    ],
+  "flex-layout.col#footer-1-box-2": {
+    "children": ["rich-text#social-footer", "rich-text#redes-sociais"],
     "props": {
-        "blockClass": ["footer__content-col","footer__content-col--mobile-0"],
-        "verticalAlign": "top",
-        "width": "100%"
+      "blockClass": ["footer__content-col", "footer__content-col--mobile-2"],
+      "verticalAlign": "top",
+      "width": "100%"
     }
   },
 
-
-  "flex-layout.col#footer-1-box-menu-2":{
-    "children": [
-      "vtex.menu@2.x:menu#linkList-container-mobile-2"
-    ],
-    "props": {
-        "blockClass": ["footer__content-col","footer__content-col--mobile-0"],
-        "verticalAlign": "top",
-        "width": "100%"
-    }
-  },
-
-  "rich-text#sobre-footer":{
-    "props": {
-      "text": "INSTITUCIONAL",
-      "font": "t-heading-5",
-      "textPosition": "CENTER",
-      "textAlign": "CENTER",
-      "blockClass": "footer-sobre"
-    }
-  },
-
-  "flex-layout.col#footer-1-box-menu-3":{
-    "children": [
-      "vtex.menu@2.x:menu#linkList-container-mobile-4"
-    ],
-    "props": {
-        "blockClass": ["footer__content-col","footer__content-col--mobile-0"],
-        "verticalAlign": "top",
-        "width": "100%"
-    }
-  },
-
-  "flex-layout.col#footer-1-box-1":{
-    "children": [
-      "flex-layout.row#newsletter",
-      "flex-layout.row#newsletterRow"
-    
-    ],
-    "props": {
-        "blockClass": ["footer__content-col","footer__content-col--mobile-1"],
-        "verticalAlign": "top",
-        "width": "100%"
-    }
-  },
-  "flex-layout.col#footer-1-box-2":{
-    "children": [
-      "rich-text#social-footer",
-      "rich-text#redes-sociais"
-    
-    ],
-    "props": {
-        "blockClass": ["footer__content-col","footer__content-col--mobile-2"],
-        "verticalAlign": "top",
-        "width": "100%"
-    }
-  },
-
-  "rich-text#social-footer":{
+  "rich-text#social-footer": {
     "props": {
       "text": "Redes Sociais",
       "font": "t-heading-5",
@@ -133,27 +68,12 @@
     }
   },
 
- 
-  "flex-layout.col#footer-1-box-3":{
-    "children": [
-      "flex-layout.row#powered"
-    ],
+  "flex-layout.col#footer-1-box-3": {
+    "children": ["flex-layout.row#powered"],
     "props": {
-        "blockClass": ["footer__content-col","footer__content-col--mobile-3"],
-        "verticalAlign": "top",
-        "width": "100%"
+      "blockClass": ["footer__content-col", "footer__content-col--mobile-3"],
+      "verticalAlign": "top",
+      "width": "100%"
     }
-  },
-
-  "flex-layout.row#footer-container-1-mobile": {
-    "props": {
-      "blockClass": "footer__copyright"
-    },
-    "children": [
-      "rich-text#copyright"
-    ]
-  } 
-
-
- 
+  }
 }

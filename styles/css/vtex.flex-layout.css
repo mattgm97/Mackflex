@@ -396,3 +396,13 @@
   justify-content: start;
   align-items: center;
 }
+
+.flexRowContent--security__row {
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  :global(.vtex-sandbox-iframe) {
+    margin-left: 1rem;
+  }
+}
