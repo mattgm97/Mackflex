@@ -144,6 +144,7 @@
       "flex-layout.row#identifier-reviews",
       "product-price#product-details",
       "product-description",
+       "flex-layout.row#ProgressiveDiscount",
       "sku-selector",
       "flex-layout.row#quantity",
       "add-to-cart-button#pdp",
