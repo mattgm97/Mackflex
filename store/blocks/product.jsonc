@@ -317,32 +317,32 @@
   },
   "ProgressiveDiscount#10": {
     "props": {
-      "value": 10,
+      "value": 5,
       "discountText": "3"
     }
   },
   "ProgressiveDiscount#20": {
     "props": {
-      "value": 20,
-      "discountText": "8"
+      "value": 10,
+      "discountText": "5"
     }
   },
   "ProgressiveDiscount#30": {
     "props": {
-      "value": 30,
-      "discountText": "10"
+      "value": 15,
+      "discountText": "7"
     }
   },
   "ProgressiveDiscount#40": {
     "props": {
-      "value": 40,
-      "discountText": "15"
+      "value": 20,
+      "discountText": "9"
     }
   },
   "ProgressiveDiscount#50": {
     "props": {
-      "value": 50,
-      "discountText": "17"
+      "value": 30,
+      "discountText": "12"
     }
   }
 }
