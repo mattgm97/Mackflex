@@ -129,7 +129,7 @@
   font-size: 18px;
 }
 .containerNormal .priceContainer {
-    margin-top: -2em;
+    margin-top: -25px;
 }
 .containerNormal:hover {
   border: 2px solid #cccccc;
