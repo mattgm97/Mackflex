@@ -222,6 +222,8 @@
   opacity:1;
 } */
 
+
+
 :global(.vtex-product-summary-2-x-element) {
   position: relative;
 }
@@ -507,6 +509,7 @@
 }
 
 .sellingPrice {
+
   padding-bottom: 5px;
 }
 
