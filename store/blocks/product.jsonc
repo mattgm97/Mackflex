@@ -231,10 +231,11 @@
     }
   },
   "add-to-cart-button#pdp": {
-    "props": {
-      "text": "COMPRAR",
-      "blockClass": "btn-buy-pdp"
-    }
+   "props": {
+    "addToCartFeedback": "customEvent",
+    "customPixelEventId": "add-to-cart-button",
+    "text": "COMPRAR"
+  }
   },
   "flex-layout.col#relatedshelf": {
     "children": ["recommendation-refresh#one", "recommendation-refresh#two"]
