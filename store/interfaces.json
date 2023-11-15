@@ -10,5 +10,8 @@
   },
   "ProgressiveDiscount": {
     "component": "ProgressiveDiscount"
+  },
+  "Headscript":{
+    "component": "Headscript"
   }
 }

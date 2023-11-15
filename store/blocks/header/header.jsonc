@@ -17,7 +17,8 @@
     "children": [
       "flex-layout.row#desktop-line-top-bar",
       "flex-layout.row#desktop-line-1",
-      "flex-layout.row#desktop-line-2"
+      "flex-layout.row#desktop-line-2",
+      "Headscript"
     ]
   },
   "flex-layout.row#desktop-line-top-bar": {
