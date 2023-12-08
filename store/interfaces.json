@@ -16,5 +16,8 @@
   },
   "AvalStars": {
     "component": "AvaliacoesStars"
+  },
+  "wpp-btn":{
+    "component": "WhatsappBTN"
   }
 }
