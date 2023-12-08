@@ -1,0 +1,8 @@
+.avaliacao-pdp:before{
+    font-size: 18px;
+  }
+
+  .avaliacao-pdp_rate{
+    left: 98px !important;
+    top: 5px !important;
+  }

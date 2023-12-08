@@ -98,7 +98,7 @@
 .priceContainer {
   align-items: flex-start;
   justify-content: flex-start;
-  height: 55px;
+  height: 50px;
   padding-top: 0;
 }
 
@@ -109,10 +109,10 @@
   margin-bottom: 0.5em;
   font-family: "Droid Sans";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 19px;
   line-height: 22px;
-  color: #515151;
+  color: #f15b2a;
 }
 
 .buyButtonText {
@@ -128,10 +128,17 @@
   content: "COMPRAR";
   font-size: 18px;
 }
-
+.containerNormal .priceContainer {
+    margin-top: -25px;
+}
+.containerNormal:hover {
+  border: 2px solid #cccccc;
+}
+.containerNormal{
+  padding: 8px;
+}
 .imageWrapper--product-img-shelf {
-  background: #ececec;
-  border: 1px solid #939598;
+  background: #ffffff;
   margin-bottom: 20px;
   padding: 10px;
 }

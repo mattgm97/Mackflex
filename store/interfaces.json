@@ -10,5 +10,14 @@
   },
   "ProgressiveDiscount": {
     "component": "ProgressiveDiscount"
+  },
+  "Headscript":{
+    "component": "Headscript"
+  },
+  "AvalStars": {
+    "component": "AvaliacoesStars"
+  },
+  "wpp-btn":{
+    "component": "WhatsappBTN"
   }
 }
