@@ -13,5 +13,8 @@
   },
   "Headscript":{
     "component": "Headscript"
+  },
+  "AvalStars": {
+    "component": "AvaliacoesStars"
   }
 }

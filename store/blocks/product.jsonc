@@ -92,7 +92,8 @@
       "specificationGroupName": "Group",
       "specificationName": "On Sale",
       "visibleWhen": "True",
-      "displayValue": "SPECIFICATION_NAME"
+      "displayValue": "SPECIFICATION_NAME",
+      "blockClass": "testeESP"
     }
   },
   "flex-layout.col#stack": {
@@ -149,9 +150,12 @@
       "flex-layout.row#quantity",
       "add-to-cart-button#pdp",
       "flex-layout.row#frete-gratis",
+      "AvalStars",
       "availability-subscriber"
     ]
   },
+
+  
   "flex-layout.row#quantity": {
     "children": [
       "flex-layout.col#product-quantity",
@@ -238,15 +242,15 @@
   }
   },
   "flex-layout.col#relatedshelf": {
-    "children": ["recommendation-refresh#one", "recommendation-refresh#two"]
+    "children": [ "recommendation-refresh#two"]
   },
-  "recommendation-refresh#one": {
-    "props": {
-      "strategy": "SIMILAR_PRODUCTS",
-      "secondaryStrategy": "MOST_POPULAR"
-    },
-    "blocks": ["refresh-shelf"]
-  },
+  // "recommendation-refresh#one": {
+  //   "props": {
+  //     "strategy": "SIMILAR_PRODUCTS",
+  //     "secondaryStrategy": "MOST_POPULAR"
+  //   },
+  //   "blocks": ["refresh-shelf"]
+  // },
   "recommendation-refresh#two": {
     "props": {
       "strategy": "BEST_CHOICE",
@@ -268,21 +272,20 @@
     "children": ["flex-layout.col#shelfs"]
   },
   "flex-layout.col#shelfs": {
-    "children": ["shelf#related", "shelf#related2"]
+    "children": ["shelf#relatedBuy", "shelf#related2"]
   },
-  "shelf#related": {
+  "shelf#relatedBuy": {
     "blocks": ["product-summary.shelf#new-shelf"],
     "props": {
       "blockClass": "related--shelf",
       "recomendation": "buy",
-      "orderBy": "OrderByTopSaleDESC",
       "productList": {
         "maxItems": 10,
         "itemsPerPage": 4,
         "minItemsPerPage": 2,
         "scroll": "BY_PAGE",
         "arrows": true,
-        "titleText": "VOCÊ PODE GOSTAR DE"
+        "titleText": "Quem Comprou, Comprou Também"
       }
     }
   },

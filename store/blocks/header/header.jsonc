@@ -18,7 +18,8 @@
       "flex-layout.row#desktop-line-top-bar",
       "flex-layout.row#desktop-line-1",
       "flex-layout.row#desktop-line-2",
-      "Headscript"
+      "Headscript",
+      "wpp-btn"
     ]
   },
   "flex-layout.row#desktop-line-top-bar": {
