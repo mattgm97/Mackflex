@@ -7,6 +7,9 @@
   padding: 28px 0;
   background-color: #f8f8f8;
 }
+.flexRowContent--frete-gratis{
+  align-items: center;
+}
 
 .flexRowContent--selerCondition {
   background-color: #f8f8f8;

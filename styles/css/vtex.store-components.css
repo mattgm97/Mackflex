@@ -417,7 +417,10 @@
 .imageElement--security-logo-1 {
   padding-right: 15px;
 }
-
+.imageElement--icone-frete-gratis{
+  width: 197px;
+  height: 39px;
+}
 @media (max-width: 760px) {
   .searchBarContainer {
     z-index: 100;
