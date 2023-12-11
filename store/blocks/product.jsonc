@@ -170,13 +170,14 @@
     "props": {
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "text": "[![Google avaliações](/arquivos/selo-google.png 'Google')](https://customerreviews.google.com/v/merchant?q=isinaliza.com&c=BR&v=17)"
+      "text": "[![Google avaliações](/arquivos/selo-google.png 'Google')](https://encurtador.com.br/hkmQX)",
+      "blockClass": "security-selo"
     }
   },
   "flex-layout.row#quantity": {
     "children": [
-      "flex-layout.col#product-quantity",
-      "flex-layout.col#product-troca"
+      "flex-layout.col#product-quantity"
+     
     ],
     "props": {
       "blockClass": "block-quantity"
@@ -189,21 +190,21 @@
       "verticalAlign": "middle"
     }
   },
-  "flex-layout.col#product-troca": {
-    "children": ["image#troca"],
-    "props": {
-      "width": "50%",
-      "verticalAlign": "middle"
-    }
-  },
+  // "flex-layout.col#product-troca": {
+  //   "children": ["image#troca"],
+  //   "props": {
+  //     "width": "50%",
+  //     "verticalAlign": "middle"
+  //   }
+  // },
   "image#troca": {
     "props": {
-      "src": "assets/icons/primeira-troca.png",
+      "src": "assets/icons/selotroca.png",
       "blockClass": "primeira-troca"
     }
   },
   "flex-layout.row#frete-gratis": {
-    "children": ["image#frete-gratis", "rich-text#googlereviews"],
+    "children": ["image#frete-gratis", "rich-text#googlereviews",  "image#troca"],
     "props": {
       "blockClass": "frete-gratis",
       "horizontalAlign": "middle",
