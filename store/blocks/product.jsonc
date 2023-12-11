@@ -4,10 +4,8 @@
       "blockClass": ["pdp"]
     },
     "children": [
-      "flex-layout.row#pdp",
-      "ProductSpecification",
-      "flex-layout.row#relatedshelfPlaceholder",
-      "product-reviews"
+      "stack-layout#product-images"
+    
     ]
   },
 

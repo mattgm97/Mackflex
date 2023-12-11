@@ -49,7 +49,11 @@
   padding-left: 0.3rem;
 }
 
-
+:global(.vtex-store-components-3-x-productImagesContainer) {
+  > div {
+    margin-left: 0 !important;
+  }
+}
 
 .flexRow--footer__copyright {
   background-color: #000;
@@ -407,4 +411,8 @@
   :global(.vtex-sandbox-iframe) {
     margin-left: 1rem;
   }
+}
+
+
+.flexRowContent--product__images {
 }
