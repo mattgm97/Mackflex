@@ -150,12 +150,29 @@
       "flex-layout.row#quantity",
       "add-to-cart-button#pdp",
       "flex-layout.row#frete-gratis",
-      "AvalStars",
+      // "flex-layout.row#security-2",
       "availability-subscriber"
     ]
   },
 
-  
+  // "flex-layout.row#security-2":{
+  //   "children": [
+  //    /* "sandbox#google",*/
+  //     "rich-text#googlereviews"
+  //   ],
+  //   "props": {
+  //     "preventHorizontalStretch": true,
+  //     "blockClass": "security__row"
+  //   }
+  // },
+
+  "rich-text#googlereviews": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "[![Google avaliações](/arquivos/selo-google.png 'Google')](https://customerreviews.google.com/v/merchant?q=isinaliza.com&c=BR&v=17)"
+    }
+  },
   "flex-layout.row#quantity": {
     "children": [
       "flex-layout.col#product-quantity",
@@ -186,7 +203,7 @@
     }
   },
   "flex-layout.row#frete-gratis": {
-    "children": ["image#frete-gratis"],
+    "children": ["image#frete-gratis", "rich-text#googlereviews"],
     "props": {
       "blockClass": "frete-gratis",
       "horizontalAlign": "middle",
