@@ -147,4 +147,7 @@
   :global(.vtex-product-summary-2-x-buyButtonText)::before {
     font-size: 13px;
   }
+  .containerNormal .priceContainer {
+    margin-top: 0;
+  }
 }
