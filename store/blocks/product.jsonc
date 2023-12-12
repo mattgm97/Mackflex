@@ -150,16 +150,34 @@
       "flex-layout.row#quantity",
       "add-to-cart-button#pdp",
       "flex-layout.row#frete-gratis",
-      "AvalStars",
+      // "flex-layout.row#security-2",
       "availability-subscriber"
     ]
   },
 
-  
+  // "flex-layout.row#security-2":{
+  //   "children": [
+  //    /* "sandbox#google",*/
+  //     "rich-text#googlereviews"
+  //   ],
+  //   "props": {
+  //     "preventHorizontalStretch": true,
+  //     "blockClass": "security__row"
+  //   }
+  // },
+
+  "rich-text#googlereviews": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "[![Google avaliações](/arquivos/selo-google.png 'Google')](https://encurtador.com.br/hkmQX)",
+      "blockClass": "security-selo"
+    }
+  },
   "flex-layout.row#quantity": {
     "children": [
-      "flex-layout.col#product-quantity",
-      "flex-layout.col#product-troca"
+      "flex-layout.col#product-quantity"
+     
     ],
     "props": {
       "blockClass": "block-quantity"
@@ -172,21 +190,21 @@
       "verticalAlign": "middle"
     }
   },
-  "flex-layout.col#product-troca": {
-    "children": ["image#troca"],
-    "props": {
-      "width": "50%",
-      "verticalAlign": "middle"
-    }
-  },
+  // "flex-layout.col#product-troca": {
+  //   "children": ["image#troca"],
+  //   "props": {
+  //     "width": "50%",
+  //     "verticalAlign": "middle"
+  //   }
+  // },
   "image#troca": {
     "props": {
-      "src": "assets/icons/primeira-troca.png",
+      "src": "assets/icons/selotroca.png",
       "blockClass": "primeira-troca"
     }
   },
   "flex-layout.row#frete-gratis": {
-    "children": ["image#frete-gratis"],
+    "children": ["image#frete-gratis", "rich-text#googlereviews",  "image#troca"],
     "props": {
       "blockClass": "frete-gratis",
       "horizontalAlign": "middle",
