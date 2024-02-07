@@ -3,7 +3,9 @@
   font-weight: 400;
   font-size: 13px;
   color: #939598;
-  margin-right: 1rem;
+  margin-right: 0;
+  margin-top: 7px;
+
 }
 
 .product-identifier--productReference::before {

@@ -1,0 +1,99 @@
+{
+  // RIGHT
+  "flex-layout.col#product-right-col": {
+    "title": "Bloco da Direita",
+    "props": {
+      "preventVerticalStretch": true,
+      "rowGap": 0,
+      "width": "40%",
+      "blockClass": "product__right-col"
+    },
+    "children": [
+      "responsive-layout.desktop#product-name",
+      "flex-layout.row#avaliacao-pdp",
+      "condition-layout.product#link",
+      "condition-layout.product#availability-tip-bar"
+    ]
+  },
+  "responsive-layout.desktop#product-name": {
+    "children": ["flex-layout.row#product-name-desktop"]
+  },
+  "flex-layout.row#avaliacao-pdp": {
+    "children": [    
+      "product-identifier.product","product-rating-summary"
+    ],
+    "props": {
+      "blockClass": "avalliacao-pdp"
+    }
+  },
+  "flex-layout.row#product-name-desktop": {
+    "children": [
+      "vtex.store-components:product-name"
+    ],
+    "props": {
+      "blockClass": "top-name-page-product"
+    }
+  },
+  // "responsive-layout.desktop#link-acora": {
+  //   "children": ["link#ancora-video"]
+  // },
+
+  // "link#ancora-video": {
+  //   "props": {
+  //     "label": "",
+  //     "href": "#video",
+  //     "blockClass": ["cta-login-product-ancora"],
+  //     "rel": ""
+  //   }
+  // },
+  // "link#direct-login-product": {
+  //   "props": {
+  //     "label": "PARA VER O PREÇO DESTE PRODUTO, CADASTRE-SE",
+  //     "href": "/login",
+  //     "blockClass": ["cta-login-product"]
+  //   }
+  // },
+
+  "condition-layout.product#link": {
+    "title": "Condição de disponibilidade do Produto",
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "disposition-layout#product-right-col-link"
+    }
+  },
+
+  "flex-layout.row#logged-product-main": {
+    "children": ["condition-layout.product#availability"],
+    "props": {
+      "blockClass": "logged"
+    }
+  },
+  "condition-layout.product#availability": {
+    "title": "Condição de disponibilidade do Produto",
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "disposition-layout#product-right-col",
+      "Else": "disposition-layout#product-right-col-unavailable"
+    }
+  },
+  "condition-layout.product#availability-tip-bar": {
+    "title": "Condição de disponibilidade do Produto",
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "disposition-layout#product-right-col-final",
+      "Else": "disposition-layout#product-right-col-unavailable"
+    }
+  }
+}

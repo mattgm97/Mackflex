@@ -10,11 +10,14 @@
     background: #fff;
     color: inherit;
     border: 1px solid #BDBDBD;
-    padding: 13px 20px;
+    width: 70px;
+    height: 66px;
+    flex-shrink: 0;
     font: inherit;
     cursor: pointer;
     outline: inherit;
     transition: 0.3s all;
+    padding-top: 5px;
   }
   
   .progressive-discount-container label:hover {
@@ -28,25 +31,32 @@
     border: solid 1px #F04C25;
     transition: 0.3s all;
   }
+  .progressive-discount-container label .progressive-discount-number{
+    font-family: 'Droid Sans';
+    color: #BDBDBD;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 145.139%; /* 29.028px */
+  }
   
-  .progressive-discount-container label .progressive-discount-number,
   .progressive-discount-container label .progressive-discount-units {
     font-family: 'Droid Sans';
+    color: #BDBDBD;
+    font-size: 10px;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 145.14%;
-    color: #BDBDBD;
+    line-height: 145.139%;
   }
   
   .progressive-discount-container label .progressive-discount-discounts {
     font-family: 'Droid Sans';
+    color: #F15B2A;
+    font-size: 8px;
     font-style: normal;
     font-weight: 700;
-    font-size: 12px;
-    line-height: 9px;
-    color: #F15B2A;    
-    margin-top: 5px;  
+    line-height: normal;
   }
   
   .old-price {
@@ -79,6 +89,7 @@
       .progressive-discount-container label{
         
         height: 60px;
-  
+        padding: 7px 6px;
+        width: 90px ;
       }
     }

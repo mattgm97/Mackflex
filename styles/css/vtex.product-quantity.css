@@ -11,12 +11,12 @@
 } */
 
 :global(.vtex-numeric-stepper__input){
-  width: 100px;
+  width: 80px;
   border-color: #F2EEEA;
   background-color: #F2EEEA;
   color:#4F4F4F;
   font-size: 24px;
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .quantitySelectorStepper{
@@ -52,4 +52,8 @@
   }
 
 }
-
+@media (max-width: 768px) {
+  /* .quantitySelectorStepper{
+    margin-top: -1em;
+  } */
+}

@@ -1,124 +1,129 @@
 import React, { useEffect } from "react";
 import { DescontoProgressivoProps } from "./types";
 import { useProductDispatch } from "vtex.product-context/ProductDispatchContext";
-import { getDefaultSeller } from "./helpers/seller";
 import { useProduct } from "vtex.product-context";
 
 import "./global.css";
 
 const ProgressiveDiscount: StorefrontFunctionComponent<
   DescontoProgressivoProps
-> = ({ value = 1, discountText = "" }) => {
+> = ({ value = 1, discountText = '' }) => {
   const dispatch = useProductDispatch();
   const product = useProduct();
+  
   const descontoClusterHighlights = product?.product?.clusterHighlights.length;
   const desconto = product?.product?.clusterHighlights;
 
+
+  
   const onChange = () => {
-    dispatch({ type: "SET_QUANTITY", args: { quantity: value } });
+    dispatch({ type: 'SET_QUANTITY', args: { quantity: value } });
   };
 
-  // seta o valor do desconto
   const productContextValue = useProduct();
+  const productQuantity: any = productContextValue?.selectedQuantity ?? 0;
 
-  var productQuantity: any = productContextValue?.selectedQuantity;
+  const sellerPrices: number[] = productContextValue?.selectedItem?.sellers.map((sellers) => {
+    return sellers.commertialOffer.Price;
+  }) ?? [];
 
-  // @ts-ignore
-  const seller: any = getDefaultSeller(
-    // @ts-ignore
-    productContextValue?.selectedItem?.sellers.map((sellers, Price) => {
-      return sellers.commertialOffer.Price;
-    })
-  );
+  function getDefaultSeller(sellerPrices: number[]): any {
+    if (!sellerPrices || sellerPrices.length === 0) {
+      return undefined;
+    }
+
+    const defaultSeller = sellerPrices.reduce((prev, current) => {
+      return prev < current ? prev : current;
+    });
+
+    return defaultSeller;
+  }
 
   function descontoCalc(discountRate: any) {
-    const discount = seller - seller * discountRate;
-
-    const newDesconto = discount.toFixed(2).toString().replace(".", ",");
+    const sellerPrice = getDefaultSeller(sellerPrices);
+    const discount = sellerPrice - sellerPrice * discountRate;
+    const newDesconto = discount.toFixed(2).toString().replace('.', ',');
 
     let newPrice = document?.querySelector<HTMLElement>(
-      ".vtex-store-components-3-x-price_sellingPrice--PriceBox .valor-final"
+      '.vtex-product-price-1-x-sellingPrice--product__price .vtex-product-price-1-x-customSellingPrice--product__price.valor-final'
     )!;
     let oldPriceMain = document?.querySelector<HTMLElement>(
-      ".vtex-store-components-3-x-price_sellingPrice--PriceBox span"
+      '.vtex-product-price-1-x-sellingPrice--product__price .vtex-product-price-1-x-sellingPriceValue--product__price'
     )!;
 
-    oldPriceMain.style.display = "none";
+    if (oldPriceMain) {
+      oldPriceMain.style.display = 'none';
+    }
 
     if (!newPrice) {
-      newPrice = window?.document?.createElement("div");
-      newPrice?.classList.add("valor-final");
+      newPrice = window?.document?.createElement('div')
+      newPrice?.classList.add('valor-final')
+      newPrice?.classList.add('vtex-product-price-1-x-customSellingPrice--product__price')
 
       const oldPrice = window?.document?.querySelector(
-        ".vtex-store-components-3-x-price_sellingPrice--PriceBox"
-      );
+        '.vtex-product-price-1-x-sellingPrice--product__price'
+      )
 
-      oldPrice?.append(newPrice);
+      oldPrice?.append(newPrice)
     } else {
-      newPrice.style.display = "block";
+      newPrice.style.display = 'block';
     }
-    // @ts-ignore
-    return (newPrice?.innerText = `R$ ${newDesconto}`);
+    newPrice.innerText = `R$ ${newDesconto}`;
   }
 
   useEffect(() => {
-    console.log("Passei");
+    console.log('Passei');
+    console.log(descontoClusterHighlights, "descontoClusterHighlights");
     if (productQuantity < 10) {
       let oldPriceMain = document?.querySelector<HTMLElement>(
-        ".vtex-store-components-3-x-price_sellingPrice--PriceBox span"
+        '.vtex-product-price-1-x-sellingPrice--product__price .vtex-product-price-1-x-sellingPriceValue--product__price'
       )!;
 
-      if (!oldPriceMain) {
-        return;
-      } else {
-        oldPriceMain.style.display = "block";
+      if (oldPriceMain) {
+        oldPriceMain.style.display = 'block';
       }
 
       let newPrice = document?.querySelector<HTMLElement>(
-        ".vtex-store-components-3-x-price_sellingPrice--PriceBox .valor-final"
+        '.vtex-product-price-1-x-sellingPrice--product__price .vtex-product-price-1-x-customSellingPrice--product__price.valor-final'
       )!;
 
       if (newPrice) {
-        newPrice.style.display = "none";
+        newPrice.style.display = 'none';
       }
     }
-
-    if (productQuantity >= 10 && productQuantity <= 19) {
+    if (productQuantity >= 40 && productQuantity <= 59) {
       descontoCalc(0.03);
+    } else if (productQuantity >= 60 && productQuantity <= 79) {
+      descontoCalc(0.04);
+    } else if (productQuantity >= 80) {
+      descontoCalc(0.05);
     }
-
-    if (productQuantity >= 20 && productQuantity <= 29) {
-      descontoCalc(0.08);
-    }
-
-    if (productQuantity >= 30 && productQuantity <= 39) {
-      descontoCalc(0.1);
-    }
-
-    if (productQuantity >= 40 && productQuantity <= 49) {
-      descontoCalc(0.15);
-    }
-    if (productQuantity >= 50) {
-      descontoCalc(0.17);
-    }
+    
   }, [productQuantity, productContextValue?.selectedItem]);
 
-  return (
-    <div className="progressive-discount-container">
-      {descontoClusterHighlights != 0 && desconto?.[0].id == "138" ? (
+  if (descontoClusterHighlights !== 0 && desconto && desconto[0].id === '138') {
+    return (
+      <div className="progressive-discount-container">
         <label onClick={onChange}>
           <span className="progressive-discount-number">
             {value}
-            {value >= 50 ? "+" : ""}
+            {value >= 80 ? '+' : ''}
           </span>
           <span className="progressive-discount-units">Unidades</span>
           <span className="progressive-discount-discounts">
             {discountText}% off
           </span>
         </label>
-      ) : null}
-    </div>
-  );
+      </div>
+    );
+  } else {
+  
+    if (typeof document !== 'undefined') {
+      document.querySelector('.vtex-flex-layout-0-x-flexRow--progressive-discount')?.setAttribute('style', 'display: none;');
+      document.querySelector('.vtex-store-components-3-x-skuSelectorContainer')?.setAttribute('style', 'margin-top: 23px;');
+    }
+    return null
+  }
 };
 
 export default ProgressiveDiscount;

@@ -11,6 +11,23 @@
 	margin-bottom: 10px;
 }
 
+.container--product__shipping .paragraph{
+	color: #4F4F4F;
+	font-family: "Droid Sans";
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+.paragraph--product__tipbar-flag--text {
+	color: #4F4F4F;
+	font-family: "Droid Sans";
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+  }
+  
 .link--orcamento-text,
 .strong--socialmedia-text {
 	font-size: 11px;
@@ -125,6 +142,11 @@
 }
 .paragraph--redes-sociais {
 	margin: 0;
+}
+.paragraph--product__description{
+	font-weight: 700;
+    font-size: 25px;
+    color: #515151;
 }
 
 @media (max-width: 760px) {

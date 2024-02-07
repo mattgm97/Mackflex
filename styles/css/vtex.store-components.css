@@ -57,12 +57,20 @@
 
 .productNameContainer {
   margin-bottom: 5px;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: 0;
+  color: #515151;
+  font-size: 25px;
 }
 
 .skuSelectorContainer {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 1em;
+  
+}
+.skuSelectorSubcontainer{
+  margin: 0;
 }
 
 .skuSelectorTextContainer {
@@ -204,9 +212,93 @@
   font-weight: 400;
 }
 
-.shippingContainer {
-  margin-top: 2.5em;
+.productImagesContainer--product__images--desktop {
+  background-color: #fff;
+  margin: 0.375rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
+.figure--product__images--desktop {
+  border-radius: 0.25rem;
+}
+.productImagesThumb {
+  border: 0.063rem solid transparent;
+  border-radius: 0.25rem;
+  transition: all 0.2s;
+}
+.productImagesThumb.productImagesThumbActive {
+  border: 0.063rem solid #000;
+  border-radius: 0.25rem;
+}
+.swiperCaret .caretIcon--product__images--desktop {
+  display: none;
+}
+.gradientBaseTop::after {
+  content: url('assets/icons/seta-thumb.svg');
+  transform: rotate(180deg);
+  margin-top: -1.75rem;
+}
+.productImagesThumbCaret--product__images--desktop {
+  width: 0;
+}
+.productImagesThumbCaret--product__images--desktop::after {
+  content: url('assets/icons/seta-thumb.svg');
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  left: 2.5rem;
+  right: unset;
+  top: 1.625rem;
+}
+.productImage--product__images--desktop {
+  width: 37.5rem;
+  max-width: 100%;
+  border-radius: 0.25rem;
+}
+.swiperCaretPrev--product__images--desktop {
+  color: transparent;
+  display: flex;
+}
+.swiperCaretPrev--product__images--desktop::after {
+  content: url('assets/icons/seta-esquerda-pdp.svg');
+  display: flex;
+}
+.swiperCaretNext--product__images--desktop {
+  color: transparent;
+  display: flex;
+  padding-right: 0.625rem;
+}
+.swiperCaretNext--product__images--desktop::after {
+  content: url('assets/icons/seta-direita-pdp.svg');
+  display: flex;
+}
+/* .swiperPaginationClickable {
+  display: none;
+} */
+.swiperBullet {
+  width: 1.5rem !important;
+  height: 0.25rem !important;
+  border-radius: 0.125rem !important;
+}
+.swiperBullet--active {
+  background-color: #000 !important;
+  border-radius: 0.125rem !important;
+}
+.carouselGaleryThumbs--product__images--desktop {
+  width: 15% !important;
+}
+.carouselGaleryCursor {
+  width: 84%;
+}
+.productImageTag--product__images--desktop--main {
+  width: 592px !important;
+  height: 525px !important;
+}
+
+
 
 /* :global(.vtex-product-summary-2-x-element--default-prod-shelf) :global(.vtex-button){
   visibility:hidden;
@@ -353,6 +445,12 @@
   :global(.vtex-mega-menu-2-x-accordionIconContainer--mega-menu) {
     color: #fff !important;
   }
+  :global(.vtex-store-components-3-x-productImagesGallerySlide){
+    width: 100% !important;
+  }
+  :global(.vtex-store-components-3-x-carouselGaleryCursor) {
+    width: 100%;
+  }
 
   :global(.vtex-search-2-x-biggy-autocomplete-wrapper) {
     width: 80vw;
@@ -396,12 +494,76 @@
     display: block;
   }
 
+
+
   :global(.vtex-flex-layout-0-x-flexRowContent--mob-footer-contact)
     :global(.vtex-flex-layout-0-x-stretchChildrenWidth)
     :global(.vtex-menu-2-x-menuContainerNav--menu-footer) {
     display: flex;
     justify-content: center;
   }
+}
+.shippingContainer {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: flex-start;
+  border-radius: 2px;
+  border: 1px solid #000;
+  width: 487px !important;
+  height: 42px;
+  flex-shrink: 0;
+}
+.shippingContainer :global(.vtex-input__label) {
+  display: none;
+}
+.shippingContainer :global(.vtex-input) {
+  height: 100%;
+  display: block;
+}
+.shippingContainer :global(.vtex-address-form__postalCode) {
+  width: 100%;
+  padding-bottom: 0;
+  height: 100%;
+}
+.shippingContainer :global(.vtex-input-prefix__group) {
+  border: none;
+  height: 100%;
+  border-radius: 0;
+}
+.shippingContainer :global(.vtex-address-form-4-x-input) {
+  height: 100%;
+}
+.shippingContainer :global(.vtex-input__suffix) {
+  padding: 0;
+}
+.shippingContainer :global(.vtex-button) {
+  width: auto;
+  height: 100%;
+  padding: 0.5rem 1.5rem;
+  background-color: transparent;
+  border-color: transparent;
+}
+.shippingContainer :global(.vtex-button__label) {
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0;
+  margin: 0 auto;
+  justify-content: flex-start;
+  font-size: 0;
+}
+.shippingContainer :global(.vtex-button__label)::after {
+  content: 'Calcular';
+  color: #4F4F4F;
+  font-family: "Droid Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: none;
+}
+.shippingContainer :global(.vtex-address-form__postalCode-forgottenURL) {
+  display: none;
 }
 
 @media (max-width: 1300px) {
@@ -422,6 +584,10 @@
   height: 39px;
 }
 @media (max-width: 760px) {
+  .shippingContainer{
+    width: 100% !important;
+    height: 42px;
+  }
   .searchBarContainer {
     z-index: 100;
     width: 322px;

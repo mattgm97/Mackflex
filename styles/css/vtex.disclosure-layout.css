@@ -1,0 +1,108 @@
+:global(.vtex-disclosure-layout-1-x-trigger) {
+    background-color: #fff;
+    border: 1px solid #c9c9c9;
+    border-bottom: 0;
+    height: 88px;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+  @media (min-width: 1200px) {
+    .trigger {
+      height: 72px;
+   }
+ }
+  .trigger::after {
+    content: url('assets/image/icon-close-institucional.svg');
+ }
+  .trigger--visible {
+    border: 1px solid transparent;
+    background-color: #ffdb00 80;
+ }
+  .trigger--visible::after {
+    content: url('assets/image/icon-open-institucional.svg');
+    filter: grayscale(1);
+ }
+  .trigger--product__description {
+    border: 0;
+ }
+  .trigger--product__description--visible {
+    background-color: #fff;
+    border: 0;
+ }
+  .trigger--product__description--visible::before {
+    display: none !important;
+ }
+  .content--visible {
+    border-left: 1px solid #ffdb00 80;
+    border-right: 1px solid #ffdb00 80;
+    background-color: #ffdb00 80;
+    padding: 0 1rem;
+    color: #000;
+ }
+  .content--product__description--visible {
+    background-color: #fff;
+    border: 0;
+    padding: 1rem;
+ }
+  .content--product__description--visible :global(.vtex-store-components-3-x-productDescriptionContainer) {
+    padding: 0;
+ }
+  .content--product__description--visible::before {
+    display: none !important;
+ }
+  .trigger, .content {
+    position: relative;
+ }
+  .trigger--visible::before, .content--visible::before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 100.3%;
+    position: absolute;
+    top: 0;
+    left: 0;
+ }
+  @media (min-width: 1200px) {
+    .trigger--visible::before, .content--visible::before {
+      height: 101.3%;
+   }
+ }
+
+ .content--visible {
+  border-left: 1px solid #ffdb00 80;
+  border-right: 1px solid #ffdb00 80;
+  background-color: #ffdb00 80;
+  padding: 0 1rem;
+  color: #000;
+}
+.content--product__description--visible {
+  background-color: #fff;
+  border: 0;
+  padding: 1rem;
+}
+.content--product__description--visible :global(.vtex-store-components-3-x-productDescriptionContainer) {
+  padding: 0;
+}
+.content--product__description--visible::before {
+  display: none !important;
+}
+.trigger, .content {
+  position: relative;
+}
+.trigger--visible::before, .content--visible::before {
+  content: '';
+  display: block;
+  background-color: #fff;
+  width: 4px;
+  height: 100.3%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media (min-width: 1200px) {
+  .trigger--visible::before, .content--visible::before {
+    height: 101.3%;
+ }
+}

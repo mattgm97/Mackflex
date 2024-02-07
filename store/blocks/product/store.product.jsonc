@@ -1,0 +1,87 @@
+{
+  "store.product": {
+    "title": "Produto",
+    "children": ["disposition-layout#product"]
+  },
+  "disposition-layout#product": {
+    "title": "Produto - Disposição de elementos",
+    "children": [
+      "responsive-layout.mobile#product-name",
+   
+      "flex-layout.row#product-main",
+      "flex-layout.row#product-description",
+      "flex-layout.row#relatedshelfPlaceholder"
+    ],
+    "props": {
+      "disposition": [
+        {
+          "order": 1
+        },
+        {
+          "order": 2
+        },
+        {
+          "order": 3
+        },
+        {
+          "order": 4
+        },
+        {
+          "order": 5
+        },
+        {
+          "order": 6
+        },
+        {
+          "order": 7
+        },
+        {
+          "order": 8
+        },
+        {
+          "order": 9
+        }
+      ]
+    }
+  },
+  
+  "responsive-layout.mobile#product-name": {
+    "children": ["flex-layout.row#product-name-mobile"]
+  },
+
+  "flex-layout.row#product-name-mobile": {
+    "children": [
+      "vtex.store-components:product-name"
+
+    ],
+    "props": {
+      "blockClass": "top-name-page-product"
+    }
+  },
+  "flex-layout.row#relatedshelfPlaceholder": {
+    "children": ["flex-layout.col#shelfs"],
+    "props": {
+      "blockClass": "pdp--shelf"
+    }
+  },
+  "flex-layout.col#shelfs": {
+    "children": [ "shelf#related2"]
+  },
+
+  "shelf#related2": {
+    "blocks": ["product-summary.shelf#new-shelf"],
+    "props": {
+      "blockClass": "related--shelf",
+      "recomendation": "view",
+      "orderBy": "OrderByTopSaleDESC",
+      "productList": {
+        "maxItems": 10,
+        "itemsPerPage": 4,
+        "minItemsPerPage": 2,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "QUEM VIU, VIU TAMBÉM"
+      }
+    }
+  }
+}

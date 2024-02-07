@@ -1,12 +1,40 @@
-.groupName{
+/* .groupName{
   display: none;
-}
+} */
 
 :global(.vtex-flex-layout-0-x-flexRowContent--productSpecification){
   margin-bottom: 1em;
 }
 
+:global(.vtex-flex-layout-0-x-flexRowContent--product__tipbar){
+  flex-direction: column;
+  margin-top: 2em;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--product__tipbar) :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+     
+  width: 100% !important;
 
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--product__specification) :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+  width: 10% !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--product__tipbar-card ){
+  align-items: center;
+  display: flex;
+  padding: 0 ;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--product__tipbar-card) :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  width: auto!important;
+}
+:global(.vtex-store-components-3-x-imageElementLink--product__tipbar-flag--image){
+  display: flex;
+  justify-content: center;
+  width: 3.375rem!important;
+}
+/* :global(.vtex-rich-text-0-x-container--product__tipbar-flag--text) {
+  margin-left: 1.38rem;
+} */
 
 .quantitySelectorContainer {
   margin: 35px 0px 23px;
@@ -15,11 +43,11 @@
 :global(.vtex-numeric-stepper__minus-button__text),
 :global(.vtex-numeric-stepper__plus-button__text),
 :global(.vtex-numeric-stepper__input) {
-  font-size: 14px;
+  font-size: 20px;
   line-height: 16px;
   letter-spacing: 0em;
   text-align: center;
-  color: #9f9f9f;
+  color: #4F4F4F;
 } 
 
 
